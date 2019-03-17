@@ -134,6 +134,13 @@
             color: #FFFFFF;
         }
 
+        .directly-rtm {
+            height: calc(100% - 70px) !important;
+        }
+
+        .directly-rtm.is-minimized {
+            display: none !important;
+        }
 
     </style>
 
@@ -194,8 +201,12 @@
         <div class="label">Reason for chat <span class="req">*</span></div>
         <div>
             <select name="input-reason">
-                <option>option 1</option>
-                <option>option 2</option>
+                <option></option>
+                <option>Billing and Payment</option>
+                <option>General Questions</option>
+                <option>Help Activating</option>
+                <option>Plan and Pricing Info</option>
+                <option>Where's my Order?</option>
             </select>
         </div>
     </div>
@@ -227,7 +238,16 @@
             i.attachEvent("onload", function() { y.appendChild(l); });
         }
     })(document, window, "DirectlyRTM", "https://app.directly.com/widgets/rtm/embed.js");
-    DirectlyRTM("config",{id: "2c99834e6981dadd016987c8b7516746" });
+    DirectlyRTM("config", {
+        id: "2c99834e6981dadd016987c8b7516746",
+        i18n: {
+            "en": {
+                "text": {
+                    "here_a_recent_answer_similar_question": "We think this should answer your question. If you still need help, let us know and we will connect you with an expert."
+                }
+            }
+        }
+    });
 </script>
 
 </body>

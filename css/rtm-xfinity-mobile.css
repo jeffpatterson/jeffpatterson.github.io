@@ -12,6 +12,21 @@
     border-radius: 5px;
 }
 
+.expert-carousel {
+    box-shadow: none;
+}
+
+.system-message.has-sibling + .system-message {
+
+}
+
 .header-container {
     display: none;
+}
+
+.message-container.is-bot blockquote {
+    border-left: 1px solid #2f4550;
+    margin: 14px 0 4px;
+    opacity: 0.8;
+    padding: 3px 0 2px 10px;
 }
