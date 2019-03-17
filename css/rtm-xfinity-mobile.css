@@ -24,6 +24,10 @@
     display: none;
 }
 
+.response-switcher {
+    display: none;
+}
+
 .message-container.is-bot blockquote {
     border-left: 1px solid #2f4550;
     margin: 14px 0 4px;
