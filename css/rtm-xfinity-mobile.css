@@ -2,7 +2,7 @@
     background-color: #ffffff;
 }
 
-.message-container {
+.message-container, .system-message {
     background-color: #eef1f3;
     border: 0px !important;
     border-radius: 5px;
