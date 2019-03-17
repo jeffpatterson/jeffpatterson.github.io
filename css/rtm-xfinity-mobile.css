@@ -2,6 +2,10 @@
     background-color: #ffffff;
 }
 
+.message-container {
+    background-color: eef1f3;
+    border-radius: 3px;
+}
 .message-container.is-poster {
     background-color: #3173b1;
     border-radius: 3px;
