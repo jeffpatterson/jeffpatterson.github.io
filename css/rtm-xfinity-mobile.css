@@ -4,10 +4,10 @@
 
 .message-container {
     background-color: #eef1f3;
-    border: 0;
-    border-radius: 3px;
+    border: 0px !important;
+    border-radius: 5px;
 }
 .message-container.is-poster {
     background-color: #3173b1;
-    border-radius: 3px;
+    border-radius: 5px;
 }
