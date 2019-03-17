@@ -11,3 +11,7 @@
     background-color: #3173b1;
     border-radius: 5px;
 }
+
+.header-container {
+    display: none;
+}
