@@ -6,6 +6,7 @@
     background-color: #eef1f3;
     border: 0px !important;
     border-radius: 5px;
+    margin-bottom: 18px;
 }
 .message-container.is-poster {
     background-color: #3173b1;
