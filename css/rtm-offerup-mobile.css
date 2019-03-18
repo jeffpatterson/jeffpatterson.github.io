@@ -13,6 +13,8 @@
     border-radius: 0.25rem;
     max-width: 400px;
     word-wrap: break-word;
+    color: #4a4a4a;
+    font-family: Lato, sans-serif;
 }
 .message-container.is-poster {
     display: inline-block;
