@@ -142,6 +142,34 @@
             display: none !important;
         }
 
+        .footer {
+            bottom: 0;
+            margin-bottom: 20px;
+            border-width: 1px 0 0;
+            background-color: #fff;
+            position: absolute;
+            z-index: 1000;
+            border-radius: 0px 0px 5px 5px;
+            text-align: center;
+            right: 0;
+            left: 0;
+        }
+
+        .chat-content {
+            background-color: #fff;
+            width: calc(100% - 48px);
+            position: absolute;
+            left: 0px;
+            top: 71px;
+            padding-top: 20px;
+            bottom: 94px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            margin-left: 24px;
+            margin-right: 24px;
+            padding-right: 24px;
+        }
+
     </style>
 
     <script>
@@ -182,45 +210,50 @@
     </div>
 </header>
 <div class="container">
-    <div class="form-field">
-        <div class="label">Name <span class="req">*</span></div>
-        <div>
-            <input type="text" name="input-name"/>
+    <div class="chat-content">
+        <div class="form-field">
+            <div class="label">Name <span class="req">*</span></div>
+            <div>
+                <input type="text" name="input-name"/>
+            </div>
+        </div>
+        <div class="form-field">
+            <div class="label">Email <span class="req">*</span></div>
+            <div>
+                <input type="text" name="input-email"/>
+            </div>
+        </div>
+        <div class="form-field">
+            <div class="label">Zip Code <span class="req">*</span></div>
+            <div>
+                <input type="text" name="input-zip"/>
+            </div>
+        </div>
+        <div class="form-field">
+            <div class="label">Reason for chat <span class="req">*</span></div>
+            <div>
+                <select name="input-reason">
+                    <option></option>
+                    <option>Billing and Payment</option>
+                    <option>General Questions</option>
+                    <option>Help Activating</option>
+                    <option>Plan and Pricing Info</option>
+                    <option>Where's my Order?</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-field">
+            <div class="label">Question <span class="req">*</span></div>
+            <div>
+                <textarea name="input-question"></textarea>
+            </div>
         </div>
     </div>
-    <div class="form-field">
-        <div class="label">Email <span class="req">*</span></div>
-        <div>
-            <input type="text" name="input-email"/>
+
+    <div class="footer">
+        <div class="form-submit">
+            <button class="btn" id="rtm-button" onclick="launchRTM()">Start Chat</button>
         </div>
-    </div>
-    <div class="form-field">
-        <div class="label">Zip Code <span class="req">*</span></div>
-        <div>
-            <input type="text" name="input-zip"/>
-        </div>
-    </div>
-    <div class="form-field">
-        <div class="label">Reason for chat <span class="req">*</span></div>
-        <div>
-            <select name="input-reason">
-                <option></option>
-                <option>Billing and Payment</option>
-                <option>General Questions</option>
-                <option>Help Activating</option>
-                <option>Plan and Pricing Info</option>
-                <option>Where's my Order?</option>
-            </select>
-        </div>
-    </div>
-    <div class="form-field">
-        <div class="label">Question <span class="req">*</span></div>
-        <div>
-            <textarea name="input-question"></textarea>
-        </div>
-    </div>
-    <div class="form-submit">
-        <button class="btn" id="rtm-button" onclick="launchRTM()">Start Chat</button>
     </div>
 </div>
 <script>
