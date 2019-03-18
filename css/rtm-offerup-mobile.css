@@ -1,5 +1,9 @@
 .message-list-transition-wrapper {
-    background-color: #ffffff;
+    background-color: #f4f4f4;
+}
+
+.message-list-wrapper {
+    background-color: #f4f4f4;
 }
 
 .message-container, .system-message {
