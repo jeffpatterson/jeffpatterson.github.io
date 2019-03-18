@@ -54,3 +54,8 @@
 .ActionBar {
     background-color: #00ab80;
 }
+
+.system-message.success.inverted {
+    background-color: #00ab80;
+    border-color: #00ab80;
+}
