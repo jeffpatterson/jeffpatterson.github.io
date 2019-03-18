@@ -6,8 +6,9 @@
     background-color: #f4f4f4;
 }
 
-.message-container, .message-container.system-message, .message-container.is-expert {
+.message-container, .message-container.system-message, .message-container.is-expert, .message-container.is-bot, .system-message {
     /*display: inline-block;*/
+    border: 0;
     border-bottom: 2px solid #d8d8d8;
     background-color: #ffffff;
     border-radius: 0.25rem;
