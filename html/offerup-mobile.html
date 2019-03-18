@@ -13,8 +13,11 @@
         }
 
         header {
-            height: 80px;
-            padding-top: 10px;
+            height: 50px;
+            background: -webkit-linear-gradient(90deg, #00ab80, #00a980 50%, #026d6d);
+            background: -moz-linear-gradient(90deg, #00ab80, #00a980 50%, #026d6d);
+            background: linear-gradient(90deg, #00ab80, #00a980 50%, #026d6d);
+            padding-top: 20px;
         }
 
         header h4 {
@@ -22,7 +25,17 @@
             font-family: Lato,sans-serif;
             font-weight: bold;
             font-size: 22px;
+            color: #ffffff;
+            margin: 0;
         }
+
+        h4 {
+            text-align: center;
+            font-family: Lato,sans-serif;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
         .logo {
             margin-top: 19px;
             margin-bottom: 26px;
@@ -195,10 +208,11 @@
 <body>
 <header class="container">
 
-    <h4>Ask a Question</h4>
+    <h4>Message</h4>
 </header>
 <div class="container">
     <div class="chat-content">
+        <h4>Ask a Question</h4>
         <div class="form-field">
             <div>
                 <textarea name="input-question" placeholder="Message" rows="10"></textarea>
