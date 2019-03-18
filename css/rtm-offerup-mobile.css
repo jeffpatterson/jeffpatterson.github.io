@@ -23,6 +23,8 @@
     max-width: 400px;
     word-wrap: break-word;
     background-color: #e4e4e4;
+    color: #4a4a4a;
+    font-family: Lato, sans-serif;
 }
 
 .expert-carousel {
