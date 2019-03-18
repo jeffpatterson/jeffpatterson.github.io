@@ -5,6 +5,7 @@
         body {
             padding: 0;
             margin: 0;
+            font-family: Lato, sans-serif;
         }
         .container {
             padding-left: 24px;
@@ -13,6 +14,14 @@
 
         header {
             height: 80px;
+            padding-top: 10px;
+        }
+
+        header h4 {
+            text-align: center;
+            font-family: Lato,sans-serif;
+            font-weight: bold;
+            font-size: 22px;
         }
         .logo {
             margin-top: 19px;
@@ -37,22 +46,28 @@
             font-family: "Open Sans";
         }
 
-        input[type=text], select, textarea {
-            width: 100%;
-            padding: 18px 12px 18px 6px;
-            display: block;
-            border: none;
-            border: 1px solid #636970;
-            color: #191919;
-            background: #fbfcfc;
-            font-family: "Open Sans";
+
+
+        textarea {
+            -webkit-appearance: textarea;
+            background-color: white;
+            -webkit-rtl-ordering: logical;
+            flex-direction: column;
+            resize: auto;
+            cursor: text;
+            white-space: pre-wrap;
+            overflow-wrap: break-word;
+            border-width: 1px;
+            border-style: solid;
+            border-color: initial;
+            border-image: initial;
+            padding: 2px;
+            border: 1px solid #d8d8d8;
+            border-radius: 6px;
             font-size: 16px;
-            font-style: normal;
-            font-stretch: normal;
-            font-weight: 300;
-            text-align: left;
-            border-radius: 2px;
-            line-height: 24px;
+            padding: 10px;
+            width: 100%;
+            font-family: Lato, sans-serif;
         }
 
         .label {
@@ -86,53 +101,28 @@
         }
 
         .btn {
-            padding: 12px 30px;
-            border-color: #0272B6;
-            text-align: center;
-            min-width: 160px;
-            border-radius: 30px;
-            background: #0272B6 !important;
-            background: -webkit-linear-gradient(#0272B6, #0272B6) !important;
-            background: -moz-linear-gradient(#0272B6, #0272B6) !important;
-            background: -o-linear-gradient(#0272B6, #0272B6) !important;
-            background: -ms-linear-gradient(#0272B6, #0272B6) !important;
-            background: linear-gradient(#0272B6, #0272B6) !important;
-            color: #FFFFFF;
-            font-size: 16px !important;
-            font-family: "Open Sans";
-            line-height: 24px;
-            font-weight: 300;
+            border-radius: 3px;
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: 600;
+            padding: 6px 15px;
+            outline: 0;
+            -webkit-appearance: none;
+            cursor: pointer;
+            background-color: #00ab80;
+            color: #fff;
+            border: 1px solid transparent;
+            font-size: 20px;
+            line-height: 20px;
+            padding: 10px 20px;
+            font-family: Lato, sans-serif;
+            width: calc(100% - 48px);
         }
 
         .btn:hover {
-            padding: 12px;
-            border-color: #00619a;
-            text-align: center;
-            min-width: 160px;
-            border-radius: 30px;
-            background: #00619a !important;
-            background: -webkit-linear-gradient(#00619a, #00619a) !important;
-            background: -moz-linear-gradient(#00619a, #00619a) !important;
-            background: -o-linear-gradient(#00619a, #00619a) !important;
-            background: -ms-linear-gradient(#00619a, #00619a) !important;
-            background: linear-gradient(#00619a, #00619a) !important;
+            background-color: #009770;
         }
 
-        .btn:focus {
-            border-color: #0272B6;
-            text-align: center;
-            min-width: 160px;
-            border-radius: 30px;
-            outline: 2px dashed #0272B6 !important;
-            outline-offset: 2px;
-            background: #0272B6 !important;
-            background: -webkit-linear-gradient(#0272B6, #0272B6) !important;
-            background: -moz-linear-gradient(#0272B6, #0272B6) !important;
-            background: -o-linear-gradient(#0272B6, #0272B6) !important;
-            background: -ms-linear-gradient(#0272B6, #0272B6) !important;
-            background: linear-gradient(#0272B6, #0272B6) !important;
-            color: #FFFFFF;
-        }
 
         .directly-rtm {
             height: calc(100% - 70px) !important;
@@ -174,11 +164,11 @@
 
     <script>
         function launchRTM() {
-            var emailAddress = document.getElementsByName("input-email")[0].value;
-            var fullname = document.getElementsByName("input-name")[0].value;
+            var emailAddress = "rickbowen@iuma.com";
+            var fullname = "Rick Bowen";
             var questionText = document.getElementsByName("input-question")[0].value;
-            var zipCode = document.getElementsByName("input-zip")[0].value;
-            var reason = document.getElementsByName("input-reason")[0].value;
+            var zipCode = "94523";
+            var reason = "Transaction support";
 
             DirectlyRTM("askQuestion", {
                 questionText: questionText,
@@ -199,60 +189,26 @@
             DirectlyRTM("minimize");
         }
     </script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
 </head>
 <body>
 <header class="container">
-    <div class="logo">
-        <img src="../images/xfinity-mobile-logo.svg" "/>
-    </div>
-    <div class="end-control">
-        <button class="end-chat" onclick="closeRTM()">End Chat</button>
-    </div>
+
+    <h4>Ask a Question</h4>
 </header>
 <div class="container">
     <div class="chat-content">
         <div class="form-field">
-            <div class="label">Name <span class="req">*</span></div>
             <div>
-                <input type="text" name="input-name"/>
-            </div>
-        </div>
-        <div class="form-field">
-            <div class="label">Email <span class="req">*</span></div>
-            <div>
-                <input type="text" name="input-email"/>
-            </div>
-        </div>
-        <div class="form-field">
-            <div class="label">Zip Code <span class="req">*</span></div>
-            <div>
-                <input type="text" name="input-zip"/>
-            </div>
-        </div>
-        <div class="form-field">
-            <div class="label">Reason for chat <span class="req">*</span></div>
-            <div>
-                <select name="input-reason">
-                    <option></option>
-                    <option>Billing and Payment</option>
-                    <option>General Questions</option>
-                    <option>Help Activating</option>
-                    <option>Plan and Pricing Info</option>
-                    <option>Where's my Order?</option>
-                </select>
-            </div>
-        </div>
-        <div class="form-field">
-            <div class="label">Question <span class="req">*</span></div>
-            <div>
-                <textarea name="input-question"></textarea>
+                <textarea name="input-question" placeholder="Message" rows="10"></textarea>
             </div>
         </div>
     </div>
 
     <div class="footer">
         <div class="form-submit">
-            <button class="btn" id="rtm-button" onclick="launchRTM()">Start Chat</button>
+            <button class="btn" id="rtm-button" onclick="launchRTM()">Send</button>
         </div>
     </div>
 </div>

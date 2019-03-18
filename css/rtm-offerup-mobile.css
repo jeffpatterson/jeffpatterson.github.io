@@ -3,14 +3,20 @@
 }
 
 .message-container, .system-message {
-    background-color: #eef1f3;
-    border: 0px !important;
-    border-radius: 5px;
-    margin-bottom: 18px;
+    display: inline-block;
+    border-bottom: 2px solid #d8d8d8;
+    background-color: #ffffff;
+    border-radius: 0.25rem;
+    max-width: 400px;
+    word-wrap: break-word;
 }
 .message-container.is-poster {
-    background-color: #3173b1;
-    border-radius: 5px;
+    display: inline-block;
+    border-bottom: 2px solid #d8d8d8;
+    border-radius: 0.25rem;
+    max-width: 400px;
+    word-wrap: break-word;
+    background-color: #e4e4e4;
 }
 
 .expert-carousel {
