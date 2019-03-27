@@ -98,3 +98,11 @@
     height: 30px !important;
     width: 30px !important;
 }
+
+.system-message.has-sibling {
+    padding: 0;
+}
+
+.system-message.has-sibling .icon {
+    display: none;
+}
