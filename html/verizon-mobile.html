@@ -15,7 +15,7 @@
             height: 80px;
         }
         .logo {
-            margin-top: 19px;
+            margin-top: 10px;
             margin-bottom: 26px;
             width: auto;
             float: left;
@@ -88,50 +88,74 @@
             margin-top: 40px;
             text-align: center;
         }
-
         .btn {
-            padding: 12px 30px;
+            padding: 0px 20px;
             border-color: #000000;
             text-align: center;
-            min-width: 160px;
+            min-width: 50px;
             border-radius: 30px;
             background: #ffffff !important;
             color: #000000;
-            font-size: 16px !important;
+            font-size: 11px !important;
             font-family: "Helvetica";
-            line-height: 24px;
-            font-weight: 300;
+            font-weight: bold;
+            line-height: 20px;
         }
 
-        .btn:hover {
-            padding: 12px;
-            border-color: #00619a;
-            text-align: center;
-            min-width: 160px;
-            border-radius: 30px;
-            background: #00619a !important;
-            background: -webkit-linear-gradient(#00619a, #00619a) !important;
-            background: -moz-linear-gradient(#00619a, #00619a) !important;
-            background: -o-linear-gradient(#00619a, #00619a) !important;
-            background: -ms-linear-gradient(#00619a, #00619a) !important;
-            background: linear-gradient(#00619a, #00619a) !important;
+
+        /*
+        .btn {
+            font-family: Helvetica;
+            font-weight: bold;
+            font-size: 11px;
+            background: transparent;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            padding: 0;
+            width: 60px;
+            height: 100%;
+            color: #000;
+            border: 1px solid #000;
+            border-radius: 32px;
+            display: block;
+            -ms-flex-line-pack: center;
+            align-content: center;
         }
 
-        .btn:focus {
-            border-color: #0272B6;
-            text-align: center;
-            min-width: 160px;
-            border-radius: 30px;
-            outline: 2px dashed #0272B6 !important;
-            outline-offset: 2px;
-            background: #0272B6 !important;
-            background: -webkit-linear-gradient(#0272B6, #0272B6) !important;
-            background: -moz-linear-gradient(#0272B6, #0272B6) !important;
-            background: -o-linear-gradient(#0272B6, #0272B6) !important;
-            background: -ms-linear-gradient(#0272B6, #0272B6) !important;
-            background: linear-gradient(#0272B6, #0272B6) !important;
-            color: #FFFFFF;
-        }
+
+
+.btn:hover {
+    padding: 12px;
+    border-color: #00619a;
+    text-align: center;
+    min-width: 160px;
+    border-radius: 30px;
+    background: #00619a !important;
+    background: -webkit-linear-gradient(#00619a, #00619a) !important;
+    background: -moz-linear-gradient(#00619a, #00619a) !important;
+    background: -o-linear-gradient(#00619a, #00619a) !important;
+    background: -ms-linear-gradient(#00619a, #00619a) !important;
+    background: linear-gradient(#00619a, #00619a) !important;
+}
+
+.btn:focus {
+    border-color: #0272B6;
+    text-align: center;
+    min-width: 160px;
+    border-radius: 30px;
+    outline: 2px dashed #0272B6 !important;
+    outline-offset: 2px;
+    background: #0272B6 !important;
+    background: -webkit-linear-gradient(#0272B6, #0272B6) !important;
+    background: -moz-linear-gradient(#0272B6, #0272B6) !important;
+    background: -o-linear-gradient(#0272B6, #0272B6) !important;
+    background: -ms-linear-gradient(#0272B6, #0272B6) !important;
+    background: linear-gradient(#0272B6, #0272B6) !important;
+    color: #FFFFFF;
+}
+*/
 
         .directly-rtm {
             height: calc(100% - 70px) !important;
@@ -152,6 +176,22 @@
             text-align: center;
             right: 0;
             left: 0;
+            border-top: 1px solid #c6c6c6;
+        }
+
+        .footer .form-field {
+            float: left;
+            width: 280px;
+            margin-bottom: 0;
+        }
+
+        .footer .form-field textarea {
+            border: 0;
+            background-color: #ffffff;
+            margin: 10px 10px 0;
+            font-size: 16px;
+            padding: 10px 5px;
+
         }
 
         .chat-content {
@@ -205,12 +245,12 @@
         <img src="../images/verizon-logo.png" "/>
     </div>
     <div class="end-control">
-        <button class="end-chat" onclick="closeRTM()">End Chat</button>
+        <button class="end-chat" onclick="closeRTM()">&#x2716;</button>
     </div>
 </header>
 <div class="container">
     <div class="chat-content">
-        <div class="form-field">
+        <!-- div class="form-field">
             <div class="label">Name <span class="req">*</span></div>
             <div>
                 <input type="text" name="input-name"/>
@@ -246,10 +286,15 @@
             <div>
                 <textarea name="input-question"></textarea>
             </div>
-        </div>
+        </div -->
     </div>
 
     <div class="footer">
+        <div class="form-field">
+            <div>
+                <textarea name="input-question" placeholder="Tell us what you need"></textarea>
+            </div>
+        </div>
         <div class="form-submit">
             <button class="btn" id="rtm-button" onclick="launchRTM()">Send</button>
         </div>
