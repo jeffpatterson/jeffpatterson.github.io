@@ -37,7 +37,7 @@
     width: 300px;
     height: 15px;
     content: "";
-    background-image: url("images/verizon-bar-you.png");
+    background-image: url("/images/verizon-bar-you.png");
     background-size: 300px 15px;
 }
 
@@ -57,7 +57,8 @@
     width: 300px;
     height: 16px;
     content: "";
-    background-image: url("verizon-bar-verizon-300.png");
+    background-image: url("/images/verizon-bar-verizon.png");
+    background-size: 300px 16px;
 }
 
 .message-container.is-expert {
@@ -71,7 +72,8 @@
     width: 300px;
     height: 16px;
     content: "";
-    background-image: url("verizon-bar-experts-300.png");
+    background-image: url("/images/verizon-bar-experts.png");
+    background-size: 300px 16px;
 }
 
 .expert-carousel {
