@@ -89,3 +89,12 @@
 .response-switcher {
     display: none;
 }
+
+.message-container.is-expert .author {
+    margin-top: 10px;
+}
+
+.author img {
+    height: 30px !important;
+    width: 30px !important;
+}
