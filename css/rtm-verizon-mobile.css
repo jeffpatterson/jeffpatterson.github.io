@@ -109,6 +109,6 @@
 }
 
 .system-message.message-question-rerouted {
-
-
+    display: block;
+    padding: 0;
 }
