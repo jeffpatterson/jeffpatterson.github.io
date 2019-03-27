@@ -37,7 +37,8 @@
     width: 300px;
     height: 15px;
     content: "";
-    background-image: url("verizon-bar-you-300.png");
+    background-image: url("images/verizon-bar-you.png");
+    background-size: 300px 15px;
 }
 
 .message-container.is-bot {
