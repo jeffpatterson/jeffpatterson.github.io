@@ -50,7 +50,7 @@
     padding: 3px 0 2px 10px;
 }
 
-.message-container.is-bot:before, .system-message:before {
+.message-container.is-bot:before, .system-message .has-sibling:before {
     display: inline-block;
     width: 300px;
     height: 16px;
