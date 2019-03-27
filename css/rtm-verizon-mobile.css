@@ -1,5 +1,3 @@
-
-
 .message-list-transition-wrapper {
     background-color: #ffffff;
 }
@@ -10,7 +8,7 @@
     padding: 0;
 }
 
-.message-container {
+.message-container, .system-message {
     width: 100%;
     background-color: #ffffff;
     font-size: 14px;
