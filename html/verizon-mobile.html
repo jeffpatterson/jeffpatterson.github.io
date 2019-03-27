@@ -213,11 +213,11 @@
 
     <script>
         function launchRTM() {
-            var emailAddress = document.getElementsByName("input-email")[0].value || "rickbowen@iuma.com";
-            var fullname = document.getElementsByName("input-name")[0].value || "Rick Bowen";
+            var emailAddress = "rickbowen@iuma.com";
+            var fullname = "Rick Bowen";
             var questionText = document.getElementsByName("input-question")[0].value;
-            var zipCode = document.getElementsByName("input-zip")[0].value || "";
-            var reason = document.getElementsByName("input-reason")[0].value || "";
+            var zipCode = "";
+            var reason = "";
 
             DirectlyRTM("askQuestion", {
                 questionText: questionText,
