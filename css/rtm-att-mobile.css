@@ -18,6 +18,9 @@
     box-shadow: 0 0 7px #bbbbbb;
 }
 
+.message-container.is-expert {
+    border: 1px solid #bbbbbb;
+}
 .message-container.is-bot {
     border: 1px solid #bbbbbb;
 }
