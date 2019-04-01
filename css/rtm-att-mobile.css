@@ -1,0 +1,37 @@
+.message-list-transition-wrapper {
+    background-color: #ffffff;
+}
+
+.message-container, .system-message {
+    background-color: #eef1f3;
+    border: 0px !important;
+    border-radius: 5px;
+    margin-bottom: 18px;
+}
+.message-container.is-poster {
+    background-color: #3173b1;
+    border-radius: 5px;
+}
+
+.expert-carousel {
+    box-shadow: none;
+}
+
+.system-message.has-sibling + .system-message {
+
+}
+
+.header-container {
+    display: none;
+}
+
+.response-switcher {
+    display: none;
+}
+
+.message-container.is-bot blockquote {
+    border-left: 1px solid #2f4550;
+    margin: 14px 0 4px;
+    opacity: 0.8;
+    padding: 3px 0 2px 10px;
+}
