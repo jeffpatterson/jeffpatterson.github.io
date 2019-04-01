@@ -4,10 +4,10 @@
 
 .message-container, .system-message {
     background-color: #eaf2f9;
-    border: 0px !important;
     border-radius: 5px;
     margin-bottom: 18px;
     border: 1px solid #d1d1d1;
+    color: #000000;
 }
 .message-container.is-poster {
     background-color: #ffffff;
