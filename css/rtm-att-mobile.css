@@ -3,14 +3,16 @@
 }
 
 .message-container, .system-message {
-    background-color: #eef1f3;
+    background-color: #eaf2f9;
     border: 0px !important;
     border-radius: 5px;
     margin-bottom: 18px;
+    border: 1px solid #d1d1d1;
 }
 .message-container.is-poster {
-    background-color: #3173b1;
+    background-color: #ffffff;
     border-radius: 5px;
+    border: 1px solid #d1d1d1;
 }
 
 .expert-carousel {
