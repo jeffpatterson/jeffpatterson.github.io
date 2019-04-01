@@ -8,11 +8,13 @@
     margin-bottom: 18px;
     border: 1px solid #d1d1d1;
     color: #000000;
+    font-family: "Helvetica";
 }
 .message-container.is-poster {
     background-color: #ffffff;
     border-radius: 5px;
     border: 1px solid #d1d1d1;
+    color: #000000;
 }
 
 .expert-carousel {
