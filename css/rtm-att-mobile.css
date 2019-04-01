@@ -6,17 +6,21 @@
     background-color: #eaf2f9;
     border-radius: 5px;
     margin-bottom: 18px;
-    border: 1px solid #d1d1d1;
+    border: 1px solid #bbbbbb;
     color: #000000;
     font-family: "Helvetica";
 }
 .message-container.is-poster {
     background-color: #ffffff;
     border-radius: 5px;
-    border: 1px solid #d1d1d1;
+    border: 1px solid #bbbbbb;
     color: #000000;
+    box-shadow: 0 0 7px #bbbbbb;
 }
 
+.message-container.is-bot {
+    border: 1px solid #bbbbbb;
+}
 .expert-carousel {
     box-shadow: none;
 }
