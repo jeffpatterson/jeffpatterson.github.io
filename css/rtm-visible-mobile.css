@@ -1,5 +1,6 @@
 .message-list-transition-wrapper {
-    background-color: #ffffff;
+    background-color: rgba(245,245,245,.95);
+    border-top: 1px solid #000000;
 }
 
 .message-list > li {
@@ -17,6 +18,10 @@
     font-size: small;
     line-height: 1.34em;
     margin-right: 40px;
+}
+
+.message-container.is-bot.message-auto-response-confirmation {
+    margin-top: 40px;
 }
 .message-container.is-poster {
     background-color: #ffffff;
@@ -44,7 +49,8 @@
 }
 
 .message-container.is-expert:before, .message-container.is-bot:before,
-.system-message.has-sibling.message-alerting-experts-leave-info:before {
+.system-message.has-sibling.message-alerting-experts-leave-info:before,
+.system-message.message-question-rerouted:before {
     display: block;
     width: 40px;
     height: 40px;
@@ -60,7 +66,7 @@
     margin-right: 80px;
 }
 
-.icon.icon-bell {
+.icon.icon-bell, icon.icon-arrow-right {
     display: none;
 }
 
@@ -91,6 +97,6 @@
     border-radius: 0;
 }
 
-.author .reputation span {
+.author .reputation span, .expert-last-active-date {
     color: #ffffff;
 }

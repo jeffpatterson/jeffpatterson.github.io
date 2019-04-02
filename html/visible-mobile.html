@@ -27,7 +27,7 @@
 
         .end-control {
             float: right;
-            padding-top: 16px;
+            padding-top: 5px;
         }
 
         button.end-chat {
@@ -36,8 +36,8 @@
             width: 100%;
             box-shadow: none;
             border: 0;
-            font-size: 18px;
-            color: #000000;
+            font-size: 36px;
+            color: #1800ff;
             font-family: "Helvetica";
         }
 
@@ -85,16 +85,16 @@
         }
 
         .form-submit {
-            margin-top: 25px;
+            margin-top: 16px;
             text-align: center;
         }
         .btn {
-            padding: 0px 20px;
+            padding: 0px 0px;
             border-color: #000000;
             text-align: center;
             min-width: 50px;
-            border-radius: 30px;
-            background: #ffffff !important;
+            border-radius: 0px;
+            background: #1800ff !important;
             color: #000000;
             font-size: 11px !important;
             font-family: "Helvetica";
@@ -181,7 +181,7 @@
 
         .footer .form-field {
             float: left;
-            width: 280px;
+            width: calc(100% - 75px);
             margin-bottom: 0;
         }
 
@@ -190,7 +190,8 @@
             background-color: #ffffff;
             margin: 10px 10px 0;
             font-size: 16px;
-            padding: 10px 5px;
+            padding: 2px;
+            resize: none;
 
         }
 
@@ -246,7 +247,7 @@
         <img src="../images/visible-logo.png" "/>
     </div>
     <div class="end-control">
-        <button class="end-chat" onclick="closeRTM()">&#x2716;</button>
+        <button class="end-chat" onclick="closeRTM()">&#215;</button>
     </div>
 </header>
 <div class="container">
@@ -293,11 +294,11 @@
     <div class="footer">
         <div class="form-field">
             <div>
-                <textarea name="input-question" placeholder="Tell us what you need"></textarea>
+                <textarea name="input-question" placeholder="Type a message..."></textarea>
             </div>
         </div>
         <div class="form-submit">
-            <button class="btn" id="rtm-button" onclick="launchRTM()">Send</button>
+            <button class="btn" id="rtm-button" onclick="launchRTM()"><img src="https://media-lax1.inq.com/media/sites/10005834/flash//vsble-live-div/send.png" width="40" height="40"/></button>
         </div>
     </div>
 </div>
