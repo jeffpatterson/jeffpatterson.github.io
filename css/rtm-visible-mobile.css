@@ -2,7 +2,7 @@
     background-color: #ffffff;
 }
 
-.message-list li {
+.message-list > li {
     position: relative;
     margin: 20px 40px;
 }
@@ -16,6 +16,7 @@
     font-family: "Helvetica Neue", Helvetica;
     font-size: small;
     line-height: 1.34em;
+    margin-right: 40px;
 }
 .message-container.is-poster {
     background-color: #ffffff;
