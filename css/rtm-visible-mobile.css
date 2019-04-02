@@ -1,0 +1,88 @@
+.message-list-transition-wrapper {
+    background-color: #ffffff;
+}
+
+.message-list li {
+    position: relative;
+    margin: 20px 40px;
+}
+
+.message-container, .system-message {
+    background-color: #1800ff;
+    border-radius: 0;
+    margin-bottom: 18px;
+    border: 4px solid #1800ff;
+    color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica;
+    font-size: small;
+    line-height: 1.34em;
+}
+.message-container.is-poster {
+    background-color: #ffffff;
+    border-radius: 0;
+    border: 4px solid #1800ff;
+    color: #1800ff;
+}
+
+.message-container.is-poster:before {
+    display: block;
+    width: 40px;
+    height: 40px;
+    content: "";
+    position: absolute;
+    top: -21px;
+    right: -30px;
+    background-image: url(https://media-lax1.inq.com/media/sites/10005834/flash/vsble-live-div/avatar-customer.png);
+    background-size: contain;
+}
+
+
+.message-container.is-expert {
+    border: 1px solid #bbbbbb;
+}
+
+.message-container.is-expert:before, .message-container.is-bot:before {
+    display: block;
+    width: 40px;
+    height: 40px;
+    content: "";
+    position: absolute;
+    top: -21px;
+    left: -30px;
+    background-image: url(https://media-lax1.inq.com/media/sites/10005834/flash/vsble-live-div/avatar-agent.png);
+    background-size: contain;
+}
+.message-container.is-bot {
+    border: 1px solid #bbbbbb;
+    margin-right: 80px;
+}
+.expert-carousel {
+    box-shadow: none;
+}
+
+.system-message.has-sibling + .system-message {
+
+}
+
+.header-container {
+    display: none;
+}
+
+.response-switcher {
+    display: none;
+}
+
+.message-container.is-bot blockquote {
+    border-left: 4px solid #ffffff;
+    margin: 14px 0 4px;
+    opacity: 0.8;
+    padding: 3px 0 2px 10px;
+}
+
+.author img {
+    border-radius: 0;
+}
+
+.author .reputation span {
+    color: #ffffff;
+}

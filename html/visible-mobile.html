@@ -1,0 +1,335 @@
+<html>
+<head>
+    <style>
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        header {
+            height: 80px;
+        }
+        .logo {
+            margin-top: 10px;
+            margin-bottom: 26px;
+            width: auto;
+            float: left;
+        }
+
+        .logo img {
+            width: 110px;
+        }
+
+        .end-control {
+            float: right;
+            padding-top: 16px;
+        }
+
+        button.end-chat {
+            background: #fff;
+            border-width: 1px;
+            width: 100%;
+            box-shadow: none;
+            border: 0;
+            font-size: 18px;
+            color: #000000;
+            font-family: "Helvetica";
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 18px 12px 18px 6px;
+            display: block;
+            border: none;
+            border: 1px solid #636970;
+            color: #191919;
+            background: #fbfcfc;
+            font-family: "Helvetica";
+            font-size: 16px;
+            font-style: normal;
+            font-stretch: normal;
+            font-weight: 300;
+            text-align: left;
+            border-radius: 2px;
+            line-height: 24px;
+        }
+
+        .label {
+            font-weight: normal;
+            margin-bottom: 6px;
+            font-family: "Helvetica";
+            font-size: 16px;
+            line-height: 24px;
+            color: #44484C;
+            pointer-events: none;
+            transition: 0.2s ease all;
+            -moz-transition: 0.2s ease all;
+            -webkit-transition: 0.2s ease all;
+        }
+
+        .form-field {
+            margin-bottom: 20px;
+        }
+
+        .req {
+            pointer-events: none;
+            top: 10px;
+            transition: 0.2s ease all;
+            color: #999;
+            font-size: 13px;
+        }
+
+        .form-submit {
+            margin-top: 25px;
+            text-align: center;
+        }
+        .btn {
+            padding: 0px 20px;
+            border-color: #000000;
+            text-align: center;
+            min-width: 50px;
+            border-radius: 30px;
+            background: #ffffff !important;
+            color: #000000;
+            font-size: 11px !important;
+            font-family: "Helvetica";
+            font-weight: bold;
+            line-height: 20px;
+        }
+
+
+        /*
+        .btn {
+            font-family: Helvetica;
+            font-weight: bold;
+            font-size: 11px;
+            background: transparent;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            padding: 0;
+            width: 60px;
+            height: 100%;
+            color: #000;
+            border: 1px solid #000;
+            border-radius: 32px;
+            display: block;
+            -ms-flex-line-pack: center;
+            align-content: center;
+        }
+
+
+
+.btn:hover {
+    padding: 12px;
+    border-color: #00619a;
+    text-align: center;
+    min-width: 160px;
+    border-radius: 30px;
+    background: #00619a !important;
+    background: -webkit-linear-gradient(#00619a, #00619a) !important;
+    background: -moz-linear-gradient(#00619a, #00619a) !important;
+    background: -o-linear-gradient(#00619a, #00619a) !important;
+    background: -ms-linear-gradient(#00619a, #00619a) !important;
+    background: linear-gradient(#00619a, #00619a) !important;
+}
+
+.btn:focus {
+    border-color: #0272B6;
+    text-align: center;
+    min-width: 160px;
+    border-radius: 30px;
+    outline: 2px dashed #0272B6 !important;
+    outline-offset: 2px;
+    background: #0272B6 !important;
+    background: -webkit-linear-gradient(#0272B6, #0272B6) !important;
+    background: -moz-linear-gradient(#0272B6, #0272B6) !important;
+    background: -o-linear-gradient(#0272B6, #0272B6) !important;
+    background: -ms-linear-gradient(#0272B6, #0272B6) !important;
+    background: linear-gradient(#0272B6, #0272B6) !important;
+    color: #FFFFFF;
+}
+*/
+
+        .directly-rtm {
+            height: calc(100% - 70px) !important;
+        }
+
+        .directly-rtm.is-minimized {
+            display: none !important;
+        }
+
+        .footer {
+            bottom: 0;
+            margin-bottom: 20px;
+            border-width: 1px 0 0;
+            background-color: #fff;
+            position: absolute;
+            z-index: 1000;
+            border-radius: 0px 0px 5px 5px;
+            text-align: center;
+            right: 0;
+            left: 0;
+            border-top: 1px solid #c6c6c6;
+        }
+
+        .footer .form-field {
+            float: left;
+            width: 280px;
+            margin-bottom: 0;
+        }
+
+        .footer .form-field textarea {
+            border: 0;
+            background-color: #ffffff;
+            margin: 10px 10px 0;
+            font-size: 16px;
+            padding: 10px 5px;
+
+        }
+
+        .chat-content {
+            background-color: #fff;
+            width: calc(100% - 48px);
+            position: absolute;
+            left: 0px;
+            top: 71px;
+            padding-top: 20px;
+            bottom: 94px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            margin-left: 24px;
+            margin-right: 24px;
+            padding-right: 24px;
+        }
+
+    </style>
+
+    <script>
+        function launchRTM() {
+            var emailAddress = "rickbowen@iuma.com";
+            var fullname = "Rick Bowen";
+            var questionText = document.getElementsByName("input-question")[0].value;
+            var zipCode = "";
+            var reason = "";
+
+
+            DirectlyRTM("askQuestion", {
+                questionText: questionText,
+                name: fullname,
+                email: emailAddress,
+                questionCategory: reason,
+                metadata: {
+                    "Zip Code": zipCode,
+                    "Reason": reason,
+                    "Device Manufacturer": "Samsung",
+                    "Device Model": "Galaxy S9",
+                    "Device OS": "Android Oreo"
+                }
+            });
+        }
+
+        function closeRTM() {
+            DirectlyRTM("minimize");
+        }
+    </script>
+</head>
+<body>
+<header class="container">
+    <div class="logo">
+        <img src="../images/visible-logo.png" "/>
+    </div>
+    <div class="end-control">
+        <button class="end-chat" onclick="closeRTM()">&#x2716;</button>
+    </div>
+</header>
+<div class="container">
+    <div class="chat-content">
+        <!-- div class="form-field">
+            <div class="label">Name <span class="req">*</span></div>
+            <div>
+                <input type="text" name="input-name"/>
+            </div>
+        </div>
+        <div class="form-field">
+            <div class="label">Email <span class="req">*</span></div>
+            <div>
+                <input type="text" name="input-email"/>
+            </div>
+        </div>
+        <div class="form-field">
+            <div class="label">Zip Code <span class="req">*</span></div>
+            <div>
+                <input type="text" name="input-zip"/>
+            </div>
+        </div>
+        <div class="form-field">
+            <div class="label">Reason for chat <span class="req">*</span></div>
+            <div>
+                <select name="input-reason">
+                    <option></option>
+                    <option>Billing and Payment</option>
+                    <option>General Questions</option>
+                    <option>Help Activating</option>
+                    <option>Plan and Pricing Info</option>
+                    <option>Where's my Order?</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-field">
+            <div class="label">Question <span class="req">*</span></div>
+            <div>
+                <textarea name="input-question"></textarea>
+            </div>
+        </div -->
+    </div>
+
+    <div class="footer">
+        <div class="form-field">
+            <div>
+                <textarea name="input-question" placeholder="Tell us what you need"></textarea>
+            </div>
+        </div>
+        <div class="form-submit">
+            <button class="btn" id="rtm-button" onclick="launchRTM()">Send</button>
+        </div>
+    </div>
+</div>
+<script>
+    (function(d, i, r, e, c, t, l, y) {
+        i[r] = i[r] || function () {
+            (i[r].cq = i[r].cq || []).push(arguments)
+        };
+        l = d.createElement("script");
+        l.id = "directlyRTMScript";
+        l.src = e;
+        l.async = 1;
+        y = d.head || d.getElementsByTagName("head")[0];
+        if (d.readyState === "complete" || d.readyState === "loaded" || d.readyState === "interactive") {
+            y.appendChild(l);
+        } else if (i.addEventListener) {
+            i.addEventListener("DOMContentLoaded", function() { y.appendChild(l); });
+        } else {
+            i.attachEvent("onload", function() { y.appendChild(l); });
+        }
+    })(document, window, "DirectlyRTM", "https://app.directly.com/widgets/rtm/embed.js");
+    DirectlyRTM("config", {
+        id: "2c998593699df8ef0169bce71d210a6c",
+        i18n: {
+            "en": {
+                "text": {
+                    "here_a_recent_answer_similar_question": "We think this should answer your question. If you still need help, let us know and we will connect you with an expert."
+                }
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
