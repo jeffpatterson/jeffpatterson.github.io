@@ -97,7 +97,7 @@
     border-radius: 0;
 }
 
-.author .reputation span, .expert-last-active-date {
+.author .reputation span, .expert-last-active-date, .expert-last-active-date {
     color: #ffffff;
 }
 
@@ -112,4 +112,13 @@
 
 .system-message .icon-avatar img {
     border-radius: 0;
+}
+
+.thread-view-footer {
+    border-top: 1px solid #000000;
+    box-shadow: none;
+}
+
+.thread-view-footer textarea {
+    font-family: "Helvetica Neue", Helvetica;
 }
