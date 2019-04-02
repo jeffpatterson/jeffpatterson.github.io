@@ -23,6 +23,7 @@
     border-radius: 0;
     border: 4px solid #1800ff;
     color: #1800ff;
+    margin-right: 0;
 }
 
 .message-container.is-poster:before {
@@ -42,7 +43,8 @@
     border: 1px solid #bbbbbb;
 }
 
-.message-container.is-expert:before, .message-container.is-bot:before {
+.message-container.is-expert:before, .message-container.is-bot:before,
+.system-message.has-sibling.message-alerting-experts-leave-info:before {
     display: block;
     width: 40px;
     height: 40px;
@@ -57,6 +59,11 @@
     border: 1px solid #bbbbbb;
     margin-right: 80px;
 }
+
+.icon.icon-bell {
+    display: none;
+}
+
 .expert-carousel {
     box-shadow: none;
 }
