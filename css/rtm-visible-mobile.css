@@ -100,3 +100,16 @@
 .author .reputation span, .expert-last-active-date {
     color: #ffffff;
 }
+
+.ActionBar {
+    background-color: #1800ff;
+}
+
+.ActionBar__button {
+    border-radius: 0;
+    font-family: "Helvetica Neue", Helvetica;
+}
+
+.system-message .icon-avatar img {
+    border-radius: 0;
+}
