@@ -16,7 +16,7 @@
     color: #ffffff;
     font-family: "Helvetica Neue", Helvetica;
     font-size: small;
-    line-height: 1.34em;
+    line-height: 1.6em;
     margin-right: 0px;
 }
 
@@ -30,6 +30,7 @@
     color: #1800ff;
     margin-right: 0;
     margin-left: 0;
+    font-weight: bold;
 }
 
 .message-container.is-poster:before {
@@ -95,7 +96,7 @@
 .message-container.is-bot blockquote {
     border-left: 4px solid #ffffff;
     margin: 14px 0 4px;
-    opacity: 0.8;
+    opacity: 1;
     padding: 3px 0 2px 10px;
 }
 
