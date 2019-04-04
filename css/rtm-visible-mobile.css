@@ -73,7 +73,7 @@
 
 }
 
-.icon.icon-bell, .icon.icon-arrow-right,  {
+.icon.icon-bell, .icon.icon-arrow-right  {
     display: none;
 }
 
@@ -115,6 +115,7 @@
 .ActionBar__button {
     border-radius: 0;
     font-family: "Helvetica Neue", Helvetica;
+    color: #1800ff;
 }
 
 .system-message .icon-avatar img {
