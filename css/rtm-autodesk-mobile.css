@@ -69,14 +69,14 @@
 }
 
 .ActionBar__button {
-    border-radius: 3px;
+    border-radius: 0;
     background-color: #eeeeee;
     color: #0298d9;
     box-shadow: none;
     font-family: "Artifakt Element" !important;
 }
 
-.ActionBar__button {
+.ActionBar__button:hover {
     box-shadow: none;
     background-color: #0298d9;
     color: #eeeeee;
