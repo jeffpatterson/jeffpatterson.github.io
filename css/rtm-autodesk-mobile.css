@@ -61,7 +61,21 @@
 }
 
 .ActionBar {
-    background-color: #00ab80;
+    background-color: #eeeeee;
+}
+
+.ActionBar__button {
+    border-radius: 3px;
+    background-color: #eeeeee;
+    color: #0298d9;
+    box-shadow: none;
+    font-family: "Artifakt Element" !important;
+}
+
+.ActionBar__button {
+    box-shadow: none;
+    background-color: #0298d9;
+    color: #eeeeee;
 }
 
 .system-message.success.inverted {
