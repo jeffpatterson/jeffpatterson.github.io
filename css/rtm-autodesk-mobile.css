@@ -1,5 +1,9 @@
+.maximized-view.is-question-view {
+    background-color: #eeeeee;
+}
+
 .message-list-transition-wrapper {
-    background-color: #d8d8d8;
+    background-color: #eeeeee;
 }
 
 .message-list-wrapper {
