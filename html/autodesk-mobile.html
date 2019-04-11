@@ -8,8 +8,13 @@
             background-color: #eeeeee;
         }
         .container {
-            padding-left: 24px;
-            padding-right: 11px;
+        }
+
+        #main {
+            width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+            height: 100%;
         }
 
         header {
@@ -175,7 +180,7 @@
 
         .footer {
             bottom: 0;
-            margin-bottom: 20px;
+            margin: 0 auto;
             border-width: 1px 0 0;
             background-color: #fff;
             position: absolute;
@@ -185,6 +190,7 @@
             right: 0;
             left: 0;
             border-top: 1px solid #000000;
+            width: 800px;
         }
 
         .footer .form-field {
@@ -206,18 +212,16 @@
 
         .chat-content {
             background-color: #fff;
-            width: calc(100% - 48px);
+            /* width: calc(100% - 48px); */
             position: absolute;
-            left: 0px;
             top: 178px;
             padding-top: 20px;
             bottom: 94px;
             overflow-y: auto;
             overflow-x: hidden;
-            margin-left: 24px;
-            margin-right: 24px;
-            padding-right: 24px;
+            margin: 0 auto;
             background-color: #eeeeee;
+            width: 800px;
         }
 
     </style>
@@ -252,6 +256,7 @@
     </script>
 </head>
 <body>
+<div id="main">
 <header class="container">
     <div class="logo">
     </div>
@@ -309,6 +314,7 @@
             <button class="btn" id="rtm-button" onclick="launchRTM()"><img src="https://media-lax1.inq.com/media/sites/10005834/flash//vsble-live-div/send.png" width="40" height="40"/></button>
         </div>
     </div>
+</div>
 </div>
 <script>
     (function(d, i, r, e, c, t, l, y) {
