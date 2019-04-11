@@ -76,6 +76,7 @@
     box-shadow: none;
     background-color: #0298d9;
     color: #eeeeee;
+    font-weight: normal;
 }
 
 .system-message.success.inverted {

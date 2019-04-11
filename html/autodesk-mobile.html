@@ -99,17 +99,18 @@
             text-align: center;
         }
         .btn {
-            padding: 0px 0px;
-            border-color: #000000;
-            text-align: center;
-            min-width: 50px;
-            border-radius: 0px;
-            background: #1800ff !important;
-            color: #000000;
-            font-size: 11px !important;
-            font-family: "Helvetica";
-            font-weight: bold;
-            line-height: 20px;
+            position: absolute;
+            bottom: 2px;
+            right: 9px;
+            color: blue;
+            color: #4a90e2;
+            padding-left: 10px;
+            font-size: 22px;
+            -webkit-appearance: none !important;
+            height: 41px;
+            width: 41px;
+            border: 0;
+            margin-bottom: 6px;
         }
 
 
@@ -173,6 +174,7 @@
             max-width: 100% !important;
             padding: 0 !important;
             left: calc((100% - 800px)/2);
+            background-color: #eeeeee !important;
         }
 
         .directly-rtm.is-minimized {
@@ -207,7 +209,7 @@
             font-size: 16px;
             padding: 2px;
             resize: none;
-            font-family: "Helvetica Neue", Helvetica;
+            font-family: "Artifakt Element", Helvetica;
 
         }
 
@@ -312,7 +314,9 @@
             </div>
         </div>
         <div class="form-submit">
-            <button class="btn" id="rtm-button" onclick="launchRTM()"><img src="https://media-lax1.inq.com/media/sites/10005834/flash//vsble-live-div/send.png" width="40" height="40"/></button>
+            <button class="btn" id="rtm-button" onclick="launchRTM()">
+                <svg class="svg-inline--fa fa-arrow-right fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>
+            </button>
         </div>
     </div>
 </div>
