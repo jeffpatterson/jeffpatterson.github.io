@@ -82,7 +82,7 @@
     margin-bottom: 0 !important;
 }
 
-.system-message .icon.icon-bell, .system-message .icon.icon-arrow-right {
+.system-message .icon.icon-bell, .system-message .icon.icon-arrow-right, .icon.icon-success {
     display: none;
 }
 
