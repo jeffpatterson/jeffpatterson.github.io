@@ -36,7 +36,7 @@
     background-size: contain;
 }
 
-.message-container.is-expert, .message-container.is-bot {
+.message-container.is-expert, .message-container.is-bot, .system-message {
     background: none repeat scroll 0 0 #F2F2F2;
     padding: 11pt;
     position: relative;
@@ -51,7 +51,8 @@
 }
 
 
-.message-container.is-expert::before, .message-container.is-bot::before {
+.message-container.is-expert::before, .message-container.is-bot::before,
+.system-message.has-sibling + .system-message::before {
     display: block;
     width: 31px;
     height: 22px;
@@ -69,7 +70,16 @@
 }
 
 .system-message.has-sibling + .system-message {
+    width: 98%;
+    margin-top: 0;
+}
 
+.system-message.has-sibling {
+    margin-bottom: 0;
+}
+
+.system-message .icon {
+    display: none;
 }
 
 .header-container {
