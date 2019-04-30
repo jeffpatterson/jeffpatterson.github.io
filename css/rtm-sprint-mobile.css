@@ -71,11 +71,11 @@
 
 .system-message.has-sibling + .system-message {
     width: 98%;
-    margin-top: 0;
+    margin-top: 0 !important;
 }
 
 .system-message.has-sibling {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 
 .system-message .icon {
