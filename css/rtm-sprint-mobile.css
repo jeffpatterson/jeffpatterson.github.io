@@ -52,7 +52,8 @@
 
 
 .message-container.is-expert::before, .message-container.is-bot::before,
-.system-message.has-sibling + .system-message::before {
+.system-message::before,
+.system-message:not(.has-sibling) + .system-message::before {
     display: block;
     width: 31px;
     height: 22px;
@@ -78,7 +79,7 @@
     margin-bottom: 0 !important;
 }
 
-.system-message .icon {
+.system-message .icon,icon-bell, .system-message .icon.icon-arrow-right {
     display: none;
 }
 
