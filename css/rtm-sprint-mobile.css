@@ -9,6 +9,9 @@
     color: #000000 !important;
     border: 0 !important;
     max-width: 90%;
+    font-size: 13px;
+    line-height: 1.34em;
+    font-family: Helvetica;
 }
 .message-container.is-poster {
     background: none repeat scroll 0 0 #DEDEDE;
@@ -36,7 +39,8 @@
     background-size: contain;
 }
 
-.message-container.is-expert, .message-container.is-bot, .system-message {
+.message-container.is-expert, .message-container.is-bot, .system-message,
+.system-message.inverted.success.message-question-with-response-accepted {
     background: none repeat scroll 0 0 #F2F2F2;
     padding: 11pt;
     position: relative;
@@ -105,8 +109,12 @@
 .ActionBar .ActionBar__button {
     background-color: #ffffff;
     border-radius: 30px;
-    border: 3px solid #ffce0a;
+    border: 2px solid #ffce0a;
     box-shadow: none;
+    font-size: 13px;
+    font-weight: normal;
+    padding-top: 9px;
+    padding-bottom: 8px;
 }
 
 .ActionBar > button:first-of-type {
