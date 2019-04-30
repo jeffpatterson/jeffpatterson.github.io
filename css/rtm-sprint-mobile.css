@@ -102,10 +102,11 @@
     background-color: #ffffff;
 }
 
-.ActionBar button {
+.ActionBar .ActionBar__button {
     background-color: #ffffff;
     border-radius: 30px;
     border: 3px solid #ffce0a;
+    box-shadow: none;
 }
 
 .ActionBar > button:first-of-type {
