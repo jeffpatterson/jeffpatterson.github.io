@@ -64,9 +64,16 @@
     background-size: contain;
 }
 
-.message-container.is-bot.message-auto-response:before {
+.message-container.is-bot.message-auto-response:before,
+.message-container.is-bot.message-auto-response-confirmation:before {
     bottom: -7px;
 }
+
+li > .message-container.is-expert, li > .system-message.alerting-experts,
+li > .system-message.message-question-rerouted {
+    margin-bottom: 0;
+}
+
 .message-container.is-bot {
     margin-right: 30px;
     margin-bottom: 30px;
@@ -158,7 +165,7 @@
 }
 
 .system-message .icon-avatar img {
-    border-radius: 0;
+    border-radius: 30px;
     border: 1px solid #ffffff;
 }
 
@@ -169,4 +176,8 @@
 
 .thread-view-footer textarea {
     font-family: "Arial Narrow", Helvetica;
+}
+
+.system-message.alerting-experts {
+    padding: 0 12px 5px;
 }
