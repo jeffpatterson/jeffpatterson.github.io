@@ -58,7 +58,7 @@
     height: 40px;
     content: "";
     position: absolute;
-    bottom: 11px;
+    bottom: -7px;
     left: -46px;
     background-image: url(../images/tmobile-bubble_tail_agent.png);
     background-size: contain;
@@ -155,13 +155,16 @@ li > .system-message.message-question-rerouted {
 }
 
 .ActionBar {
-    background-color: #1800ff;
+    background-color: #ffffff;
 }
 
 .ActionBar__button {
-    border-radius: 0;
+    border-radius: 40px;
+    border: 2px solid #e20074;
     font-family: "Arial Narrow", Helvetica;
-    color: #1800ff;
+    font-weight: bold;
+    color: #e20074;
+    box-shadow: none;
 }
 
 .system-message .icon-avatar img {
