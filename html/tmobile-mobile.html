@@ -15,10 +15,15 @@
             height: 80px;
         }
         .logo {
-            margin-top: 10px;
+            margin-top: 16px;
             margin-bottom: 26px;
             width: auto;
             float: left;
+            font-family: "Arial Narrow";
+            font-weight: bold;
+            font-size: 22px;
+            width: 100%;
+            text-align: center;
         }
 
         .logo img {
@@ -33,12 +38,20 @@
         button.end-chat {
             background: #fff;
             border-width: 1px;
-            width: 100%;
             box-shadow: none;
             border: 0;
             font-size: 36px;
-            color: #1800ff;
-            font-family: "Helvetica";
+            color: #666666;
+            font-family: "Arial Narrow";
+            z-index: 1111;
+            position: absolute;
+            float: right;
+            padding-top: 5px;
+            z-index: 1111;
+            position: absolute;
+            right: 20px;
+            top: 6px;
+
         }
 
         input[type=text], select, textarea {
@@ -90,17 +103,22 @@
         }
         .btn {
             padding: 0px 0px;
-            border-color: #000000;
+            border: none;
             text-align: center;
-            min-width: 50px;
+            min-width: 22px;
+            height: 22px;
             border-radius: 0px;
-            background: #1800ff !important;
             color: #000000;
             font-size: 11px !important;
             font-family: "Helvetica";
             font-weight: bold;
             line-height: 20px;
+            background-image: url(../images/tmobile-sprites_v1.png);
+            background-position: 1160px 0;
+
+
         }
+
 
 
         /*
@@ -192,7 +210,7 @@
             font-size: 16px;
             padding: 2px;
             resize: none;
-            font-family: "Helvetica Neue", Helvetica;
+            font-family: "Arial Narrow", Helvetica;
 
         }
 
@@ -245,7 +263,7 @@
 <body>
 <header class="container">
     <div class="logo">
-        <img src="../images/visible-logo.png" "/>
+        T-Mobile
     </div>
     <div class="end-control">
         <button class="end-chat" onclick="closeRTM()">&#215;</button>
@@ -295,11 +313,11 @@
     <div class="footer">
         <div class="form-field">
             <div>
-                <textarea name="input-question" placeholder="Type a message..."></textarea>
+                <textarea name="input-question" placeholder="Enter text here"></textarea>
             </div>
         </div>
         <div class="form-submit">
-            <button class="btn" id="rtm-button" onclick="launchRTM()"><img src="https://media-lax1.inq.com/media/sites/10005834/flash//vsble-live-div/send.png" width="40" height="40"/></button>
+            <button class="btn" id="rtm-button" onclick="launchRTM()"></button>
         </div>
     </div>
 </div>
