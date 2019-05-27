@@ -128,12 +128,12 @@ li > .system-message.message-question-rerouted {
 }
 
 .ActionBar__button {
-    border-radius: 40px;
-    border: 2px solid #e20074;
-    font-family: "Arial Narrow", Helvetica;
+    border-radius: 4px;
+    border: 1px solid #640aaa;
     font-weight: bold;
-    color: #e20074;
+    color: #ffffff;
     box-shadow: none;
+    background-color: #640aaa;
 }
 
 .system-message .icon-avatar img {
@@ -151,5 +151,10 @@ li > .system-message.message-question-rerouted {
 }
 
 .system-message.alerting-experts {
-    padding: 0 12px 5px;
+    border-radius: 4px;
+    border: 1px solid #640aaa;
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow: none;
+    background-color: #640aaa;
 }

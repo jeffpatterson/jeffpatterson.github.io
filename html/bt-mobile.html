@@ -13,6 +13,7 @@
 
         header {
             height: 80px;
+            background-color: #6400aa;
         }
         .logo {
             margin-top: 19px;
@@ -21,20 +22,25 @@
             float: left;
         }
 
+        .logo img {
+            height: 40px;
+        }
+
         .end-control {
             float: right;
             padding-top: 16px;
         }
 
         button.end-chat {
-            background: #fff;
+            background-color: #6400aa;
             border-width: 1px;
             width: 100%;
             box-shadow: none;
             border: 0;
-            font-size: 18px;
-            color: #0272B6;
+            font-size: 14px;
+            color: #ffffff;
             font-family: "Open Sans";
+            margin-top: 13px;
         }
 
         input[type=text], select, textarea {
@@ -56,7 +62,6 @@
         }
 
         .label {
-            font-weight: normal;
             margin-bottom: 6px;
             font-family: "Open Sans";
             font-size: 16px;
@@ -64,6 +69,7 @@
             color: #44484C;
             pointer-events: none;
             transition: 0.2s ease all;
+            font-weight: bold !important;
             -moz-transition: 0.2s ease all;
             -webkit-transition: 0.2s ease all;
         }
@@ -87,16 +93,11 @@
 
         .btn {
             padding: 12px 30px;
-            border-color: #0272B6;
+            border-color: #6400aa;
             text-align: center;
             min-width: 160px;
-            border-radius: 30px;
-            background: #0272B6 !important;
-            background: -webkit-linear-gradient(#0272B6, #0272B6) !important;
-            background: -moz-linear-gradient(#0272B6, #0272B6) !important;
-            background: -o-linear-gradient(#0272B6, #0272B6) !important;
-            background: -ms-linear-gradient(#0272B6, #0272B6) !important;
-            background: linear-gradient(#0272B6, #0272B6) !important;
+            border-radius: 4px;
+            background: #6400aa !important;
             color: #FFFFFF;
             font-size: 16px !important;
             font-family: "Open Sans";
@@ -160,7 +161,7 @@
             width: calc(100% - 48px);
             position: absolute;
             left: 0px;
-            top: 71px;
+            top: 80px;
             padding-top: 20px;
             bottom: 94px;
             overflow-y: auto;
@@ -203,7 +204,7 @@
 <body>
 <header class="container">
     <div class="logo">
-        <img src="../images/xfinity-mobile-logo.svg" "/>
+        <img src="../images/BT_colour_rev.png"/>
     </div>
     <div class="end-control">
         <button class="end-chat" onclick="closeRTM()">End Chat</button>
@@ -212,38 +213,25 @@
 <div class="container">
     <div class="chat-content">
         <div class="form-field">
-            <div class="label">Name <span class="req">*</span></div>
+            <div class="label">Full Name <span class="req">*</span></div>
             <div>
                 <input type="text" name="input-name"/>
             </div>
         </div>
         <div class="form-field">
-            <div class="label">Email <span class="req">*</span></div>
+            <div class="label">Email address <span class="req">*</span></div>
             <div>
                 <input type="text" name="input-email"/>
             </div>
         </div>
         <div class="form-field">
-            <div class="label">Zip Code <span class="req">*</span></div>
+            <div class="label">Phone number you'd like to chat about <span class="req">*</span></div>
             <div>
                 <input type="text" name="input-zip"/>
             </div>
         </div>
         <div class="form-field">
-            <div class="label">Reason for chat <span class="req">*</span></div>
-            <div>
-                <select name="input-reason">
-                    <option></option>
-                    <option>Billing and Payment</option>
-                    <option>General Questions</option>
-                    <option>Help Activating</option>
-                    <option>Plan and Pricing Info</option>
-                    <option>Where's my Order?</option>
-                </select>
-            </div>
-        </div>
-        <div class="form-field">
-            <div class="label">Question <span class="req">*</span></div>
+            <div class="label">How can we help you? <span class="req">*</span></div>
             <div>
                 <textarea name="input-question"></textarea>
             </div>
