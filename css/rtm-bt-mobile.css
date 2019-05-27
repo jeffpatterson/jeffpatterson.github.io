@@ -147,14 +147,9 @@ li > .system-message.message-question-rerouted {
 }
 
 .thread-view-footer textarea {
-    font-family: "Arial Narrow", Helvetica;
 }
 
 .system-message.alerting-experts {
-    border-radius: 4px;
-    border: 1px solid #640aaa;
-    font-weight: bold;
-    color: #ffffff;
-    box-shadow: none;
-    background-color: #640aaa;
+    margin-top: 0;
+    padding-right: 40px;
 }
