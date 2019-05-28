@@ -131,9 +131,9 @@ li > .system-message.message-question-rerouted {
     border-radius: 4px;
     border: 1px solid #640aaa;
     font-weight: bold;
-    color: #ffffff;
+    color: #640aaa;
     box-shadow: none;
-    background-color: #640aaa;
+    background-color: #ffffff;
 }
 
 .system-message .icon-avatar img {
