@@ -64,7 +64,7 @@
 
 
 
-li > .message-container.is-expert, li > .system-message.alerting-experts,
+li > .system-message.alerting-experts,
 li > .system-message.message-question-rerouted {
     margin-bottom: 0;
 }
