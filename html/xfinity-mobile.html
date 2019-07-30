@@ -177,6 +177,8 @@
             var emailAddress = document.getElementsByName("input-email")[0].value;
             var fullname = document.getElementsByName("input-name")[0].value;
             var questionText = document.getElementsByName("input-question")[0].value;
+            var zipCode = document.getElementsByName("input-zip")[0].value;
+            var reason = document.getElementsByName("input-reason")[0].value;
 
             DirectlyRTM("askQuestion", {
                 questionText: questionText,
@@ -221,7 +223,25 @@
                 <input type="text" name="input-email"/>
             </div>
         </div>
-        
+                <div class="form-field">
+            <div class="label">Zip Code <span class="req">*</span></div>
+            <div>
+                <input type="text" name="input-zip"/>
+            </div>
+        </div>
+        <div class="form-field">
+            <div class="label">Reason for chat <span class="req">*</span></div>
+            <div>
+                <select name="input-reason">
+                    <option></option>
+                    <option>Billing and Payment</option>
+                    <option>General Questions</option>
+                    <option>Help Activating</option>
+                    <option>Plan and Pricing Info</option>
+                    <option>Where's my Order?</option>
+                </select>
+            </div>
+        </div>
         <div class="form-field">
             <div class="label">Question <span class="req">*</span></div>
             <div>
