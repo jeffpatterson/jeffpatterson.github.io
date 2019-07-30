@@ -172,7 +172,31 @@
 
     </style>
 
-   
+    <script>
+        function launchRTM() {
+            var emailAddress = document.getElementsByName("input-email")[0].value;
+            var fullname = document.getElementsByName("input-name")[0].value;
+            var questionText = document.getElementsByName("input-question")[0].value;
+
+            DirectlyRTM("askQuestion", {
+                questionText: questionText,
+                name: fullname,
+                email: emailAddress,
+                questionCategory: reason,
+                metadata: {
+                    "Zip Code": zipCode,
+                    "Reason": reason,
+                    "Device Manufacturer": "Samsung",
+                    "Device Model": "Galaxy S9",
+                    "Device OS": "Android Oreo"
+                }
+            });
+        }
+
+        function closeRTM() {
+            DirectlyRTM("minimize");
+        }
+    </script>
 </head>
 <body>
 <header class="container">
