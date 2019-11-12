@@ -66,7 +66,6 @@
 }
 
 .message-container.is-expert:after, .message-container.is-bot:after,
-.system-message.has-sibling.message-alerting-experts-leave-info:after,
 .system-message.message-question-rerouted:after {
     content: "";
     position: absolute;
@@ -79,6 +78,20 @@
     width: 0;
 }
 
+.system-message.has-sibling.message-alerting-experts-leave-info:after {
+    background-color: #f3f3f3;
+    content: "We are notifying top Samsung experts. It usually takes 1-2 minutes.";
+    width: 210px;
+    position: absolute;
+    left: -53px;
+    padding: 24px 50px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.system-message.alerting-experts.message-alerting-experts {
+    display: none;
+}
 .message-container.is-bot.message-auto-response:before,
 .message-container.is-bot.message-auto-response-confirmation:before {
     bottom: 0px;
@@ -174,7 +187,7 @@ li > .system-message.message-question-rerouted {
     border-radius: 100px;
     background-color: #fff;
     border: 1px solid #00b3e3;
-    padding: 8px 12px;
+    padding: 8px 9px;
     margin: 4px 4px 4px 4px;
     cursor: pointer;
     font-family: SamsungOne;
