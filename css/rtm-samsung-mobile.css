@@ -1,3 +1,7 @@
+html {
+    font-family: SamsungOne, Helvetica;
+}
+
 .message-list-transition-wrapper {
     background-color: #ffffff;
     border-top: 1px solid #000000;
@@ -58,7 +62,7 @@
     height: 40px;
     content: "";
     position: absolute;
-    bottom: 0px;
+    top: 0px;
     left: -46px;
     background-image: url(../images/samsung-avatar.png);
     background-repeat: no-repeat;
@@ -144,7 +148,7 @@ li > .system-message.message-question-rerouted {
     width: 38px !important;
     left: -60px;
     position: relative;
-    bottom: -30px;
+    top: 32px;
     border-radius: 20px;
 }
 
