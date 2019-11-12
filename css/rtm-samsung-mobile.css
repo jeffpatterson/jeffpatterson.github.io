@@ -288,3 +288,7 @@ li > .system-message.message-question-rerouted {
 .MinimizedView.MinimizedView--AskQuestion .MinimizedView__icon.svg-icon {
     display: none;
 }
+
+.system-message.message-ask-new-question {
+    display: none;
+}
