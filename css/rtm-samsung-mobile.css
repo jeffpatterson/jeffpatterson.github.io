@@ -175,7 +175,7 @@ li > .system-message.message-question-rerouted {
     background-color: #fff;
     border: 1px solid #00b3e3;
     padding: 8px 12px;
-    margin: 4px 0 4px auto;
+    margin: 4px 4px 4px 4px;
     cursor: pointer;
     font-family: SamsungOne;
     font-size: 14px;
@@ -184,10 +184,11 @@ li > .system-message.message-question-rerouted {
     font-stretch: normal;
     line-height: 1.29;
     letter-spacing: normal;
-    text-align: right;
+    text-align: center;
     color: #00b3e3;
     margin-left: auto;
     max-width: 84%;
+    box-shadow: none;
 }
 
 .system-message .icon-avatar img {
@@ -224,14 +225,15 @@ li > .system-message.message-question-rerouted {
     color: #ffffff;
 }
 
-.header-container .thread-view-title-container h1 {
-    display: none;
+.header-container h1 {
+    color: transparent;
 }
 
-.header-container .thread-view-title-container:after {
+.header-container:after {
     content: "CHAT";
-    font-size: 16px;
-    margin-left: 20px;
+    left: 20px;
+    position: absolute;
+    color: #ffffff;
 }
 
 .header-container .minimize-container {
