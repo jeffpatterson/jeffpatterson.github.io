@@ -171,11 +171,23 @@ li > .system-message.message-question-rerouted {
 }
 
 .ActionBar__button {
-    border-radius: 40px;
-    border: 2px solid #e20074;
-    font-family: SamsungOne, Helvetica;
-    color: #e20074;
-    box-shadow: none;
+    border-radius: 100px;
+    background-color: #fff;
+    border: 1px solid #00b3e3;
+    padding: 8px 12px;
+    margin: 4px 0 4px auto;
+    cursor: pointer;
+    font-family: SamsungOne;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: right;
+    color: #00b3e3;
+    margin-left: auto;
+    max-width: 84%;
 }
 
 .system-message .icon-avatar img {
