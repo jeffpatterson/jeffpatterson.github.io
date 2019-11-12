@@ -1,0 +1,235 @@
+.message-list-transition-wrapper {
+    background-color: #ffffff;
+    border-top: 1px solid #000000;
+}
+
+.message-list > li {
+    position: relative;
+    margin: 15px 0px 15px 41px;
+}
+
+.message-container, .system-message, .message-container.is-expert, .message-container.is-bot {
+    background-color: #f3f3f3;
+    border: none !important;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    color: #000000;
+    font-family: SamsungOne, Helvetica;
+    font-size: 14px;
+    line-height: 16px;
+    margin-right: 0px;
+    max-width: 90%;
+}
+
+.message-container.is-bot.message-auto-response-confirmation {
+    margin-top: 40px;
+}
+.message-container.is-poster {
+    background-color: #00b3e3;
+    border-radius: 4px;
+    border: 0;
+    color: #ffffff;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+
+
+.message-container.is-poster:after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-width: 10px 0 0 10px;
+    border-style: solid;
+    border-color: #00b3e3 transparent;
+    display: block;
+    width: 0;
+}
+
+
+
+
+.message-container.is-expert:before, .message-container.is-bot:before,
+.system-message.has-sibling.message-alerting-experts-leave-info:before,
+.system-message.message-question-rerouted:before {
+    display: block;
+    width: 74px;
+    height: 40px;
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: -46px;
+    background-image: url(../images/samsung-avatar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.message-container.is-expert:after, .message-container.is-bot:after,
+.system-message.has-sibling.message-alerting-experts-leave-info:after,
+.system-message.message-question-rerouted:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    border-width: 10px 10px 0 0px;
+    border-style: solid;
+    border-color: #f3f3f3 transparent;
+    display: block;
+    width: 0;
+}
+
+.message-container.is-bot.message-auto-response:before,
+.message-container.is-bot.message-auto-response-confirmation:before {
+    bottom: 0px;
+}
+
+li > .message-container.is-expert, li > .system-message.alerting-experts,
+li > .system-message.message-question-rerouted {
+    margin-bottom: 0;
+}
+
+.message-container.is-bot {
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+}
+
+.icon.icon-bell, .icon.icon-arrow-right  {
+    display: none;
+}
+
+.expert-carousel {
+    box-shadow: none;
+}
+
+.system-message.has-sibling + .system-message {
+
+}
+
+
+.message-container.is-bot blockquote {
+    border-left: none;
+    margin: 14px 0 4px;
+    opacity: 1;
+    padding: 3px 0 2px 0px;
+}
+
+.author img {
+    border-radius: 20px;
+    height: 32px !important;
+    width: 32px !important;
+    border: 1px solid #ffffff;
+}
+
+.author .reputation span, .system-message.alerting-experts .expert-last-active-date {
+    color: #ffffff;
+}
+
+.message-container.is-expert .author img {
+    height: 32px !important;
+    width: 32px !important;
+    left: -61px;
+    position: relative;
+    bottom: -225px;
+    border-radius: 20px;
+}
+
+.message-container.is-expert .author {
+    position: relative;
+    top: -24px;
+    height: 0;
+    margin: 0;
+}
+
+.message-container.is-expert .author .profile {
+    margin-left: -46px;
+}
+
+.message-container.is-expert .author .profile > div {
+    float: left;
+}
+
+.message-container.is-expert .author .profile .name-wrapper {
+    color: #666666;
+    font-size: 12px;
+}
+
+.message-container.is-expert .author .profile .reputation span {
+    color: #666666;
+    line-height: 16px;
+    margin-left: 10px;
+}
+
+.author {
+    display: none;
+}
+
+.ActionBar {
+    background-color: #ffffff;
+}
+
+.ActionBar__button {
+    border-radius: 40px;
+    border: 2px solid #e20074;
+    font-family: SamsungOne, Helvetica;
+    color: #e20074;
+    box-shadow: none;
+}
+
+.system-message .icon-avatar img {
+    border-radius: 30px;
+    border: 1px solid #ffffff;
+}
+
+.thread-view-footer {
+    border-top: 1px solid #000000;
+    box-shadow: none;
+}
+
+.thread-view-footer textarea {
+    font-family: SamsungOne, Helvetica;
+}
+
+.system-message.alerting-experts {
+    padding: 0 12px 5px;
+}
+
+.header-container {
+    /* display: none; */
+    background-color: #00b3e3;
+}
+
+.header-container .menu {
+    display: none;
+}
+
+.header-container .thread-view-title-container {
+    justify-content: left;
+    font-size: 14px;
+    font-family: SamsungOne;
+    color: #ffffff;
+}
+
+.header-container .thread-view-title-container h1 {
+    display: none;
+}
+
+.header-container .thread-view-title-container:after {
+    content: "CHAT";
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.header-container .minimize-container {
+    background: none;
+    border: 0;
+}
+
+.header-container .minimize-container .svg-icon {
+    color: #ffffff;
+}
+
+.response-switcher {
+    display: none;
+}
