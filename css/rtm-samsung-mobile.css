@@ -280,3 +280,7 @@ li > .system-message.message-question-rerouted {
     /* padding: 0px 20px; */
     height: 50px;
 }
+
+.MinimizedView.MinimizedView--AskQuestion .MinimizedView__icon.svg-icon {
+    display: none;
+}
