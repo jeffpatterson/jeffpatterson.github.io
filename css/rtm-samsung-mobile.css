@@ -127,11 +127,11 @@ li > .system-message.message-question-rerouted {
 }
 
 .message-container.is-expert .author img {
-    height: 32px !important;
-    width: 32px !important;
-    left: -61px;
+    height: 38px !important;
+    width: 38px !important;
+    left: -60px;
     position: relative;
-    bottom: -225px;
+    bottom: -30px;
     border-radius: 20px;
 }
 
@@ -140,6 +140,7 @@ li > .system-message.message-question-rerouted {
     top: -24px;
     height: 0;
     margin: 0;
+    display: flex;
 }
 
 .message-container.is-expert .author .profile {
