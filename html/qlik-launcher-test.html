@@ -3,29 +3,14 @@
   <head>
     <title>Darwin / Qlik Stage Test</title>
     <style>
-      #customLauncher {
-        position: fixed;
-        bottom: 25px;
-        right: 25px;
-        width: 80px;
-        height: 80px;
-        background-image: url(https://www.qlik.com/us/-/media/images/global-us/Resource-Library/Custom/driftbot_graphic_circle.jpg);
-        background-size: 80px 80px;
-        z-index:2147483001;
-        border-radius: 40px;
-        cursor: pointer;
-      }
 
-      #customLauncher.hide {
-        display: none;
-      }
+
 
     </style>
   </head>
   <body>
     <script>
     const rendered = {}
-    // Functions used to render the Meya lifecycle logs on the side panel
     function onEventStream(eventStream) {
       for(const event of [...eventStream.events].reverse()) {
         if(!rendered[event.id]) {
@@ -36,13 +21,42 @@
     }
 
     function render(event, eventStream) {
-      console.log(event)
       if(event.type === "meya.session.event.chat.close") {
-        document.getElementById("customLauncher").classList.remove("hide");
+        document.getElementById("customLauncher").style.display = "block";
       } else if (event.type === "meya.session.event.chat.open") {
-        document.getElementById("customLauncher").classList.add("hide");
+        document.getElementById("customLauncher").style.display = "none";
       }
     }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var launcherDiv = document.createElement("div");
+      launcherDiv.setAttribute("id", "customLauncher");
+      launcherDiv.style.position = "fixed";
+      launcherDiv.style.bottom = "25px";
+      launcherDiv.style.right = "25px";
+      launcherDiv.style.width = "80px";
+      launcherDiv.style.height = "80px";
+      launcherDiv.style.backgroundImage = "url(https://www.qlik.com/us/-/media/images/global-us/Resource-Library/Custom/driftbot_graphic_circle.jpg)";
+      launcherDiv.style.backgroundSize = "80px 80px";
+      launcherDiv.style.zIndex = "2147483001";
+      launcherDiv.style.borderRadius = "40px";
+      launcherDiv.style.cursor = "pointer";
+      launcherDiv.addEventListener("click",function() { orb.openChat();});
+      document.body.appendChild(launcherDiv);
+
+      const mediaQuery = window.matchMedia('(min-width: 676px) and (min-height: 686px)');
+      function positionLauncher(e) {
+        if (e.matches) {
+          document.getElementById("customLauncher").style.bottom = "25px";
+          document.getElementById("customLauncher").style.right = "25px";
+        } else {
+          document.getElementById("customLauncher").style.bottom = "10px";
+          document.getElementById("customLauncher").style.right = "10px";
+        }
+      }
+      mediaQuery.addListener(positionLauncher);
+      positionLauncher(mediaQuery);
+    });
 
     window.orbConfig = {
         connectionOptions: {
@@ -80,6 +94,5 @@
         document.body.appendChild(fontStyleSheet);
     })();
 </script>
-<div id="customLauncher" onclick="orb.openChat();"></div>
   </body>
 </html>
