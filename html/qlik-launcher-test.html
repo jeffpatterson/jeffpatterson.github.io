@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Darwin / Qlik Stage Test</title>
+  </head>
+  <body>
+    <script>
+    window.orbConfig = {
+        connectionOptions: {
+            gridUrl: "https://grid.meya.ai",
+            appId: "app-5d25cf848e834f8699cd7a80aaada26c",
+            integrationId: "integration.orb",
+            connect: false,
+            pageContext: {
+                environment: "STAGE"
+            }
+        },
+        theme: { 
+            brandColor: "#005cb9", 
+            botAvatarUrl: "https://www.qlik.com/us/-/media/images/global-us/Resource-Library/Custom/driftbot_graphic_circle.jpg" 
+        },
+        launcher: { 
+            type: "orb", 
+        },
+        windowApi: true,
+    };
+    document.head.appendChild(document.createElement("style")).innerHTML = "h1.Title-sc-l0esa5{margin-top:revert;}";
+    (function(){
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.async = true;
+        script.src = "https://cdn.meya.ai/v2/orb.js";
+        document.body.appendChild(script);
+        var fontStyleSheet = document.createElement("link");
+        fontStyleSheet.rel = "stylesheet";
+        fontStyleSheet.href = "https://cdn.meya.ai/font/inter.css";
+        document.body.appendChild(fontStyleSheet);
+    })();
+</script>
+  </body>
+</html>
