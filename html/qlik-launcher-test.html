@@ -1,9 +1,49 @@
+
 <html>
   <head>
     <title>Darwin / Qlik Stage Test</title>
+    <style>
+      #customLauncher {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        width: 80px;
+        height: 80px;
+        background-image: url(https://www.qlik.com/us/-/media/images/global-us/Resource-Library/Custom/driftbot_graphic_circle.jpg);
+        background-size: 80px 80px;
+        z-index:2147483001;
+        border-radius: 40px;
+        cursor: pointer;
+      }
+
+      #customLauncher.hide {
+        display: none;
+      }
+
+    </style>
   </head>
   <body>
     <script>
+    const rendered = {}
+    // Functions used to render the Meya lifecycle logs on the side panel
+    function onEventStream(eventStream) {
+      for(const event of [...eventStream.events].reverse()) {
+        if(!rendered[event.id]) {
+          render(event, eventStream)
+          rendered[event.id] = true
+        }
+      }
+    }
+
+    function render(event, eventStream) {
+      console.log(event)
+      if(event.type === "meya.session.event.chat.close") {
+        document.getElementById("customLauncher").classList.remove("hide");
+      } else if (event.type === "meya.session.event.chat.open") {
+        document.getElementById("customLauncher").classList.add("hide");
+      }
+    }
+
     window.orbConfig = {
         connectionOptions: {
             gridUrl: "https://grid.meya.ai",
@@ -12,14 +52,18 @@
             connect: false,
             pageContext: {
                 environment: "STAGE"
+            },
+            onFirstConnect: (connectData, next) => {
+              orb.addListener("eventStream", onEventStream);
+              next();
             }
         },
-        theme: { 
-            brandColor: "#005cb9", 
-            botAvatarUrl: "https://www.qlik.com/us/-/media/images/global-us/Resource-Library/Custom/driftbot_graphic_circle.jpg" 
+        theme: {
+            brandColor: "#009845",
+            botAvatarUrl: "https://www.qlik.com/us/-/media/images/global-us/Resource-Library/Custom/driftbot_graphic_circle.jpg"
         },
-        launcher: { 
-            type: "orb", 
+        launcher: {
+            type: "orb",
         },
         windowApi: true,
     };
@@ -36,5 +80,6 @@
         document.body.appendChild(fontStyleSheet);
     })();
 </script>
+<div id="customLauncher" onclick="orb.openChat();"></div>
   </body>
 </html>
