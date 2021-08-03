@@ -21,6 +21,7 @@
     }
 
     function render(event, eventStream) {
+      console.log(event.type);
       if(event.type === "meya.session.event.chat.close") {
         var messageButton = document.querySelector("button[class^='MessageButton']");
         messageButton.style.borderRadius = "40px";
