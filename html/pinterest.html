@@ -1,8 +1,2191 @@
-<html>
-  <head>
-    <title>Pinterest</title>
-  </head>
-  <body>
-    <iframe width=100% height=100% src="https://www.pinterest.com"></iframe>
-  </body>
-</html>
+<!DOCTYPE html>
+<html dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class="js js-focus-visible" data-js-focus-visible="" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8"><script type="text/javascript" src="Pinterest%20Help_files/7ea89c5a2f.js"></script><script src="Pinterest%20Help_files/nr-1210.js"></script><script type="text/javascript" async="" src="Pinterest%20Help_files/pinit_main.js"></script><script async="" src="Pinterest%20Help_files/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UQAPUlNQGwIBXVBaAgMDVQ==",licenseKey:"7ea89c5a2f",applicationID:"119185243"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(25),s={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,i.indexOf("dev")!==-1&&(s.dev=!0),i.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&o.on("internal-error",function(t){r(t.stack)}),s.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{p?p-=1:i(s||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:c.now();o("err",[t,n])}var o=t("handle"),a=t(26),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError";if(!c.disabled){var p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(9),t(8),"addEventListener"in window&&t(5),c.xhrWrappable&&t(10),d=!0)}s.on("fn-start",function(t,e,n){d&&(p+=1)}),s.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){o("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var i=t("ee"),o=t("handle"),a=t(9),s=t(8),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",g="pushState",y=t("loader");if(!y.disabled){y.features.stn=!0,t(7),"addEventListener"in window&&t(5);var x=NREUM.o.EV;i.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),i.on(w,function(t,e){var n=t[0];n instanceof x&&o("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(w,function(t,e){o(v,[e,this.bstStart,y.now(),this.bstType])}),s.on(m,function(){this.bstStart=y.now()}),s.on(w,function(t,e){o(v,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),i.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),i.on(g+h,function(t){o("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){o(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){o(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){s.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return i.emit(n+"start",[t,a],s),s.then(function(t){return i.emit(n+"end",[null,t],s),t},function(t){throw i.emit(n+"end",[t],s),t})})}var i=t("ee").get("fetch"),o=t(26),a=t(25);e.exports=i;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(s,"fetch",c),i.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(c+"done",[null,e],n)}else i.emit(c+"done",[t],n)}))},{}],7:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],8:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],9:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(c+u,r),o.on(s+u,i)},{}],10:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",s)}function o(t){y.push(t),h&&(b?b.then(a):w?w(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(v,i,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],11:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),w=Date.now(),v={spanId:h,traceId:m,timestamp:w};return(t.sameOrigin||c(t)&&l())&&(v.traceContextParentHeader=i(h,m),v.traceContextStateHeader=o(h,w,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(v.newrelicHeader=a(h,m,w,n,r,f)),v}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",s=1,c="",f="";return i+"@nr="+o+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(s.d.tk=o),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(22),h=t(13);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],12:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime]))}}function i(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function o(t,e){t.params.status=e.status;var n=w(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(13),f=t(11).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(18),m=t(17),w=t(14),v=NREUM.o.REQ,g=window.XMLHttpRequest;a.features.xhr=!0,t(10),t(6),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){o(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<l;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof g&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof g&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof g&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},o=this.target;"string"==typeof o?n=o:"object"==typeof o&&o instanceof v?n=o.url:window.URL&&"object"==typeof o&&o instanceof URL&&(n=o.href),i(this,n);var s=(""+(o&&o instanceof v&&o.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}),u.on("fetch-done",function(t,e){this.params||(this.params={}),this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime])})}},{}],13:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||s),"/"===i.pathname&&(r[t]=i),i}},{}],14:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(17);e.exports=r},{}],15:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[f.now()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(25),s=t(26),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=i(l+e,!0,"api")}),u.addPageAction=i(l+"addPageAction",!0),u.setCurrentRouteName=i(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(p+"tracer",[f.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=i(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,f.now(),!1,e])}},{}],16:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],17:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],18:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],19:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,s=t(27);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],20:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],21:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!w){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),w=!0,d("timing",["fi",e,n])}}function s(t){"hidden"===t&&d("pageHide",[l.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,f,u,d=t("handle"),l=t("loader"),p=t(24),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(i);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(o);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var w=!1,v=["click","keydown","mousedown","pointerdown","touchstart"];v.forEach(function(t){document.addEventListener(t,a,!1)})}p(s)}},{}],22:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<o.length;s++)i=o[s],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(31)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],23:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],24:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],25:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],26:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],27:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!p.aborted||o){t&&a&&t(n,r,i);for(var s=e(i),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var l=d[y[n]];return l&&l.push([x,n,r,s]),s}}function o(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function w(t){return l[t]=l[t]||i(n)}function v(t,e){p.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:o,addEventListener:o,removeEventListener:h,emit:n,get:w,listeners:m,context:e,buffer:v,abort:s,aborted:!1};return x}function o(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var c="nr@context",f=t("gos"),u=t(25),d={},l={},p=e.exports=i();e.exports.getOrSetContext=o,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!O++){var t=S.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+S.offset],null,"api"),s("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=p+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){s("mark",["domContent",a()+S.offset],null,"api")}var a=t(19),s=t("handle"),c=t(25),f=t("ee"),u=t(23),d=t(20),l=t(16),p=l.getConfiguration("ssl")===!1?"http":"https",h=window,m=h.document,w="addEventListener",v="attachEvent",g=h.XMLHttpRequest,y=g&&g.prototype,x=!d(h.location);NREUM.o={ST:setTimeout,SI:h.setImmediate,CT:clearTimeout,XHR:g,REQ:h.Request,EV:h.Event,PR:h.Promise,MO:h.MutationObserver};var b=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},R=g&&y&&y[w]&&!/CriOS/.test(navigator.userAgent),S=e.exports={offset:a.getLastTimestamp(),now:a,origin:b,features:{},xhrWrappable:R,userAgent:u,disabled:x};if(!x){t(15),t(21),m[w]?(m[w]("DOMContentLoaded",o,!1),h[w]("load",r,!1)):(m[v]("onreadystatechange",i),h[v]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var O=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var o,a,u,l;try{a=this,o=d(arguments),u="function"==typeof r?r(o,a):r||{}}catch(p){i([p,"",[o,a,c],u],t)}s(n+"start",[o,a,c],u,f);try{return l=e.apply(a,o)}catch(h){throw s(n+"err",[o,a,h],u,f),h}finally{s(n+"end",[o,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,i,c,o))}function s(n,r,o,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=l,n}function i(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function s(t,e){var n=e(t);return n[l]=t,o(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(26),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,12,4,3]);</script>
+<link rel="alternate" hreflang="x-default" href="https://help.pinterest.com/en">
+<meta property="og:site_name" content="Pinterest Help">
+<link rel="canonical" href="https://help.pinterest.com/en">
+<link rel="shortlink" href="https://help.pinterest.com/en">
+<meta name="description" content="Ask us anything. The Pinterest Help Center is the place to get answers to your questions, learn how to use Pinterest and troubleshoot issues.">
+<meta property="fb:app_id" content="274266067164">
+<meta property="og:url" content="https://help.pinterest.com/en/homepage/help-center">
+<meta property="og:title" content="Pinterest Help">
+<meta property="og:description" content="Ask us anything. The Pinterest Help Center is the place to get answers to your questions, learn how to use Pinterest and troubleshoot issues.">
+<meta property="pin:url" content="https://help.pinterest.com/en/homepage/help-center">
+<meta property="pin:description" content="Ask us anything. The Pinterest Help Center is the place to get answers to your questions, learn how to use Pinterest and troubleshoot issues.">
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://help.pinterest.com/profiles/contrib/pin/favicon.png">
+<link rel="alternate" hreflang="en" href="https://help.pinterest.com/en">
+<link rel="alternate" hreflang="id" href="https://help.pinterest.com/id">
+<link rel="alternate" hreflang="cs" href="https://help.pinterest.com/cs">
+<link rel="alternate" hreflang="da" href="https://help.pinterest.com/da">
+<link rel="alternate" hreflang="de" href="https://help.pinterest.com/de">
+<link rel="alternate" hreflang="en-gb" href="https://help.pinterest.com/en-gb">
+<link rel="alternate" hreflang="es" href="https://help.pinterest.com/es">
+<link rel="alternate" hreflang="fr" href="https://help.pinterest.com/fr">
+<link rel="alternate" hreflang="it" href="https://help.pinterest.com/it">
+<link rel="alternate" hreflang="hu" href="https://help.pinterest.com/hu">
+<link rel="alternate" hreflang="nl" href="https://help.pinterest.com/nl">
+<link rel="alternate" hreflang="nb" href="https://help.pinterest.com/nb">
+<link rel="alternate" hreflang="pl" href="https://help.pinterest.com/pl">
+<link rel="alternate" hreflang="pt-br" href="https://help.pinterest.com/pt-br">
+<link rel="alternate" hreflang="pt-pt" href="https://help.pinterest.com/pt-pt">
+<link rel="alternate" hreflang="ro" href="https://help.pinterest.com/ro">
+<link rel="alternate" hreflang="sk" href="https://help.pinterest.com/sk">
+<link rel="alternate" hreflang="fi" href="https://help.pinterest.com/fi">
+<link rel="alternate" hreflang="sv" href="https://help.pinterest.com/sv">
+<link rel="alternate" hreflang="tl" href="https://help.pinterest.com/tl">
+<link rel="alternate" hreflang="vi" href="https://help.pinterest.com/vi">
+<link rel="alternate" hreflang="tr" href="https://help.pinterest.com/tr">
+<link rel="alternate" hreflang="el" href="https://help.pinterest.com/el">
+<link rel="alternate" hreflang="ru" href="https://help.pinterest.com/ru">
+<link rel="alternate" hreflang="uk" href="https://help.pinterest.com/uk">
+<link rel="alternate" hreflang="th" href="https://help.pinterest.com/th">
+<link rel="alternate" hreflang="zh-hans" href="https://help.pinterest.com/zh-hans">
+<link rel="alternate" hreflang="zh-hant" href="https://help.pinterest.com/zh-hant">
+<link rel="alternate" hreflang="ko" href="https://help.pinterest.com/ko">
+<link rel="alternate" hreflang="ja" href="https://help.pinterest.com/ja">
+<link rel="revision" href="https://help.pinterest.com/en/homepage/help-center">
+
+    <title>Pinterest Help</title>
+    <link rel="stylesheet" media="all" href="Pinterest%20Help_files/css_x0rLAt0CW5VenXISONJTQsRaRoY5idydxZuIb_Gux0A.css">
+<link rel="stylesheet" media="all" href="Pinterest%20Help_files/css_coduQg3BkEc-WsvVeCdLUnchaTRM6V2cQaeot06mPNk.css">
+
+    <script>document.documentElement.classList.add('js');</script>
+    
+  <script type="text/javascript">(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-12967896-3", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script><style type="text/css"> span.PIN_1628267791748_embed_grid { 
+  width: 100%;
+  max-width: 257px;
+  min-width: 140px;
+  display: inline-block;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 16px;
+  overflow: hidden;
+  font: 12px "Helvetica Neue", Helvetica, arial, sans-serif;
+  color: rgb(54, 54, 54);
+  box-sizing: border-box;
+  background: #fff;
+  cursor: pointer;
+  -moz-font-smoothing: antialiased;
+}
+ span.PIN_1628267791748_embed_grid * { 
+  display: block;
+  position: relative;
+  font: inherit;
+  cursor: inherit;
+  color: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+ span.PIN_1628267791748_embed_grid .PIN_1628267791748_hd { 
+  height: 55px;
+}
+ span.PIN_1628267791748_embed_grid .PIN_1628267791748_hd .PIN_1628267791748_img { 
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 36px;
+  width: 36px;
+  border-radius: 18px;
+  background: transparent url () 0 0 no-repeat;
+  background-size: cover;
+}
+ span.PIN_1628267791748_embed_grid .PIN_1628267791748_hd .PIN_1628267791748_pinner { 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 75%;
+  position: absolute;
+  top: 20px;
+  left: 56px;
+  font-size: 14px;
+  font-weight: bold;
+}
+ span.PIN_1628267791748_embed_grid .PIN_1628267791748_bd { 
+  padding: 0 10px;
+  -moz-scrollbars: none;
+  -ms-overflow-style: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+ span.PIN_1628267791748_embed_grid .PIN_1628267791748_bd .PIN_1628267791748_ct { 
+  width: 100%;
+  height: auto;
+}
+ span.PIN_1628267791748_embed_grid .PIN_1628267791748_bd .PIN_1628267791748_ct .PIN_1628267791748_col { 
+  display: inline-block;
+  width: 100%;
+  padding: 1px;
+  vertical-align: top;
+  min-width: 60px;
+}
+ span.PIN_1628267791748_embed_grid .PIN_1628267791748_bd .PIN_1628267791748_ct .PIN_1628267791748_col .PIN_1628267791748_img { 
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  background: transparent url() 0 0 no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+}
+ span.PIN_1628267791748_embed_grid .PIN_1628267791748_ft { 
+  padding: 10px;
+}
+ span.PIN_1628267791748_embed_grid .PIN_1628267791748_ft .PIN_1628267791748_button { 
+  border-radius: 16px;
+  text-align: center;
+  background-color: #efefef;
+  border: 1px solid #efefef;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 32px;
+  width: 100%;
+  min-width: 70px;
+  padding: 0 3px;
+}
+ span.PIN_1628267791748_embed_grid .PIN_1628267791748_ft .PIN_1628267791748_button .PIN_1628267791748_label { 
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+ span.PIN_1628267791748_embed_grid .PIN_1628267791748_ft .PIN_1628267791748_button .PIN_1628267791748_label.PIN_1628267791748_top { 
+  top: 0;
+}
+ span.PIN_1628267791748_embed_grid .PIN_1628267791748_ft .PIN_1628267791748_button .PIN_1628267791748_label.PIN_1628267791748_bottom { 
+  bottom: 0;
+}
+ span.PIN_1628267791748_embed_grid .PIN_1628267791748_ft .PIN_1628267791748_button .PIN_1628267791748_label .PIN_1628267791748_string { 
+  white-space: pre;
+  color: #746d6a;
+  font-size: 13px;
+  font-weight: bold;
+  vertical-align: top;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+}
+ span.PIN_1628267791748_embed_grid .PIN_1628267791748_ft .PIN_1628267791748_button .PIN_1628267791748_label .PIN_1628267791748_logo { 
+  display: inline-block;
+  vertical-align: bottom;
+  height: 32px;
+  width: 80px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTJweCIgd2lkdGg9IjUwcHgiIHZpZXdCb3g9IjAgMCA1MCAxMiI+PGc+PHBhdGggZD0iTTE5LjY5LDkuMjggTDE5LjY5LDQuMjggTDIxLjI3LDQuMjggTDIxLjI3LDkuMjggTDE5LjY5LDkuMjggWiBNNS45NywwLjAwIEM5LjI3LDAuMDAgMTEuOTUsMi42OSAxMS45NSw2LjAwIEMxMS45NSw5LjMxIDkuMjcsMTIuMDAgNS45NywxMi4wMCBDNS4zOCwxMi4wMCA0LjgwLDExLjkxIDQuMjYsMTEuNzUgQzQuMjYsMTEuNzUgNC4yNiwxMS43NSA0LjI2LDExLjc1IEM0LjI1LDExLjc1IDQuMjQsMTEuNzQgNC4yMywxMS43NCBMNC4yMSwxMS43MyBDNC4yMSwxMS43MyA0LjIxLDExLjczIDQuMjEsMTEuNzMgQzQuNDUsMTEuMzMgNC44MSwxMC42OCA0Ljk1LDEwLjE2IEM1LjAyLDkuODggNS4zMiw4LjczIDUuMzIsOC43MyBDNS41Miw5LjExIDYuMDgsOS40MiA2LjY5LDkuNDIgQzguNDksOS40MiA5Ljc5LDcuNzYgOS43OSw1LjY5IEM5Ljc5LDMuNzEgOC4xOCwyLjIzIDYuMTEsMi4yMyBDMy41MywyLjIzIDIuMTYsMy45NiAyLjE2LDUuODYgQzIuMTYsNi43NCAyLjYzLDcuODMgMy4zNyw4LjE4IEMzLjQ5LDguMjMgMy41NSw4LjIxIDMuNTcsOC4xMCBDMy41OSw4LjAyIDMuNjksNy42MSAzLjc0LDcuNDIgQzMuNzUsNy4zNiAzLjc1LDcuMzEgMy43MCw3LjI1IEMzLjQ1LDYuOTUgMy4yNSw2LjM5IDMuMjUsNS44OCBDMy4yNSw0LjU1IDQuMjUsMy4yNyA1Ljk1LDMuMjcgQzcuNDIsMy4yNyA4LjQ1LDQuMjggOC40NSw1LjcxIEM4LjQ1LDcuMzQgNy42Myw4LjQ2IDYuNTcsOC40NiBDNS45OCw4LjQ2IDUuNTQsNy45OCA1LjY4LDcuMzggQzUuODUsNi42NyA2LjE4LDUuOTAgNi4xOCw1LjM4IEM2LjE4LDQuOTIgNS45Myw0LjU0IDUuNDIsNC41NCBDNC44Miw0LjU0IDQuMzQsNS4xNiA0LjM0LDUuOTkgQzQuMzQsNi41MiA0LjUyLDYuODggNC41Miw2Ljg4IEM0LjUyLDYuODggMy45Myw5LjQwIDMuODIsOS44NyBDMy43MCwxMC4zOCAzLjc1LDExLjExIDMuODAsMTEuNTkgTDMuODAsMTEuNTkgQzMuNzksMTEuNTkgMy43OCwxMS41OCAzLjc4LDExLjU4IEMzLjc3LDExLjU4IDMuNzYsMTEuNTggMy43NiwxMS41NyBDMy43NiwxMS41NyAzLjc2LDExLjU3IDMuNzYsMTEuNTcgQzEuNTYsMTAuNjkgMC4wMCw4LjUzIDAuMDAsNi4wMCBDMC4wMCwyLjY5IDIuNjcsMC4wMCA1Ljk3LDAuMDAgWiBNMTYuODcsMi4zMSBDMTcuNzEsMi4zMSAxOC4zNCwyLjU0IDE4Ljc2LDIuOTUgQzE5LjIxLDMuMzcgMTkuNDYsMy45NiAxOS40Niw0LjY2IEMxOS40Niw2LjAwIDE4LjU0LDYuOTUgMTcuMTEsNi45NSBMMTUuNzIsNi45NSBMMTUuNzIsOS4yOCBMMTQuMTIsOS4yOCBMMTQuMTIsMi4zMSBMMTYuODcsMi4zMSBaIE0xNi45NCw1LjU4IEMxNy41Niw1LjU4IDE3LjkxLDUuMjEgMTcuOTEsNC42NSBDMTcuOTEsNC4xMCAxNy41NSwzLjc2IDE2Ljk0LDMuNzYgTDE1LjcyLDMuNzYgTDE1LjcyLDUuNTggTDE2Ljk0LDUuNTggWiBNNTAuMDAsNS4yOCBMNDkuMTksNS4yOCBMNDkuMTksNy42MiBDNDkuMTksOC4wMSA0OS40MCw4LjExIDQ5Ljc0LDguMTEgQzQ5LjgzLDguMTEgNDkuOTMsOC4xMCA1MC4wMCw4LjEwIEw1MC4wMCw5LjI4IEM0OS44NCw5LjMxIDQ5LjU4LDkuMzMgNDkuMjIsOS4zMyBDNDguMzAsOS4zMyA0Ny42NCw5LjAzIDQ3LjY0LDcuOTYgTDQ3LjY0LDUuMjggTDQ3LjE2LDUuMjggTDQ3LjE2LDQuMjggTDQ3LjY0LDQuMjggTDQ3LjY0LDIuNzAgTDQ5LjE5LDIuNzAgTDQ5LjE5LDQuMjggTDUwLjAwLDQuMjggTDUwLjAwLDUuMjggWiBNNDUuMzEsNi4xMyBDNDYuMTgsNi4yNyA0Ny4yMSw2LjUwIDQ3LjIxLDcuNzcgQzQ3LjIxLDguODcgNDYuMjUsOS40MyA0NC45NSw5LjQzIEM0My41NSw5LjQzIDQyLjY1LDguODEgNDIuNTQsNy43OCBMNDQuMDUsNy43OCBDNDQuMTUsOC4yMCA0NC40Niw4LjQwIDQ0Ljk0LDguNDAgQzQ1LjQyLDguNDAgNDUuNzIsOC4yMiA0NS43Miw3LjkwIEM0NS43Miw3LjQ1IDQ1LjEyLDcuNDAgNDQuNDYsNy4yOSBDNDMuNTksNy4xNCA0Mi42Nyw2LjkxIDQyLjY3LDUuNzQgQzQyLjY3LDQuNjggNDMuNjQsNC4xNCA0NC44Miw0LjE0IEM0Ni4yMiw0LjE0IDQ2Ljk4LDQuNzUgNDcuMDYsNS43NCBMNDUuNjAsNS43NCBDNDUuNTQsNS4yOSA0NS4yNCw1LjE1IDQ0LjgwLDUuMTUgQzQ0LjQyLDUuMTUgNDQuMTIsNS4zMCA0NC4xMiw1LjYxIEM0NC4xMiw1Ljk2IDQ0LjY4LDYuMDEgNDUuMzEsNi4xMyBaIE0yMC40OCwyLjAwIEMyMS4wMCwyLjAwIDIxLjQzLDIuNDIgMjEuNDMsMi45NSBDMjEuNDMsMy40OCAyMS4wMCwzLjkwIDIwLjQ4LDMuOTAgQzE5Ljk1LDMuOTAgMTkuNTMsMy40OCAxOS41MywyLjk1IEMxOS41MywyLjQyIDE5Ljk1LDIuMDAgMjAuNDgsMi4wMCBaIE0yOC40OCw3LjYyIEMyOC40OCw4LjAxIDI4LjcwLDguMTEgMjkuMDQsOC4xMSBDMjkuMTAsOC4xMSAyOS4xOCw4LjEwIDI5LjI0LDguMTAgTDI5LjI0LDkuMjkgQzI5LjA4LDkuMzEgMjguODMsOS4zMyAyOC41Miw5LjMzIEMyNy42MCw5LjMzIDI2Ljk0LDkuMDMgMjYuOTQsNy45NiBMMjYuOTQsNS4yOCBMMjYuNDIsNS4yOCBMMjYuNDIsNC4yOCBMMjYuOTQsNC4yOCBMMjYuOTQsMi43MCBMMjguNDgsMi43MCBMMjguNDgsNC4yOCBMMjkuMjQsNC4yOCBMMjkuMjQsNS4yOCBMMjguNDgsNS4yOCBMMjguNDgsNy42MiBaIE0yNC42OSw0LjE0IEMyNS43Nyw0LjE0IDI2LjQxLDQuOTIgMjYuNDEsNi4wMyBMMjYuNDEsOS4yOCBMMjQuODMsOS4yOCBMMjQuODMsNi4zNSBDMjQuODMsNS44MiAyNC41Nyw1LjQ2IDI0LjA1LDUuNDYgQzIzLjUzLDUuNDYgMjMuMTgsNS45MCAyMy4xOCw2LjUyIEwyMy4xOCw5LjI4IEwyMS42MCw5LjI4IEwyMS42MCw0LjI4IEwyMy4xMiw0LjI4IEwyMy4xMiw0Ljk3IEwyMy4xNSw0Ljk3IEMyMy41Miw0LjQzIDI0LjAwLDQuMTQgMjQuNjksNC4xNCBaIE0zMy40Miw0Ljc2IEMzMi45OSw0LjM3IDMyLjQzLDQuMTQgMzEuNzIsNC4xNCBDMzAuMjAsNC4xNCAyOS4xNiw1LjI4IDI5LjE2LDYuNzcgQzI5LjE2LDguMjggMzAuMTcsOS40MiAzMS44MSw5LjQyIEMzMi40NCw5LjQyIDMyLjk1LDkuMjYgMzMuMzcsOC45NiBDMzMuODAsOC42NiAzNC4xMCw4LjIzIDM0LjIwLDcuNzggTDMyLjY2LDcuNzggQzMyLjUyLDguMTAgMzIuMjUsOC4yOCAzMS44Myw4LjI4IEMzMS4xOCw4LjI4IDMwLjgxLDcuODYgMzAuNzIsNy4xOSBMMzQuMjksNy4xOSBDMzQuMzAsNi4xOCAzNC4wMSw1LjMxIDMzLjQyLDQuNzYgTDMzLjQyLDQuNzYgWiBNNDEuNjYsNC43NiBDNDIuMjYsNS4zMSA0Mi41NSw2LjE4IDQyLjU0LDcuMTkgTDM4Ljk3LDcuMTkgQzM5LjA2LDcuODYgMzkuNDMsOC4yOCA0MC4wOCw4LjI4IEM0MC41MCw4LjI4IDQwLjc3LDguMTAgNDAuOTEsNy43OCBMNDIuNDUsNy43OCBDNDIuMzQsOC4yMyA0Mi4wNSw4LjY2IDQxLjYyLDguOTYgQzQxLjIwLDkuMjYgNDAuNjksOS40MiA0MC4wNiw5LjQyIEMzOC40Miw5LjQyIDM3LjQxLDguMjggMzcuNDEsNi43NyBDMzcuNDEsNS4yOCAzOC40NSw0LjE0IDM5Ljk3LDQuMTQgQzQwLjY3LDQuMTQgNDEuMjQsNC4zNyA0MS42Niw0Ljc2IFogTTMwLjczLDYuMjQgQzMwLjgzLDUuNjUgMzEuMTQsNS4yNyAzMS43NSw1LjI3IEMzMi4yNiw1LjI3IDMyLjYzLDUuNjUgMzIuNjksNi4yNCBMMzAuNzMsNi4yNCBaIE0zOC45OCw2LjI0IEw0MC45NCw2LjI0IEM0MC44OCw1LjY1IDQwLjUxLDUuMjcgNDAuMDAsNS4yNyBDMzkuMzksNS4yNyAzOS4wOCw1LjY1IDM4Ljk4LDYuMjQgWiBNMzcuNTQsNC4yMSBMMzcuNTQsNS42MCBDMzYuNjQsNS41MSAzNi4wNyw1Ljk5IDM2LjA3LDcuMDMgTDM2LjA3LDkuMjggTDM0LjQ4LDkuMjggTDM0LjQ4LDQuMjggTDM2LjAwLDQuMjggTDM2LjAwLDUuMDYgTDM2LjAzLDUuMDYgQzM2LjM4LDQuNDcgMzYuNzgsNC4yMSAzNy4zOSw0LjIxIEMzNy40NSw0LjIxIDM3LjUwLDQuMjEgMzcuNTQsNC4yMSBaIiBmaWxsPSIjZTYwMDIzIj48L3BhdGg+PC9nPjwvc3ZnPg==) 50% 50% no-repeat;
+  background-size: contain;
+}
+ span.PIN_1628267791748_embed_grid .PIN_1628267791748_ft .PIN_1628267791748_button:hover { 
+  border: 1px solid rgba(0,0,0,.1);
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_noscroll .PIN_1628267791748_bd { 
+  overflow: hidden;
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_board .PIN_1628267791748_hd .PIN_1628267791748_pinner { 
+  top: 10px;
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_board .PIN_1628267791748_hd .PIN_1628267791748_board { 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 75%;
+  position: absolute;
+  bottom: 10px;
+  left: 56px;
+  color: #363636;
+  font-size: 12px;
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_c2 { 
+  max-width: 494px;
+  min-width: 140px;
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_c2 .PIN_1628267791748_bd .PIN_1628267791748_ct .PIN_1628267791748_col { 
+  width: 50%;
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_c3 { 
+  max-width: 731px;
+  min-width: 200px;
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_c3 .PIN_1628267791748_bd .PIN_1628267791748_ct .PIN_1628267791748_col { 
+  width: 33.33%;
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_c4 { 
+  max-width: 968px;
+  min-width: 260px;
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_c4 .PIN_1628267791748_bd .PIN_1628267791748_ct .PIN_1628267791748_col { 
+  width: 25%;
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_c5 { 
+  max-width: 1205px;
+  min-width: 320px;
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_c5 .PIN_1628267791748_bd .PIN_1628267791748_ct .PIN_1628267791748_col { 
+  width: 20%;
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_c6 { 
+  max-width: 1442px;
+  min-width: 380px;
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_c6 .PIN_1628267791748_bd .PIN_1628267791748_ct .PIN_1628267791748_col { 
+  width: 16.66%;
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_c7 { 
+  max-width: 1679px;
+  min-width: 440px;
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_c7 .PIN_1628267791748_bd .PIN_1628267791748_ct .PIN_1628267791748_col { 
+  width: 14.28%;
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_c8 { 
+  max-width: 1916px;
+  min-width: 500px;
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_c8 .PIN_1628267791748_bd .PIN_1628267791748_ct .PIN_1628267791748_col { 
+  width: 12.5%;
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_c9 { 
+  max-width: 2153px;
+  min-width: 560px;
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_c9 .PIN_1628267791748_bd .PIN_1628267791748_ct .PIN_1628267791748_col { 
+  width: 11.11%;
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_c10 { 
+  max-width: 2390px;
+  min-width: 620px;
+}
+ span.PIN_1628267791748_embed_grid.PIN_1628267791748_c10 .PIN_1628267791748_bd .PIN_1628267791748_ct .PIN_1628267791748_col { 
+  width: 10%;
+}
+ span.PIN_1628267791748_embed_pin { 
+  min-width: 160px;
+  max-width: 236px;
+  width: 100%;
+  border-radius: 16px;
+  font: 12px "SF Pro", "Helvetica Neue", Helvetica, arial, sans-serif;
+  display: inline-block;
+  background: rgba(0,0,0,.1);
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,.1);
+  box-sizing: border-box;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ span.PIN_1628267791748_embed_pin * { 
+  display: block;
+  position: relative;
+  font: inherit;
+  cursor: inherit;
+  color: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages { 
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_page { 
+  position: absolute;
+  left: 0;
+  transition-property: left;
+  transition-duration: .25s;
+  transition-timing-function: ease-in;
+  height: inherit;
+  width: inherit;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_page.PIN_1628267791748_past { 
+  left: -100%;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_page.PIN_1628267791748_future { 
+  left: 100%;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_page .PIN_1628267791748_blocks { 
+  height: inherit;
+  width: inherit;
+  overflow: hidden;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_page .PIN_1628267791748_blocks .PIN_1628267791748_block { 
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflowX: hidden;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_page .PIN_1628267791748_blocks .PIN_1628267791748_block .PIN_1628267791748_container { 
+  position: absolute;
+  width: 100%;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_page .PIN_1628267791748_blocks .PIN_1628267791748_block .PIN_1628267791748_container.PIN_1628267791748_top { 
+  top: 0;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_page .PIN_1628267791748_blocks .PIN_1628267791748_block .PIN_1628267791748_container.PIN_1628267791748_middle { 
+  top: 50%;
+  transform: translateY(-50%);
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_page .PIN_1628267791748_blocks .PIN_1628267791748_block .PIN_1628267791748_container.PIN_1628267791748_bottom { 
+  bottom: 0;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_page .PIN_1628267791748_blocks .PIN_1628267791748_block .PIN_1628267791748_container.PIN_1628267791748_left { 
+  text-align: left;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_page .PIN_1628267791748_blocks .PIN_1628267791748_block .PIN_1628267791748_container.PIN_1628267791748_center { 
+  text-align: center;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_page .PIN_1628267791748_blocks .PIN_1628267791748_block .PIN_1628267791748_container.PIN_1628267791748_right { 
+  text-align: right;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_page .PIN_1628267791748_blocks .PIN_1628267791748_block .PIN_1628267791748_container .PIN_1628267791748_paragraph { 
+  text-align: inherit;
+  display: inline;
+  word-break: break-word;
+  font-size: 16px;
+  line-height: 1.24em;
+  border-radius: 3px;
+  padding: 0.1em 0.2em;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_page .PIN_1628267791748_blocks .PIN_1628267791748_block .PIN_1628267791748_container _video { 
+  position: absolute;
+  height: 100%;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_page .PIN_1628267791748_blocks .PIN_1628267791748_block .PIN_1628267791748_container.PIN_1628267791748_video { 
+  height: 100%;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_page .PIN_1628267791748_blocks .PIN_1628267791748_block .PIN_1628267791748_image { 
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_page .PIN_1628267791748_blocks .PIN_1628267791748_block .PIN_1628267791748_image.PIN_1628267791748_containMe { 
+  background-size: contain;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_page .PIN_1628267791748_blocks .PIN_1628267791748_block .PIN_1628267791748_image.PIN_1628267791748_coverMe { 
+  background-size: cover;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_page .PIN_1628267791748_blocks .PIN_1628267791748_block video { 
+  position: absolute;
+  height: 100%;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_page .PIN_1628267791748_blocks .PIN_1628267791748_block video.PIN_1628267791748_isNative { 
+  width: 100%;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_overlay { 
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: .001;
+  background: rgba(0,0,0,.03);
+  cursor: pointer;
+  user-select: none;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_repin { 
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  height: 40px;
+  color: #fff;
+  background: #e60023 url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjZTYwMDIzIj48L3BhdGg+PC9nPjwvc3ZnPg==) 10px 50% no-repeat;
+  background-size: 18px 18px;
+  text-indent: 36px;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 0 12px 0 0;
+  width: auto;
+  z-index: 2;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_price { 
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  height: 40px;
+  background: rgba(255,255,255,.9);
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 0 12px;
+  width: auto;
+  z-index: 2;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_controls { 
+  position: absolute;
+  height: 64px;
+  width: 64px;
+  top: 50%;
+  left: 50%;
+  margin-top: -32px;
+  margin-left: -32px;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_controls .PIN_1628267791748_play { 
+  background: rgba(0,0,0,.8) url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgd2lkdGg9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGc+PHBhdGggZD0iTTIyLjYyIDkuNDhMOC42My40OEEzIDMgMCAwIDAgNCAzdjE4YTMgMyAwIDAgMCA0LjYzIDIuNTJsMTQtOWEzIDMgMCAwIDAgMC01LjA0IiBmaWxsPSIjZmZmIj48L3BhdGg+PC9nPjwvc3ZnPg==) 50% 50% no-repeat;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_controls .PIN_1628267791748_pause { 
+  background: rgba(0,0,0,.8) url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgd2lkdGg9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGc+PHBhdGggZD0iTTcgMGMxLjY1IDAgMyAxLjM1IDMgM3YxOGMwIDEuNjUtMS4zNSAzLTMgM3MtMy0xLjM1LTMtM1YzYzAtMS42NSAxLjM1LTMgMy0zem0xMCAwYzEuNjUgMCAzIDEuMzUgMyAzdjE4YzAgMS42NS0xLjM1IDMtMyAzcy0zLTEuMzUtMy0zVjNjMC0xLjY1IDEuMzUtMyAzLTN6IiBmaWxsPSIjZmZmIj48L3BhdGg+PC9nPjwvc3ZnPg==) 50% 50% no-repeat;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_controls .PIN_1628267791748_pause,  span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_controls .PIN_1628267791748_play { 
+  position: absolute;
+  display: block;
+  height: 64px;
+  width: 64px;
+  border-radius: 32px;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_nav { 
+  user-select: none;
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  background: transparent url() 0 0 no-repeat;
+  background-size: 24px 24px;
+  z-index: 1;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_nav.PIN_1628267791748_forward,  span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_nav.PIN_1628267791748_forward_noop { 
+  right: 0;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_nav.PIN_1628267791748_backward,  span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_nav.PIN_1628267791748_backward_noop { 
+  left: 0;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_nav.PIN_1628267791748_forward { 
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgd2lkdGg9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGc+PHBhdGggZD0iTTYuNzIgMjRjLjU3IDAgMS4xNC0uMjIgMS41Ny0uNjZMMTkuNSAxMiA4LjI5LjY2Yy0uODYtLjg4LTIuMjctLjg4LTMuMTQgMC0uODcuODgtLjg3IDIuMyAwIDMuMThMMTMuMjEgMTJsLTguMDYgOC4xNmMtLjg3Ljg4LS44NyAyLjMgMCAzLjE4LjQzLjQ0IDEgLjY2IDEuNTcuNjYiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2FhYSIgc3Ryb2tlLXdpZHRoPSIuNSI+PC9wYXRoPjwvZz48L3N2Zz4=);
+  background-position: 100% 50%;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_nav.PIN_1628267791748_backward { 
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgd2lkdGg9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGc+PHBhdGggZD0iTTE3LjI4IDI0Yy0uNTcgMC0xLjE0LS4yMi0xLjU4LS42Nkw0LjUgMTIgMTUuNy42NmEyLjIxIDIuMjEgMCAwIDEgMy4xNSAwYy44Ny44OC44NyAyLjMgMCAzLjE4TDEwLjc5IDEybDguMDYgOC4xNmMuODcuODguODcgMi4zIDAgMy4xOC0uNDQuNDQtMSAuNjYtMS41Ny42NiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjYWFhIiBzdHJva2Utd2lkdGg9Ii41Ij48L3BhdGg+PC9nPjwvc3ZnPg==);
+  background-position: 0 50%;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_progress { 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 36px;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.2));
+  text-align: center;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_progress .PIN_1628267791748_indicator { 
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  margin: 16px 2px 0;
+  background: rgba(255,255,255,.5);
+  border-radius: 50%;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_progress .PIN_1628267791748_indicator.PIN_1628267791748_current { 
+  background: #fff;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_pages .PIN_1628267791748_overlay:hover { 
+  opacity: 1;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_footer { 
+  position: relative;
+  display: block;
+  height: 96px;
+  padding: 16px;
+  color: #333;
+  background: #fff;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_footer .PIN_1628267791748_container { 
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_footer .PIN_1628267791748_container .PIN_1628267791748_title { 
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  font-size: 16px;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: pre;
+  text-overflow: ellipsis;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_footer .PIN_1628267791748_container .PIN_1628267791748_avatar { 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: transparent url() 0 0 no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 1px rgba(0,0,0,.5);
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_footer .PIN_1628267791748_container .PIN_1628267791748_deets { 
+  position: absolute;
+  left: 40px;
+  right: 0px;
+  bottom: 0px;
+  height: 30px;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_footer .PIN_1628267791748_container .PIN_1628267791748_deets span { 
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  font-size: 12px;
+  overflow: hidden;
+  white-space: pre;
+  text-overflow: ellipsis;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_footer .PIN_1628267791748_container .PIN_1628267791748_deets .PIN_1628267791748_topline { 
+  top: 0;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_footer .PIN_1628267791748_container .PIN_1628267791748_deets .PIN_1628267791748_bottomline { 
+  bottom: 0;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_footer::after { 
+  content: "------------------------------------------------------------------------------------------------------------------------";
+  display: block;
+  height: 1px;
+  line-height: 1px;
+  color: transparent;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_footer.PIN_1628267791748_uno .PIN_1628267791748_container .PIN_1628267791748_deets .PIN_1628267791748_topline { 
+  top: 8px;
+}
+ span.PIN_1628267791748_embed_pin .PIN_1628267791748_footer.PIN_1628267791748_uno .PIN_1628267791748_container .PIN_1628267791748_deets .PIN_1628267791748_bottomline { 
+  display: none;
+}
+ span.PIN_1628267791748_embed_pin.PIN_1628267791748_fresh .PIN_1628267791748_pages .PIN_1628267791748_overlay { 
+  opacity: 1;
+}
+ span.PIN_1628267791748_embed_pin.PIN_1628267791748_medium { 
+  min-width: 237px;
+  max-width: 345px;
+  border-radius: 24px;
+}
+ span.PIN_1628267791748_embed_pin.PIN_1628267791748_medium .PIN_1628267791748_pages .PIN_1628267791748_page .PIN_1628267791748_blocks .PIN_1628267791748_block .PIN_1628267791748_container .PIN_1628267791748_paragraph { 
+  font-size: 21px;
+  line-height: 1.23em;
+  border-radius: 5px;
+  padding: 2px 3px;
+}
+ span.PIN_1628267791748_embed_pin.PIN_1628267791748_medium .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_progress .PIN_1628267791748_indicator { 
+  margin: 16px 4px 0;
+}
+ span.PIN_1628267791748_embed_pin.PIN_1628267791748_large { 
+  min-width: 346px;
+  max-width: 600px;
+  border-radius: 36px;
+}
+ span.PIN_1628267791748_embed_pin.PIN_1628267791748_large .PIN_1628267791748_pages .PIN_1628267791748_page .PIN_1628267791748_blocks .PIN_1628267791748_block .PIN_1628267791748_container .PIN_1628267791748_paragraph { 
+  font-size: 27px;
+  line-height: 1.11em;
+  border-radius: 5px;
+  padding: 3px 4.5px;
+}
+ span.PIN_1628267791748_embed_pin.PIN_1628267791748_large .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_progress .PIN_1628267791748_indicator { 
+  margin: 16px 4px 0;
+}
+ span.PIN_1628267791748_embed_pin.PIN_1628267791748_atStart .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_backward { 
+  display: none;
+}
+ span.PIN_1628267791748_embed_pin.PIN_1628267791748_atEnd .PIN_1628267791748_pages .PIN_1628267791748_overlay .PIN_1628267791748_forward { 
+  display: none;
+}
+ .PIN_1628267791748_button_follow { 
+  display: inline-block;
+  color: #363636;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 1px #888;
+  border-radius: 3px;
+  font: bold 11px/20px "Helvetica Neue", Helvetica, arial, sans-serif !important;
+  cursor: pointer;
+  -moz-font-smoothing: antialiased;
+  height: 20px;
+  padding: 0 4px 0 20px;
+  background-color: #efefef;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+ .PIN_1628267791748_button_follow:hover { 
+  box-shadow: inset 0 0 1px #000;
+}
+ .PIN_1628267791748_button_follow::after { 
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  top: 3px;
+  left: 3px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjZTYwMDIzIj48L3BhdGg+PC9nPjwvc3ZnPg==) 0 0 no-repeat;
+  background-size: 14px 14px;
+}
+ .PIN_1628267791748_button_follow.PIN_1628267791748_tall { 
+  height: 26px;
+  line-height: 26px;
+  font-size: 13px;
+  padding: 0 6px 0 25px;
+  border-radius: 3px;
+}
+ .PIN_1628267791748_button_follow.PIN_1628267791748_tall::after { 
+  height: 18px;
+  width: 18px;
+  top: 4px;
+  left: 4px;
+  background-size: 18px 18px;
+}
+ .PIN_1628267791748_button_pin { 
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 1px #888;
+  border-radius: 3px;
+  height: 20px;
+  width: 40px;
+  -moz-font-smoothing: antialiased;
+  background: #efefef url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgd2lkdGg9IjQycHgiIHZpZXdCb3g9IjAgMCA0MiAxOCI+PGc+PHBhdGggZD0iTTE2Ljg1Myw2LjM0NSBDMTcuNjMyLDYuMzQ1IDE4LjM4LDUuNzAyIDE4LjUxLDQuOTA5IEMxOC42NjQsNC4xMzggMTguMTM1LDMuNDk0IDE3LjM1NywzLjQ5NCBDMTYuNTc4LDMuNDk0IDE1LjgzLDQuMTM4IDE1LjY5OCw0LjkwOSBDMTUuNTQ2LDUuNzAyIDE2LjA1Myw2LjM0NSAxNi44NTMsNi4zNDUgWiBNNy40NTgsMCBDMi41LDAgMCwzLjUyMiAwLDYuNDU5IEMwLDguMjM3IDAuNjgsOS44MTkgMi4xMzcsMTAuNDA5IEMyLjM3NiwxMC41MDUgMi41OSwxMC40MTIgMi42NiwxMC4xNSBDMi43MDgsOS45NjkgMi44MjIsOS41MTEgMi44NzMsOS4zMiBDMi45NDMsOS4wNjEgMi45MTYsOC45NyAyLjcyMyw4Ljc0NCBDMi4zMDIsOC4yNTMgMi4wMzQsNy42MTcgMi4wMzQsNi43MTYgQzIuMDM0LDQuMTA0IDQuMDA3LDEuNzY1IDcuMTcyLDEuNzY1IEM5Ljk3NSwxLjc2NSAxMS41MTQsMy40NjEgMTEuNTE0LDUuNzI2IEMxMS41MTQsOC43MDggMTAuMTgzLDExLjE4IDguMjA2LDExLjE4IEM3LjExNCwxMS4xOCA2LjI5NywxMC4zMjkgNi41NTksOS4yMzMgQzYuODcyLDcuOTIyIDcuNDgsNi41MDkgNy40OCw1LjU2NCBDNy40OCw0LjcxNyA3LjAyMiw0LjAxMSA2LjA3Miw0LjAxMSBDNC45NTYsNC4wMTEgNC4wNiw1LjE1NSA0LjA2LDYuNjg3IEM0LjA2LDcuNjYzIDQuMzkzLDguMzIzIDQuMzkzLDguMzIzIEM0LjM5Myw4LjMyMyAzLjI1MSwxMy4xMTcgMy4wNTEsMTMuOTU3IEMyLjY1MiwxNS42MjkgMi45OTEsMTcuNjc5IDMuMDE5LDE3Ljg4NiBDMy4wMzYsMTguMDA5IDMuMTk1LDE4LjAzOCAzLjI2NywxNy45NDYgQzMuMzcsMTcuODEyIDQuNywxNi4xODcgNS4xNTEsMTQuNTYyIEM1LjI3OSwxNC4xMDIgNS44ODUsMTEuNzIgNS44ODUsMTEuNzIgQzYuMjQ4LDEyLjQwNiA3LjMwOCwxMy4wMDkgOC40MzUsMTMuMDA5IEMxMS43OSwxMy4wMDkgMTQuMDY2LDkuOTc5IDE0LjA2Niw1LjkyMyBDMTQuMDY2LDIuODU3IDExLjQ0NCwwIDcuNDU4LDAgWiBNMjYuODk2LDE0LjE4OSBDMjYuMzQ4LDE0LjE4OSAyNi4xMTcsMTMuOTE1IDI2LjExNywxMy4zMjggQzI2LjExNywxMi40MDQgMjcuMDM1LDEwLjA5MSAyNy4wMzUsOS4wNDEgQzI3LjAzNSw3LjYzOCAyNi4yNzYsNi44MjYgMjQuNzIsNi44MjYgQzIzLjczOSw2LjgyNiAyMi43MjIsNy40NTMgMjIuMjkxLDguMDAzIEMyMi4yOTEsOC4wMDMgMjIuNDIyLDcuNTUzIDIyLjQ2Nyw3LjM4IEMyMi41MTUsNy4xOTYgMjIuNDE1LDYuODg0IDIyLjE3Myw2Ljg4NCBMMjAuNjUxLDYuODg0IEMyMC4zMjgsNi44ODQgMjAuMjM4LDcuMDU1IDIwLjE5MSw3LjI0NCBDMjAuMTcyLDcuMzIgMTkuNjI0LDkuNTg0IDE5LjA5OCwxMS42MzIgQzE4LjczOCwxMy4wMzQgMTcuODYzLDE0LjIwNSAxNi45MjgsMTQuMjA1IEMxNi40NDcsMTQuMjA1IDE2LjIzMywxMy45MDYgMTYuMjMzLDEzLjM5OSBDMTYuMjMzLDEyLjk1OSAxNi41MTksMTEuODc3IDE2Ljg2LDEwLjUzNCBDMTcuMjc2LDguODk4IDE3LjY0Miw3LjU1MSAxNy42ODEsNy4zOTQgQzE3LjczMiw3LjE5MiAxNy42NDIsNy4wMTcgMTcuMzc5LDcuMDE3IEwxNS44NDksNy4wMTcgQzE1LjU3Miw3LjAxNyAxNS40NzMsNy4xNjEgMTUuNDE0LDcuMzYxIEMxNS40MTQsNy4zNjEgMTQuOTgzLDguOTc3IDE0LjUyNywxMC43NzUgQzE0LjE5NiwxMi4wNzkgMTMuODMsMTMuNDA5IDEzLjgzLDE0LjAzNCBDMTMuODMsMTUuMTQ4IDE0LjMzNiwxNS45NDQgMTUuNzI0LDE1Ljk0NCBDMTYuNzk2LDE1Ljk0NCAxNy42NDQsMTUuNDUgMTguMjkyLDE0Ljc2NCBDMTguMTk3LDE1LjEzNSAxOC4xMzYsMTUuNDE0IDE4LjEzLDE1LjQzOSBDMTguMDc0LDE1LjY1IDE4LjE0MiwxNS44MzggMTguMzk0LDE1LjgzOCBMMTkuOTYxLDE1LjgzOCBDMjAuMjMzLDE1LjgzOCAyMC4zMzcsMTUuNzMgMjAuMzk0LDE1LjQ5NCBDMjAuNDQ5LDE1LjI2OSAyMS42MTksMTAuNjY3IDIxLjYxOSwxMC42NjcgQzIxLjkyOCw5LjQ0MyAyMi42OTIsOC42MzIgMjMuNzY4LDguNjMyIEMyNC4yNzksOC42MzIgMjQuNzIsOC45NjcgMjQuNjY5LDkuNjE4IEMyNC42MTIsMTAuMzMzIDIzLjc0MSwxMi45MDMgMjMuNzQxLDE0LjAzMSBDMjMuNzQxLDE0Ljg4NCAyNC4wNiwxNS45NDUgMjUuNjgzLDE1Ljk0NSBDMjYuNzg5LDE1Ljk0NSAyNy42MDMsMTUuNDY0IDI4LjE5NSwxNC43ODYgTDI3LjQ4OSwxMy45NDEgQzI3LjMxMSwxNC4wOTQgMjcuMTE0LDE0LjE4OSAyNi44OTYsMTQuMTg5IFogTTQxLjcwMSw2Ljg3MyBMNDAuMTM0LDYuODczIEM0MC4xMzQsNi44NzMgNDAuODU2LDQuMTA5IDQwLjg3Myw0LjAzNSBDNDAuOTQyLDMuNzQ1IDQwLjY5OCwzLjU3OCA0MC40NDEsMy42MzEgQzQwLjQ0MSwzLjYzMSAzOS4yMywzLjg2NiAzOS4wMDUsMy45MTMgQzM4Ljc3OSwzLjk1OCAzOC42MDQsNC4wODEgMzguNTIyLDQuNDAzIEMzOC41MTIsNC40NDUgMzcuODgsNi44NzMgMzcuODgsNi44NzMgTDM2LjYyMiw2Ljg3MyBDMzYuMzg1LDYuODczIDM2LjI0NSw2Ljk2OCAzNi4xOTIsNy4xODggQzM2LjExNSw3LjUwNCAzNS45NzUsOC4xNDUgMzUuOTM2LDguMjk3IEMzNS44ODUsOC40OTQgMzYsOC42NDQgMzYuMjIyLDguNjQ0IEwzNy40NTcsOC42NDQgQzM3LjQ0OCw4LjY3NyAzNy4wNjQsMTAuMTI1IDM2LjcyNSwxMS41MjEgTDM2LjcyNCwxMS41MTYgQzM2LjcyLDExLjUzMiAzNi43MTYsMTEuNTQ2IDM2LjcxMiwxMS41NjIgTDM2LjcxMiwxMS41NTYgQzM2LjcxMiwxMS41NTYgMzYuNzA4LDExLjU3MSAzNi43MDIsMTEuNTk4IEMzNi4zMjQsMTIuOTY4IDM1LjExOCwxNC4yMDkgMzQuMjAxLDE0LjIwOSBDMzMuNzIxLDE0LjIwOSAzMy41MDYsMTMuOTA5IDMzLjUwNiwxMy40MDIgQzMzLjUwNiwxMi45NjMgMzMuNzkyLDExLjg4IDM0LjEzNCwxMC41MzcgQzM0LjU0OSw4LjkwMSAzNC45MTUsNy41NTUgMzQuOTU1LDcuMzk3IEMzNS4wMDYsNy4xOTYgMzQuOTE1LDcuMDIgMzQuNjUyLDcuMDIgTDMzLjEyMiw3LjAyIEMzMi44NDUsNy4wMiAzMi43NDYsNy4xNjQgMzIuNjg3LDcuMzY0IEMzMi42ODcsNy4zNjQgMzIuMjU3LDguOTggMzEuOCwxMC43NzggQzMxLjQ2OSwxMi4wODMgMzEuMTAzLDEzLjQxMiAzMS4xMDMsMTQuMDM3IEMzMS4xMDMsMTUuMTUxIDMxLjYwOSwxNS45NDggMzIuOTk3LDE1Ljk0OCBDMzQuMDcsMTUuOTQ4IDM1LjEzNiwxNS40NTMgMzUuNzgzLDE0Ljc2NyBDMzUuNzgzLDE0Ljc2NyAzNi4wMTEsMTQuNTIxIDM2LjIzLDE0LjIyOSBDMzYuMjQxLDE0LjU4MSAzNi4zMjQsMTQuODM3IDM2LjQxMSwxNS4wMTggQzM2LjQ1OCwxNS4xMTkgMzYuNTE1LDE1LjIxNSAzNi41ODEsMTUuMzAzIEMzNi41ODIsMTUuMzA0IDM2LjU4MywxNS4zMDYgMzYuNTg1LDE1LjMwOCBMMzYuNTg1LDE1LjMwOCBDMzYuODkxLDE1LjcxMyAzNy4zOTgsMTUuOTYyIDM4LjE1MSwxNS45NjIgQzM5Ljg5NCwxNS45NjIgNDAuOTQ0LDE0LjkzOCA0MS41NjIsMTMuOTA5IEw0MC43MDQsMTMuMjM5IEM0MC4zMzMsMTMuNzc0IDM5LjgzOSwxNC4xNzUgMzkuMzI0LDE0LjE3NSBDMzguODQ2LDE0LjE3NSAzOC41NzksMTMuODc4IDM4LjU3OSwxMy4zNzIgQzM4LjU3OSwxMi45MzUgMzguODg5LDExLjg2OCAzOS4yMjksMTAuNTMgQzM5LjM0NCwxMC4wODMgMzkuNTE2LDkuNDAxIDM5LjcwOCw4LjY0NCBMNDEuMzAyLDguNjQ0IEM0MS41MzksOC42NDQgNDEuNjc4LDguNTQ5IDQxLjczMiw4LjMyOSBDNDEuODA4LDguMDEyIDQxLjk0OCw3LjM3MiA0MS45ODgsNy4yMjEgQzQyLjAzOSw3LjAyMyA0MS45MjMsNi44NzMgNDEuNzAxLDYuODczIFogTTM0LjEyNiw2LjM0OCBDMzQuOTA1LDYuMzQ4IDM1LjY1Myw1LjcwNiAzNS43ODMsNC45MTIgQzM1LjkzNyw0LjE0MSAzNS40MDksMy40OTggMzQuNjMsMy40OTggQzMzLjg1MSwzLjQ5OCAzMy4xMDMsNC4xNDEgMzIuOTcxLDQuOTEyIEMzMi44MTksNS43MDYgMzMuMzI2LDYuMzQ4IDM0LjEyNiw2LjM0OCBaIiBmaWxsPSIjZTYwMDIzIj48L3BhdGg+PC9nPjwvc3ZnPg==) 50% 50% no-repeat;
+  background-size: 75%;
+  position: relative;
+  font: 12px "Helvetica Neue", Helvetica, arial, sans-serif;
+  color: #555;
+  text-align: center;
+  vertical-align: baseline;
+}
+ .PIN_1628267791748_button_pin:hover { 
+  box-shadow: inset 0 0 1px #000;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_above .PIN_1628267791748_count { 
+  position: absolute;
+  top: -28px;
+  left: 0;
+  height: 28px;
+  width: inherit;
+  line-height: 24px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNzZweCIgd2lkdGg9IjExNHB4IiB2aWV3Qm94PSIwIDAgMTE0IDc2Ij48Zz48cGF0aCBkPSJNOSAxQzQuNiAxIDEgNC42IDEgOXY0M2MwIDQuMyAzLjYgOCA4IDhoMjZsMTggMTVoNy41bDE2LTE1SDEwNWM0LjQgMCA4LTMuNyA4LThWOWMwLTQuNC0zLjYtOC04LThIOXoiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2I1YjViNSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+PC9nPjwvc3ZnPg==) 0 0 no-repeat;
+  background-size: 40px 28px;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_above.PIN_1628267791748_padded { 
+  margin-top: 28px;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_beside .PIN_1628267791748_count { 
+  position: absolute;
+  right: -45px;
+  text-align: center;
+  text-indent: 5px;
+  height: inherit;
+  width: 45px;
+  font-size: 11px;
+  line-height: 20px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNTZweCIgd2lkdGg9IjEyNnB4IiB2aWV3Qm94PSIyIDAgMTMwIDYwIj48Zz48cGF0aCBkPSJNMTE5LjYgMmM0LjUgMCA4IDMuNiA4IDh2NDBjMCA0LjQtMy41IDgtOCA4SDIzLjNMMS42IDMyLjR2LTQuNkwyMy4zIDJoOTYuM3oiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2I1YjViNSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+PC9nPjwvc3ZnPg==);
+  background-size: cover;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_beside.PIN_1628267791748_padded { 
+  margin-right: 45px;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_ja { 
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgd2lkdGg9IjQxcHgiIHZpZXdCb3g9IjAgMCA0MSAxOCI+PGc+PHBhdGggZD0iTTE5LjgyMiw3LjE3MyBDMTkuODIyLDYuNTEgMTkuODM1LDYuMjc2IDE5Ljg4Nyw1Ljk2NCBMMTguMTQ1LDUuOTY0IEMxOC4xOTcsNi4yODkgMTguMTk3LDYuNDk3IDE4LjE5Nyw3LjE2IEwxOC4yMSwxMy4xOTIgQzE4LjIxLDEzLjk0NiAxOC4yMjMsMTQuMTY3IDE4LjI0OSwxNC4zODggQzE4LjMyNywxNS4wMjUgMTguNTIyLDE1LjQ0MSAxOC44ODYsMTUuNzE0IEMxOS4zOTMsMTYuMTA0IDIwLjI5LDE2LjI3MyAyMS45MjgsMTYuMjczIEMyMi43MjEsMTYuMjczIDI0LjM1OSwxNi4xOTUgMjUuMTI2LDE2LjExNyBDMjYuNTA0LDE1Ljk4NyAyNi41NjksMTUuOTc0IDI2Ljg0MiwxNS45NzQgTDI2Ljc2NCwxNC4yNDUgQzI2LjE5MiwxNC40MTQgMjUuOTA2LDE0LjQ3OSAyNS4yODIsMTQuNTU3IEMyNC4zMzMsMTQuNjg3IDIzLjEzNywxNC43NjUgMjIuMjY2LDE0Ljc2NSBDMjEuMDA1LDE0Ljc2NSAyMC4yNjQsMTQuNjQ4IDIwLjA0MywxNC40MjcgQzE5Ljg2MSwxNC4yNDUgMTkuODA5LDEzLjk1OSAxOS44MDksMTMuMjMxIEMxOS44MDksMTMuMTc5IDE5LjgwOSwxMy4xMDEgMTkuODIyLDEzLjAyMyBMMTkuODIyLDExLjMwNyBDMjEuOTkzLDEwLjkwNCAyNC4wMDgsMTAuMjI4IDI1LjkzMiw5LjI0IEwyNi4yNyw5LjA3MSBDMjYuMzc0LDkuMDE5IDI2LjQsOS4wMDYgMjYuNTQzLDguOTU0IEwyNS41MDMsNy40ODUgQzI0LjY1OCw4LjI3OCAyMS43ODUsOS40MzUgMTkuODIyLDkuNzk5IEwxOS44MjIsNy4xNzMgWiBNMjcuMzEsNC44NzIgQzI2LjQ5MSw0Ljg3MiAyNS44MTUsNS41NDggMjUuODE1LDYuMzY3IEMyNS44MTUsNy4xOTkgMjYuNDkxLDcuODc1IDI3LjMxLDcuODc1IEMyOC4xNDIsNy44NzUgMjguODE4LDcuMTk5IDI4LjgxOCw2LjM2NyBDMjguODE4LDUuNTQ4IDI4LjE0Miw0Ljg3MiAyNy4zMSw0Ljg3MiBMMjcuMzEsNC44NzIgWiBNMjcuMzEsNS41MjIgQzI3Ljc5MSw1LjUyMiAyOC4xNjgsNS44OTkgMjguMTY4LDYuMzY3IEMyOC4xNjgsNi44MzUgMjcuNzkxLDcuMjI1IDI3LjMxLDcuMjI1IEMyNi44NDIsNy4yMjUgMjYuNDY1LDYuODM1IDI2LjQ2NSw2LjM2NyBDMjYuNDY1LDUuODk5IDI2Ljg0Miw1LjUyMiAyNy4zMSw1LjUyMiBMMjcuMzEsNS41MjIgWiBNMzAuNTg2LDcuNjU0IEMzMS43OTUsOC4zMyAzMi44NjEsOS4xODggMzMuOTAxLDEwLjI5MyBMMzUuMDE5LDguODc2IEMzNC4wMTgsNy45MjcgMzMuMjEyLDcuMzI5IDMxLjY2NSw2LjM2NyBMMzAuNTg2LDcuNjU0IFogTTMxLjA0MSwxNi4yMzQgQzMxLjM0LDE2LjEzIDMxLjM3OSwxNi4xMTcgMzEuODk5LDE2LjAxMyBDMzMuOTE0LDE1LjU4NCAzNS41MjYsMTQuOTQ3IDM2Ljg1MiwxNC4wNjMgQzM4LjYzMywxMi44OCAzOS44NjgsMTEuMzQ2IDQwLjk3Myw4Ljk2NyBDNDAuMzEsOC40OTkgNDAuMTAyLDguMzA0IDM5LjU5NSw3LjY5MyBDMzkuMjA1LDguNzQ2IDM4Ljg0MSw5LjQ2MSAzOC4yNjksMTAuMjkzIEMzNy4yNDIsMTEuNzc1IDM2LjAzMywxMi43NzYgMzQuNDA4LDEzLjQ3OCBDMzMuMjI1LDEzLjk5OCAzMS42NzgsMTQuMzc1IDMwLjU2LDE0LjQ0IEwzMS4wNDEsMTYuMjM0IFogTTcuNDU4LDAgQzIuNSwwIDAsMy41MjIgMCw2LjQ1OSBDMCw4LjIzNyAwLjY4LDkuODE5IDIuMTM3LDEwLjQwOSBDMi4zNzYsMTAuNTA1IDIuNTksMTAuNDEyIDIuNjYsMTAuMTUgQzIuNzA4LDkuOTY5IDIuODIyLDkuNTExIDIuODczLDkuMzIgQzIuOTQzLDkuMDYxIDIuOTE2LDguOTcgMi43MjMsOC43NDQgQzIuMzAyLDguMjUzIDIuMDM0LDcuNjE3IDIuMDM0LDYuNzE2IEMyLjAzNCw0LjEwNCA0LjAwNywxLjc2NSA3LjE3MiwxLjc2NSBDOS45NzUsMS43NjUgMTEuNTE0LDMuNDYxIDExLjUxNCw1LjcyNiBDMTEuNTE0LDguNzA4IDEwLjE4MywxMS4xOCA4LjIwNiwxMS4xOCBDNy4xMTQsMTEuMTggNi4yOTcsMTAuMzI5IDYuNTU5LDkuMjMzIEM2Ljg3Miw3LjkyMiA3LjQ4LDYuNTA5IDcuNDgsNS41NjQgQzcuNDgsNC43MTcgNy4wMjIsNC4wMTEgNi4wNzIsNC4wMTEgQzQuOTU2LDQuMDExIDQuMDYsNS4xNTUgNC4wNiw2LjY4NyBDNC4wNiw3LjY2MyA0LjM5Myw4LjMyMyA0LjM5Myw4LjMyMyBDNC4zOTMsOC4zMjMgMy4yNTEsMTMuMTE3IDMuMDUxLDEzLjk1NyBDMi42NTIsMTUuNjI5IDIuOTkxLDE3LjY3OSAzLjAxOSwxNy44ODYgQzMuMDM2LDE4LjAwOSAzLjE5NSwxOC4wMzggMy4yNjcsMTcuOTQ2IEMzLjM3LDE3LjgxMiA0LjcsMTYuMTg3IDUuMTUxLDE0LjU2MiBDNS4yNzksMTQuMTAyIDUuODg1LDExLjcyIDUuODg1LDExLjcyIEM2LjI0OCwxMi40MDYgNy4zMDgsMTMuMDA5IDguNDM1LDEzLjAwOSBDMTEuNzksMTMuMDA5IDE0LjA2Niw5Ljk3OSAxNC4wNjYsNS45MjMgQzE0LjA2NiwyLjg1NyAxMS40NDQsMCA3LjQ1OCwwIFoiIGZpbGw9IiNlNjAwMjMiPjwvcGF0aD48L2c+PC9zdmc+);
+  background-size: 72%;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_red { 
+  background-color: #e60023;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgd2lkdGg9IjQycHgiIHZpZXdCb3g9IjAgMCA0MiAxOCI+PGc+PHBhdGggZD0iTTE2Ljg1Myw2LjM0NSBDMTcuNjMyLDYuMzQ1IDE4LjM4LDUuNzAyIDE4LjUxLDQuOTA5IEMxOC42NjQsNC4xMzggMTguMTM1LDMuNDk0IDE3LjM1NywzLjQ5NCBDMTYuNTc4LDMuNDk0IDE1LjgzLDQuMTM4IDE1LjY5OCw0LjkwOSBDMTUuNTQ2LDUuNzAyIDE2LjA1Myw2LjM0NSAxNi44NTMsNi4zNDUgWiBNNy40NTgsMCBDMi41LDAgMCwzLjUyMiAwLDYuNDU5IEMwLDguMjM3IDAuNjgsOS44MTkgMi4xMzcsMTAuNDA5IEMyLjM3NiwxMC41MDUgMi41OSwxMC40MTIgMi42NiwxMC4xNSBDMi43MDgsOS45NjkgMi44MjIsOS41MTEgMi44NzMsOS4zMiBDMi45NDMsOS4wNjEgMi45MTYsOC45NyAyLjcyMyw4Ljc0NCBDMi4zMDIsOC4yNTMgMi4wMzQsNy42MTcgMi4wMzQsNi43MTYgQzIuMDM0LDQuMTA0IDQuMDA3LDEuNzY1IDcuMTcyLDEuNzY1IEM5Ljk3NSwxLjc2NSAxMS41MTQsMy40NjEgMTEuNTE0LDUuNzI2IEMxMS41MTQsOC43MDggMTAuMTgzLDExLjE4IDguMjA2LDExLjE4IEM3LjExNCwxMS4xOCA2LjI5NywxMC4zMjkgNi41NTksOS4yMzMgQzYuODcyLDcuOTIyIDcuNDgsNi41MDkgNy40OCw1LjU2NCBDNy40OCw0LjcxNyA3LjAyMiw0LjAxMSA2LjA3Miw0LjAxMSBDNC45NTYsNC4wMTEgNC4wNiw1LjE1NSA0LjA2LDYuNjg3IEM0LjA2LDcuNjYzIDQuMzkzLDguMzIzIDQuMzkzLDguMzIzIEM0LjM5Myw4LjMyMyAzLjI1MSwxMy4xMTcgMy4wNTEsMTMuOTU3IEMyLjY1MiwxNS42MjkgMi45OTEsMTcuNjc5IDMuMDE5LDE3Ljg4NiBDMy4wMzYsMTguMDA5IDMuMTk1LDE4LjAzOCAzLjI2NywxNy45NDYgQzMuMzcsMTcuODEyIDQuNywxNi4xODcgNS4xNTEsMTQuNTYyIEM1LjI3OSwxNC4xMDIgNS44ODUsMTEuNzIgNS44ODUsMTEuNzIgQzYuMjQ4LDEyLjQwNiA3LjMwOCwxMy4wMDkgOC40MzUsMTMuMDA5IEMxMS43OSwxMy4wMDkgMTQuMDY2LDkuOTc5IDE0LjA2Niw1LjkyMyBDMTQuMDY2LDIuODU3IDExLjQ0NCwwIDcuNDU4LDAgWiBNMjYuODk2LDE0LjE4OSBDMjYuMzQ4LDE0LjE4OSAyNi4xMTcsMTMuOTE1IDI2LjExNywxMy4zMjggQzI2LjExNywxMi40MDQgMjcuMDM1LDEwLjA5MSAyNy4wMzUsOS4wNDEgQzI3LjAzNSw3LjYzOCAyNi4yNzYsNi44MjYgMjQuNzIsNi44MjYgQzIzLjczOSw2LjgyNiAyMi43MjIsNy40NTMgMjIuMjkxLDguMDAzIEMyMi4yOTEsOC4wMDMgMjIuNDIyLDcuNTUzIDIyLjQ2Nyw3LjM4IEMyMi41MTUsNy4xOTYgMjIuNDE1LDYuODg0IDIyLjE3Myw2Ljg4NCBMMjAuNjUxLDYuODg0IEMyMC4zMjgsNi44ODQgMjAuMjM4LDcuMDU1IDIwLjE5MSw3LjI0NCBDMjAuMTcyLDcuMzIgMTkuNjI0LDkuNTg0IDE5LjA5OCwxMS42MzIgQzE4LjczOCwxMy4wMzQgMTcuODYzLDE0LjIwNSAxNi45MjgsMTQuMjA1IEMxNi40NDcsMTQuMjA1IDE2LjIzMywxMy45MDYgMTYuMjMzLDEzLjM5OSBDMTYuMjMzLDEyLjk1OSAxNi41MTksMTEuODc3IDE2Ljg2LDEwLjUzNCBDMTcuMjc2LDguODk4IDE3LjY0Miw3LjU1MSAxNy42ODEsNy4zOTQgQzE3LjczMiw3LjE5MiAxNy42NDIsNy4wMTcgMTcuMzc5LDcuMDE3IEwxNS44NDksNy4wMTcgQzE1LjU3Miw3LjAxNyAxNS40NzMsNy4xNjEgMTUuNDE0LDcuMzYxIEMxNS40MTQsNy4zNjEgMTQuOTgzLDguOTc3IDE0LjUyNywxMC43NzUgQzE0LjE5NiwxMi4wNzkgMTMuODMsMTMuNDA5IDEzLjgzLDE0LjAzNCBDMTMuODMsMTUuMTQ4IDE0LjMzNiwxNS45NDQgMTUuNzI0LDE1Ljk0NCBDMTYuNzk2LDE1Ljk0NCAxNy42NDQsMTUuNDUgMTguMjkyLDE0Ljc2NCBDMTguMTk3LDE1LjEzNSAxOC4xMzYsMTUuNDE0IDE4LjEzLDE1LjQzOSBDMTguMDc0LDE1LjY1IDE4LjE0MiwxNS44MzggMTguMzk0LDE1LjgzOCBMMTkuOTYxLDE1LjgzOCBDMjAuMjMzLDE1LjgzOCAyMC4zMzcsMTUuNzMgMjAuMzk0LDE1LjQ5NCBDMjAuNDQ5LDE1LjI2OSAyMS42MTksMTAuNjY3IDIxLjYxOSwxMC42NjcgQzIxLjkyOCw5LjQ0MyAyMi42OTIsOC42MzIgMjMuNzY4LDguNjMyIEMyNC4yNzksOC42MzIgMjQuNzIsOC45NjcgMjQuNjY5LDkuNjE4IEMyNC42MTIsMTAuMzMzIDIzLjc0MSwxMi45MDMgMjMuNzQxLDE0LjAzMSBDMjMuNzQxLDE0Ljg4NCAyNC4wNiwxNS45NDUgMjUuNjgzLDE1Ljk0NSBDMjYuNzg5LDE1Ljk0NSAyNy42MDMsMTUuNDY0IDI4LjE5NSwxNC43ODYgTDI3LjQ4OSwxMy45NDEgQzI3LjMxMSwxNC4wOTQgMjcuMTE0LDE0LjE4OSAyNi44OTYsMTQuMTg5IFogTTQxLjcwMSw2Ljg3MyBMNDAuMTM0LDYuODczIEM0MC4xMzQsNi44NzMgNDAuODU2LDQuMTA5IDQwLjg3Myw0LjAzNSBDNDAuOTQyLDMuNzQ1IDQwLjY5OCwzLjU3OCA0MC40NDEsMy42MzEgQzQwLjQ0MSwzLjYzMSAzOS4yMywzLjg2NiAzOS4wMDUsMy45MTMgQzM4Ljc3OSwzLjk1OCAzOC42MDQsNC4wODEgMzguNTIyLDQuNDAzIEMzOC41MTIsNC40NDUgMzcuODgsNi44NzMgMzcuODgsNi44NzMgTDM2LjYyMiw2Ljg3MyBDMzYuMzg1LDYuODczIDM2LjI0NSw2Ljk2OCAzNi4xOTIsNy4xODggQzM2LjExNSw3LjUwNCAzNS45NzUsOC4xNDUgMzUuOTM2LDguMjk3IEMzNS44ODUsOC40OTQgMzYsOC42NDQgMzYuMjIyLDguNjQ0IEwzNy40NTcsOC42NDQgQzM3LjQ0OCw4LjY3NyAzNy4wNjQsMTAuMTI1IDM2LjcyNSwxMS41MjEgTDM2LjcyNCwxMS41MTYgQzM2LjcyLDExLjUzMiAzNi43MTYsMTEuNTQ2IDM2LjcxMiwxMS41NjIgTDM2LjcxMiwxMS41NTYgQzM2LjcxMiwxMS41NTYgMzYuNzA4LDExLjU3MSAzNi43MDIsMTEuNTk4IEMzNi4zMjQsMTIuOTY4IDM1LjExOCwxNC4yMDkgMzQuMjAxLDE0LjIwOSBDMzMuNzIxLDE0LjIwOSAzMy41MDYsMTMuOTA5IDMzLjUwNiwxMy40MDIgQzMzLjUwNiwxMi45NjMgMzMuNzkyLDExLjg4IDM0LjEzNCwxMC41MzcgQzM0LjU0OSw4LjkwMSAzNC45MTUsNy41NTUgMzQuOTU1LDcuMzk3IEMzNS4wMDYsNy4xOTYgMzQuOTE1LDcuMDIgMzQuNjUyLDcuMDIgTDMzLjEyMiw3LjAyIEMzMi44NDUsNy4wMiAzMi43NDYsNy4xNjQgMzIuNjg3LDcuMzY0IEMzMi42ODcsNy4zNjQgMzIuMjU3LDguOTggMzEuOCwxMC43NzggQzMxLjQ2OSwxMi4wODMgMzEuMTAzLDEzLjQxMiAzMS4xMDMsMTQuMDM3IEMzMS4xMDMsMTUuMTUxIDMxLjYwOSwxNS45NDggMzIuOTk3LDE1Ljk0OCBDMzQuMDcsMTUuOTQ4IDM1LjEzNiwxNS40NTMgMzUuNzgzLDE0Ljc2NyBDMzUuNzgzLDE0Ljc2NyAzNi4wMTEsMTQuNTIxIDM2LjIzLDE0LjIyOSBDMzYuMjQxLDE0LjU4MSAzNi4zMjQsMTQuODM3IDM2LjQxMSwxNS4wMTggQzM2LjQ1OCwxNS4xMTkgMzYuNTE1LDE1LjIxNSAzNi41ODEsMTUuMzAzIEMzNi41ODIsMTUuMzA0IDM2LjU4MywxNS4zMDYgMzYuNTg1LDE1LjMwOCBMMzYuNTg1LDE1LjMwOCBDMzYuODkxLDE1LjcxMyAzNy4zOTgsMTUuOTYyIDM4LjE1MSwxNS45NjIgQzM5Ljg5NCwxNS45NjIgNDAuOTQ0LDE0LjkzOCA0MS41NjIsMTMuOTA5IEw0MC43MDQsMTMuMjM5IEM0MC4zMzMsMTMuNzc0IDM5LjgzOSwxNC4xNzUgMzkuMzI0LDE0LjE3NSBDMzguODQ2LDE0LjE3NSAzOC41NzksMTMuODc4IDM4LjU3OSwxMy4zNzIgQzM4LjU3OSwxMi45MzUgMzguODg5LDExLjg2OCAzOS4yMjksMTAuNTMgQzM5LjM0NCwxMC4wODMgMzkuNTE2LDkuNDAxIDM5LjcwOCw4LjY0NCBMNDEuMzAyLDguNjQ0IEM0MS41MzksOC42NDQgNDEuNjc4LDguNTQ5IDQxLjczMiw4LjMyOSBDNDEuODA4LDguMDEyIDQxLjk0OCw3LjM3MiA0MS45ODgsNy4yMjEgQzQyLjAzOSw3LjAyMyA0MS45MjMsNi44NzMgNDEuNzAxLDYuODczIFogTTM0LjEyNiw2LjM0OCBDMzQuOTA1LDYuMzQ4IDM1LjY1Myw1LjcwNiAzNS43ODMsNC45MTIgQzM1LjkzNyw0LjE0MSAzNS40MDksMy40OTggMzQuNjMsMy40OTggQzMzLjg1MSwzLjQ5OCAzMy4xMDMsNC4xNDEgMzIuOTcxLDQuOTEyIEMzMi44MTksNS43MDYgMzMuMzI2LDYuMzQ4IDM0LjEyNiw2LjM0OCBaIiBmaWxsPSIjZmZmIj48L3BhdGg+PC9nPjwvc3ZnPg==);
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_red.PIN_1628267791748_ja { 
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgd2lkdGg9IjQxcHgiIHZpZXdCb3g9IjAgMCA0MSAxOCI+PGc+PHBhdGggZD0iTTE5LjgyMiw3LjE3MyBDMTkuODIyLDYuNTEgMTkuODM1LDYuMjc2IDE5Ljg4Nyw1Ljk2NCBMMTguMTQ1LDUuOTY0IEMxOC4xOTcsNi4yODkgMTguMTk3LDYuNDk3IDE4LjE5Nyw3LjE2IEwxOC4yMSwxMy4xOTIgQzE4LjIxLDEzLjk0NiAxOC4yMjMsMTQuMTY3IDE4LjI0OSwxNC4zODggQzE4LjMyNywxNS4wMjUgMTguNTIyLDE1LjQ0MSAxOC44ODYsMTUuNzE0IEMxOS4zOTMsMTYuMTA0IDIwLjI5LDE2LjI3MyAyMS45MjgsMTYuMjczIEMyMi43MjEsMTYuMjczIDI0LjM1OSwxNi4xOTUgMjUuMTI2LDE2LjExNyBDMjYuNTA0LDE1Ljk4NyAyNi41NjksMTUuOTc0IDI2Ljg0MiwxNS45NzQgTDI2Ljc2NCwxNC4yNDUgQzI2LjE5MiwxNC40MTQgMjUuOTA2LDE0LjQ3OSAyNS4yODIsMTQuNTU3IEMyNC4zMzMsMTQuNjg3IDIzLjEzNywxNC43NjUgMjIuMjY2LDE0Ljc2NSBDMjEuMDA1LDE0Ljc2NSAyMC4yNjQsMTQuNjQ4IDIwLjA0MywxNC40MjcgQzE5Ljg2MSwxNC4yNDUgMTkuODA5LDEzLjk1OSAxOS44MDksMTMuMjMxIEMxOS44MDksMTMuMTc5IDE5LjgwOSwxMy4xMDEgMTkuODIyLDEzLjAyMyBMMTkuODIyLDExLjMwNyBDMjEuOTkzLDEwLjkwNCAyNC4wMDgsMTAuMjI4IDI1LjkzMiw5LjI0IEwyNi4yNyw5LjA3MSBDMjYuMzc0LDkuMDE5IDI2LjQsOS4wMDYgMjYuNTQzLDguOTU0IEwyNS41MDMsNy40ODUgQzI0LjY1OCw4LjI3OCAyMS43ODUsOS40MzUgMTkuODIyLDkuNzk5IEwxOS44MjIsNy4xNzMgWiBNMjcuMzEsNC44NzIgQzI2LjQ5MSw0Ljg3MiAyNS44MTUsNS41NDggMjUuODE1LDYuMzY3IEMyNS44MTUsNy4xOTkgMjYuNDkxLDcuODc1IDI3LjMxLDcuODc1IEMyOC4xNDIsNy44NzUgMjguODE4LDcuMTk5IDI4LjgxOCw2LjM2NyBDMjguODE4LDUuNTQ4IDI4LjE0Miw0Ljg3MiAyNy4zMSw0Ljg3MiBMMjcuMzEsNC44NzIgWiBNMjcuMzEsNS41MjIgQzI3Ljc5MSw1LjUyMiAyOC4xNjgsNS44OTkgMjguMTY4LDYuMzY3IEMyOC4xNjgsNi44MzUgMjcuNzkxLDcuMjI1IDI3LjMxLDcuMjI1IEMyNi44NDIsNy4yMjUgMjYuNDY1LDYuODM1IDI2LjQ2NSw2LjM2NyBDMjYuNDY1LDUuODk5IDI2Ljg0Miw1LjUyMiAyNy4zMSw1LjUyMiBMMjcuMzEsNS41MjIgWiBNMzAuNTg2LDcuNjU0IEMzMS43OTUsOC4zMyAzMi44NjEsOS4xODggMzMuOTAxLDEwLjI5MyBMMzUuMDE5LDguODc2IEMzNC4wMTgsNy45MjcgMzMuMjEyLDcuMzI5IDMxLjY2NSw2LjM2NyBMMzAuNTg2LDcuNjU0IFogTTMxLjA0MSwxNi4yMzQgQzMxLjM0LDE2LjEzIDMxLjM3OSwxNi4xMTcgMzEuODk5LDE2LjAxMyBDMzMuOTE0LDE1LjU4NCAzNS41MjYsMTQuOTQ3IDM2Ljg1MiwxNC4wNjMgQzM4LjYzMywxMi44OCAzOS44NjgsMTEuMzQ2IDQwLjk3Myw4Ljk2NyBDNDAuMzEsOC40OTkgNDAuMTAyLDguMzA0IDM5LjU5NSw3LjY5MyBDMzkuMjA1LDguNzQ2IDM4Ljg0MSw5LjQ2MSAzOC4yNjksMTAuMjkzIEMzNy4yNDIsMTEuNzc1IDM2LjAzMywxMi43NzYgMzQuNDA4LDEzLjQ3OCBDMzMuMjI1LDEzLjk5OCAzMS42NzgsMTQuMzc1IDMwLjU2LDE0LjQ0IEwzMS4wNDEsMTYuMjM0IFogTTcuNDU4LDAgQzIuNSwwIDAsMy41MjIgMCw2LjQ1OSBDMCw4LjIzNyAwLjY4LDkuODE5IDIuMTM3LDEwLjQwOSBDMi4zNzYsMTAuNTA1IDIuNTksMTAuNDEyIDIuNjYsMTAuMTUgQzIuNzA4LDkuOTY5IDIuODIyLDkuNTExIDIuODczLDkuMzIgQzIuOTQzLDkuMDYxIDIuOTE2LDguOTcgMi43MjMsOC43NDQgQzIuMzAyLDguMjUzIDIuMDM0LDcuNjE3IDIuMDM0LDYuNzE2IEMyLjAzNCw0LjEwNCA0LjAwNywxLjc2NSA3LjE3MiwxLjc2NSBDOS45NzUsMS43NjUgMTEuNTE0LDMuNDYxIDExLjUxNCw1LjcyNiBDMTEuNTE0LDguNzA4IDEwLjE4MywxMS4xOCA4LjIwNiwxMS4xOCBDNy4xMTQsMTEuMTggNi4yOTcsMTAuMzI5IDYuNTU5LDkuMjMzIEM2Ljg3Miw3LjkyMiA3LjQ4LDYuNTA5IDcuNDgsNS41NjQgQzcuNDgsNC43MTcgNy4wMjIsNC4wMTEgNi4wNzIsNC4wMTEgQzQuOTU2LDQuMDExIDQuMDYsNS4xNTUgNC4wNiw2LjY4NyBDNC4wNiw3LjY2MyA0LjM5Myw4LjMyMyA0LjM5Myw4LjMyMyBDNC4zOTMsOC4zMjMgMy4yNTEsMTMuMTE3IDMuMDUxLDEzLjk1NyBDMi42NTIsMTUuNjI5IDIuOTkxLDE3LjY3OSAzLjAxOSwxNy44ODYgQzMuMDM2LDE4LjAwOSAzLjE5NSwxOC4wMzggMy4yNjcsMTcuOTQ2IEMzLjM3LDE3LjgxMiA0LjcsMTYuMTg3IDUuMTUxLDE0LjU2MiBDNS4yNzksMTQuMTAyIDUuODg1LDExLjcyIDUuODg1LDExLjcyIEM2LjI0OCwxMi40MDYgNy4zMDgsMTMuMDA5IDguNDM1LDEzLjAwOSBDMTEuNzksMTMuMDA5IDE0LjA2Niw5Ljk3OSAxNC4wNjYsNS45MjMgQzE0LjA2NiwyLjg1NyAxMS40NDQsMCA3LjQ1OCwwIFoiIGZpbGw9IiNmZmYiPjwvcGF0aD48L2c+PC9zdmc+);
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_white { 
+  background-color: #fff;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_save { 
+  border-radius: 2px;
+  text-indent: 20px;
+  width: auto;
+  padding: 0 4px 0 0;
+  text-align: center;
+  text-decoration: none;
+  font: 11px/20px "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  color: #fff!important;
+  background: #e60023 url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjZTYwMDIzIj48L3BhdGg+PC9nPjwvc3ZnPg==) 3px 50% no-repeat;
+  background-size: 14px 14px;
+  -webkit-font-smoothing: antialiased;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_save:hover { 
+  background-color: #e60023;
+  box-shadow: none;
+  color: #fff!important;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_save .PIN_1628267791748_count { 
+  text-indent: 0;
+  position: absolute;
+  color: #555;
+  background: #efefef;
+  border-radius: 2px;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_save .PIN_1628267791748_count::before { 
+  content: "";
+  position: absolute;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_save.PIN_1628267791748_beside .PIN_1628267791748_count { 
+  right: -46px;
+  height: 20px;
+  width: 40px;
+  font-size: 10px;
+  line-height: 20px;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_save.PIN_1628267791748_beside .PIN_1628267791748_count::before { 
+  top: 3px;
+  left: -4px;
+  border-right: 7px solid #efefef;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_save.PIN_1628267791748_above .PIN_1628267791748_count { 
+  top: -36px;
+  width: 100%;
+  height: 30px;
+  font-size: 10px;
+  line-height: 30px;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_save.PIN_1628267791748_above .PIN_1628267791748_count::before { 
+  bottom: -4px;
+  left: 4px;
+  border-top: 7px solid #efefef;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_save.PIN_1628267791748_above.PIN_1628267791748_padded { 
+  margin-top: 28px;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_tall { 
+  height: 28px;
+  width: 56px;
+  border-radius: 3px;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_tall.PIN_1628267791748_above .PIN_1628267791748_count { 
+  position: absolute;
+  height: 37px;
+  width: inherit;
+  top: -37px;
+  left: 0;
+  line-height: 30px;
+  font-size: 14px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNzZweCIgd2lkdGg9IjExNHB4IiB2aWV3Qm94PSIwIDAgMTE0IDc2Ij48Zz48cGF0aCBkPSJNOSAxQzQuNiAxIDEgNC42IDEgOXY0M2MwIDQuMyAzLjYgOCA4IDhoMjZsMTggMTVoNy41bDE2LTE1SDEwNWM0LjQgMCA4LTMuNyA4LThWOWMwLTQuNC0zLjYtOC04LThIOXoiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2I1YjViNSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+PC9nPjwvc3ZnPg==);
+  background-size: cover;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_tall.PIN_1628267791748_above.PIN_1628267791748_padded { 
+  margin-top: 37px;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_tall.PIN_1628267791748_beside .PIN_1628267791748_count { 
+  text-indent: 5px;
+  position: absolute;
+  right: -63px;
+  height: inherit;
+  width: 63px;
+  font-size: 14px;
+  line-height: 28px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNTZweCIgd2lkdGg9IjEyNnB4IiB2aWV3Qm94PSIyIDAgMTMwIDYwIj48Zz48cGF0aCBkPSJNMTE5LjYgMmM0LjUgMCA4IDMuNiA4IDh2NDBjMCA0LjQtMy41IDgtOCA4SDIzLjNMMS42IDMyLjR2LTQuNkwyMy4zIDJoOTYuM3oiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2I1YjViNSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+PC9nPjwvc3ZnPg==);
+  background-size: cover;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_tall.PIN_1628267791748_beside.PIN_1628267791748_padded { 
+  margin-right: 63px;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_tall.PIN_1628267791748_save { 
+  border-radius: 4px;
+  width: auto;
+  background-position-x: 6px;
+  background-size: 18px 18px;
+  text-indent: 29px;
+  font: 14px/28px "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-weight: bold;
+  padding: 0 6px 0 0;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_tall.PIN_1628267791748_save .PIN_1628267791748_count { 
+  position: absolute;
+  color: #555;
+  font-size: 12px;
+  text-indent: 0;
+  background: #efefef;
+  border-radius: 4px;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_tall.PIN_1628267791748_save .PIN_1628267791748_count::before { 
+  content: "";
+  position: absolute;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_tall.PIN_1628267791748_save.PIN_1628267791748_above .PIN_1628267791748_count { 
+  font-size: 14px;
+  top: -50px;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_tall.PIN_1628267791748_save.PIN_1628267791748_above .PIN_1628267791748_count::before { 
+  bottom: -4px;
+  left: 7px;
+  border-top: 7px solid #efefef;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_tall.PIN_1628267791748_save.PIN_1628267791748_beside .PIN_1628267791748_count { 
+  font-size: 14px;
+  right: -63px;
+  width: 56px;
+  height: 28px;
+  line-height: 28px;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_tall.PIN_1628267791748_save.PIN_1628267791748_beside .PIN_1628267791748_count::before { 
+  top: 7px;
+  left: -4px;
+  border-right: 7px solid #efefef;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_round { 
+  height: 16px;
+  width: 16px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjZTYwMDIzIj48L3BhdGg+PC9nPjwvc3ZnPg==) 0 0 no-repeat;
+  background-size: 16px 16px;
+  box-shadow: none;
+}
+ .PIN_1628267791748_button_pin.PIN_1628267791748_round.PIN_1628267791748_tall { 
+  height: 32px;
+  width: 32px;
+  background-size: 32px 32px;
+}
+</style></head>
+  <body class="pinterest-help">
+        <a id="skip-link" href="#main-content" class="visually-hidden focusable button">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+    <div class="site">
+
+    <header class="site__header site__header--fixed-nav" role="banner" style="padding-top: 52px;">
+    <div class="navigation navigation--white-bg" data-nav-overlay="false" data-nav-off-class="navigation--white-bg">
+  <div class="navigation__inner">
+
+      <div id="block-sitebranding" class="header-section header-section--small">
+  
+    
+    <aside class="branding" style="height: 28px;">
+            <div class="branding__logo">
+        <a href="https://help.pinterest.com/en" title="Home" rel="home">
+          <img src="Pinterest%20Help_files/logo.svg" alt="Home" width="24" height="24">
+        </a>
+      </div>
+      
+            <div class="branding__name">
+        <a href="https://help.pinterest.com/en" title="Home" rel="home">Help Center</a>
+      </div>
+      
+        </aside>
+</div>
+<nav role="navigation" aria-labelledby="block-headernavigation-menu" id="block-headernavigation" class="header__nav-main header-section desktop menu--main-nav" style="display: block;">
+            
+  <h2 class="visually-hidden" id="block-headernavigation-menu">Header navigation</h2>
+  
+
+        
+  
+      
+            <ul class="menu--main help menu">
+    
+          <li class="menu__item activeFacet" data-submenu-target="1" aria-haspopup="true" aria-expanded="false" aria-selected="true" style="touch-action: pan-y; user-select: none;">
+                  <a href="https://help.pinterest.com/en" class="u-no--click-through" data-drupal-link-system-path="&lt;front&gt;">General</a>
+        
+              </li>
+          <li class="menu__item" data-submenu-target="2" aria-haspopup="true" aria-expanded="false" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+                  <a href="https://help.pinterest.com/en" class="u-no--click-through" data-drupal-link-system-path="&lt;front&gt;">Business</a>
+        
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-headernavigationactions-menu" id="block-headernavigationactions" class="header__nav-actions header-section header-section--xsmall menu--search-nav">
+            
+  <h2 class="visually-hidden" id="block-headernavigationactions-menu">Header navigation - actions</h2>
+  
+
+        
+  
+      
+            <ul class="menu--search help menu" style="height: 28px;">
+              <li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+        <a href="https://help.pinterest.com/#" title="Search" data-drupal-link-system-path="search" style="touch-action: pan-y; user-select: none;"></a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div class="user__profile"><a href="https://pinterest.com/nougatu"><span class="user__profile__avatar"><img alt="Jeff Patterson" src="Pinterest%20Help_files/cea689b680dae0d7d90a4c06a8156385.jpg"></span><span class="user__profile__name">Jeff</span></a></div><button class="menu__user__toggle menu__user__toggle--collapsed" data-menu-target="menu-user-authenticated"><span class="menu__user__toggle-text">User Menu</span></button><ul class="menu--user logged-in menu menu-user-authenticated"><li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;"><a href="https://www.pinterest.com/settings" title="Settings link for Pinterest users">Settings</a></li><li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;"><a href="https://www.pinterest.com/" title="Pinterest home">Pinterest home</a></li><li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;"><a href="https://www.pinterest.com/about/privacy" title="Terms &amp; privacy for Pinterest">Terms &amp; privacy</a></li><li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;"><a href="https://help.pinterest.com/en/pinterest/logout?return=/en%3Fsource%3Dgear_menu_web" title="Logout link for Pinterest users">Logout</a></li></ul>
+  <button class="menu__toggle menu__toggle--collapsed help" data-menu-target="menu--mobile">
+  <div class="menu__toggle-text">Open menu</div>
+</button>
+
+
+
+  
+
+      
+            
+                  <ul class="menu--mobile help menu">
+      
+              <li class="menu__item activeFacet" data-submenu-target="1" aria-selected="true" style="touch-action: pan-y; user-select: none;">
+          <a href="https://help.pinterest.com/en" data-drupal-link-system-path="&lt;front&gt;">General</a>
+                          
+            
+                  <ul>
+      
+              <li class="menu__item activeFacet" data-submenu-target="1" aria-selected="true" style="touch-action: pan-y; user-select: none;">
+          <a href="https://help.pinterest.com/topics/get-started">Get started</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="2" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+          <a href="https://help.pinterest.com/topics/manage-account-and-preferences">Manage account</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="3" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+          <a href="https://help.pinterest.com/topics/find-and-save">Find and save</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="4" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+          <a href="https://help.pinterest.com/topics/create-and-edit">Create and edit</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="5" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+          <a href="https://help.pinterest.com/topics/connect-collaborate-and-share">Connect, collaborate and share</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="6" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+          <a href="https://help.pinterest.com/topics/privacy-safety-and-legal">Privacy, safety and legal</a>
+                  </li>
+                </ul>
+  
+                  </li>
+              <li class="menu__item" data-submenu-target="2" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+          <a href="https://help.pinterest.com/en" data-drupal-link-system-path="&lt;front&gt;">Business</a>
+                          
+            
+                  <ul>
+      
+              <li class="menu__item activeFacet" data-submenu-target="1" aria-selected="true" style="touch-action: pan-y; user-select: none;">
+          <a href="https://help.pinterest.com/business/topics/get-started">Get started</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="2" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+          <a href="https://help.pinterest.com/business/topics/create-content">Create content</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="3" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+          <a href="https://help.pinterest.com/business/topics/create-a-shop">Create a shop</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="4" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+          <a href="https://help.pinterest.com/business/topics/advertise">Advertise</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="5" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+          <a href="https://help.pinterest.com/business/topics/add-tracking">Track</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="6" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+          <a href="https://help.pinterest.com/business/topics/report">Report</a>
+                  </li>
+                </ul>
+  
+                  </li>
+                <li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;"><ul class="mobile-user-menu"><li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;"><div class="user__profile mobile"><a href="https://pinterest.com/nougatu"><span class="user__profile__avatar"><img alt="Jeff Patterson" src="Pinterest%20Help_files/cea689b680dae0d7d90a4c06a8156385.jpg"></span><span class="user__profile__name">Jeff</span></a></div></li><li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;"><a href="https://www.pinterest.com/settings" title="Settings link for Pinterest users">Settings</a></li><li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;"><a href="https://www.pinterest.com/" title="Pinterest home">Pinterest home</a></li><li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;"><a href="https://www.pinterest.com/about/privacy" title="Terms &amp; privacy for Pinterest">Terms &amp; privacy</a></li><li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;"><a href="https://help.pinterest.com/en/pinterest/logout?return=/en%3Fsource%3Dgear_menu_web" title="Logout link for Pinterest users">Logout</a></li></ul></li></ul>
+  
+
+    
+
+
+  
+  </div>
+</div>
+
+      
+
+
+  
+      
+                  <div class="submenu" style="top: 53px;">
+                      <div class="submenu_items">
+              <ul class="submenu__item menu--submenu" data-submenu="1">
+                <div class="submenu__item-inner">
+                      
+                            <li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+            <a href="https://help.pinterest.com/topics/get-started">Get started</a>
+          </li>
+                  <li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+            <a href="https://help.pinterest.com/topics/manage-account-and-preferences">Manage account</a>
+          </li>
+                  <li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+            <a href="https://help.pinterest.com/topics/find-and-save">Find and save</a>
+          </li>
+                  <li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+            <a href="https://help.pinterest.com/topics/create-and-edit">Create and edit</a>
+          </li>
+                  <li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+            <a href="https://help.pinterest.com/topics/connect-collaborate-and-share">Connect, collaborate and share</a>
+          </li>
+                  <li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+            <a href="https://help.pinterest.com/topics/privacy-safety-and-legal">Privacy, safety and legal</a>
+          </li>
+                    
+                </div>
+              </ul>
+            </div>
+                      <div class="submenu_items">
+              <ul class="submenu__item menu--submenu" data-submenu="2">
+                <div class="submenu__item-inner">
+                      
+                            <li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+            <a href="https://help.pinterest.com/business/topics/get-started">Get started</a>
+          </li>
+                  <li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+            <a href="https://help.pinterest.com/business/topics/create-content">Create content</a>
+          </li>
+                  <li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+            <a href="https://help.pinterest.com/business/topics/create-a-shop">Create a shop</a>
+          </li>
+                  <li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+            <a href="https://help.pinterest.com/business/topics/advertise">Advertise</a>
+          </li>
+                  <li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+            <a href="https://help.pinterest.com/business/topics/add-tracking">Track</a>
+          </li>
+                  <li class="menu__item" aria-selected="false" style="touch-action: pan-y; user-select: none;">
+            <a href="https://help.pinterest.com/business/topics/report">Report</a>
+          </li>
+                    
+                </div>
+              </ul>
+            </div>
+                  </div>
+            
+
+  
+  
+
+
+
+
+  </header>  
+    <div class="site__utility">
+      <div>
+    <div data-drupal-messages-fallback="" class="hidden"></div>
+
+  </div>
+
+  </div>  
+  <main class="site__content" role="main">
+        <a id="main-content" tabindex="-1" aria-hidden="true"></a>
+
+      <div>
+    
+
+
+
+<header class="header header--no-height       u-full-width header--full-width">
+
+        
+        
+  <div class="header__inner">
+          
+            
+            
+            
+            <div class="header-search-trigger__trigger">
+  <i class="icon--search-alt" role="img"></i>
+  <input type="text" class="header-search-trigger__input" placeholder="Ask us anything" aria-label="Search">
+</div>
+    </div>
+
+</header>
+
+<div>
+  
+      <div>
+              <div><div class="user-type">
+  <div class="user-type__toggles">
+          <a class="tab__item tab__item--active" aria-selected="true" href="#" id="general" aria-label="Show General topics" style="touch-action: pan-y; user-select: none;">General</a>
+          <a class="tab__item" aria-selected="false" href="#" id="business" aria-label="Show Business topics" style="touch-action: pan-y; user-select: none;">Business</a>
+      </div>
+</div>
+
+  <div class="topic-list-grid__panel u-anim-staggered-start" data-anim-trigger="view" id="panel-general" style="display: block;" data-anim-triggered="yes">
+    <div class="topic-list-grid u-anim-staggered-start__item u-anim-fade-in-and-slide-up" data-anim-triggered="yes">
+      <div class="topic-list-grid__inner">
+                              <div class="topic-list">
+  <div class="term-links">
+    <h3 class="topic-list__headline">Get started</h3>
+    <div class="views-element-container"><div class="js-view-dom-id-bd11db7142b645e5bce57db8105ff5f0fc4c4b83acad5f63ed2b633923983197">
+  
+  
+  
+
+  
+  
+  
+
+  <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/guide/all-about-pinterest" hreflang="en">All about Pinterest</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/add-a-pinterest-widget" hreflang="en">Add a Pinterest widget</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/use-pinterest-in-a-mobile-browser" hreflang="en">Upgrade the Pinterest app</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/secret-boards" hreflang="en">Secret boards</a></span></div></li>
+    
+  </ul>
+
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+    <a class="topic-list__link" href="https://help.pinterest.com/en/topics/get-started">See more<span class="visually-hidden"> Get started articles</span></a>
+  </div>
+</div>
+
+
+
+
+                      <div class="topic-list">
+  <div class="term-links">
+    <h3 class="topic-list__headline">Manage account and preferences</h3>
+    <div class="views-element-container"><div class="js-view-dom-id-17954c6429e96bcfbb9e4d928dc5ff2c6f40477959a44db8ea90563b6b0eef4a">
+  
+  
+  
+
+  
+  
+  
+
+  <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/someone-else-signed-up-with-your-email" hreflang="en">Remove your email from someone else's account</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/two-factor-authentication" hreflang="en">Two-factor authentication</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/not-receiving-email-from-pinterest" hreflang="en">Not receiving emails from Pinterest</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/log-in-and-out-of-pinterest" hreflang="en">Log in and out of Pinterest</a></span></div></li>
+    
+  </ul>
+
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+    <a class="topic-list__link" href="https://help.pinterest.com/en/topics/manage-account-and-preferences">See more<span class="visually-hidden"> Manage account and preferences articles</span></a>
+  </div>
+</div>
+
+
+
+
+                      <div class="topic-list">
+  <div class="term-links">
+    <h3 class="topic-list__headline">Find and save</h3>
+    <div class="views-element-container"><div class="js-view-dom-id-0d9c4d2032bfea0f775bf2da71f0be52d5b79485e2cf9bac8eb726f15a269a15">
+  
+  
+  
+
+  
+  
+  
+
+  <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/download-an-image" hreflang="en">Download an image</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/save-pins-with-the-pinterest-browser-button" hreflang="en">Save Pins with the Pinterest browser button</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/trouble-with-pinterest-browser-button" hreflang="en">Trouble with Pinterest browser button</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/add-pins-from-the-web" hreflang="en">Add Pins from the web</a></span></div></li>
+    
+  </ul>
+
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+    <a class="topic-list__link" href="https://help.pinterest.com/en/topics/find-and-save">See more<span class="visually-hidden"> Find and save articles</span></a>
+  </div>
+</div>
+
+
+
+
+                      <div class="topic-list">
+  <div class="term-links">
+    <h3 class="topic-list__headline">Create and edit</h3>
+    <div class="views-element-container"><div class="js-view-dom-id-1b8ef02f1390d71ee6e75a5853d4e4e24e2a10cfca2112261a8728c0cbcc26c0">
+  
+  
+  
+
+  
+  
+  
+
+  <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/create-a-pin-from-your-photos" hreflang="en">Create a Pin from your photos</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/edit-or-delete-a-pin" hreflang="en">Edit or delete a Pin</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/add-notes-to-your-pins" hreflang="en">Add notes to your Pins</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/organize-your-boards" hreflang="en">Organize your boards</a></span></div></li>
+    
+  </ul>
+
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+    <a class="topic-list__link" href="https://help.pinterest.com/en/topics/create-and-edit">See more<span class="visually-hidden"> Create and edit articles</span></a>
+  </div>
+</div>
+
+
+
+
+                      <div class="topic-list">
+  <div class="term-links">
+    <h3 class="topic-list__headline">Connect, collaborate and share</h3>
+    <div class="views-element-container"><div class="js-view-dom-id-377ce355892328cdfeef48595531e5beaa1d70fab6c283a9437a6a333498e54e">
+  
+  
+  
+
+  
+  
+  
+
+  <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/find-and-follow-friends" hreflang="en">Find and follow people</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/group-boards" hreflang="en">Create and manage group boards</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/send-messages" hreflang="en">Send messages</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/send-pins-boards-and-profiles" hreflang="en">Send Pins, boards, and profiles</a></span></div></li>
+    
+  </ul>
+
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+    <a class="topic-list__link" href="https://help.pinterest.com/en/topics/connect-collaborate-and-share">See more<span class="visually-hidden"> Connect, collaborate and share articles</span></a>
+  </div>
+</div>
+
+
+
+
+                      <div class="topic-list">
+  <div class="term-links">
+    <h3 class="topic-list__headline">Privacy, safety and legal</h3>
+    <div class="views-element-container"><div class="js-view-dom-id-d4cb3a6804042cfdd58a7d546e6fab56c0ce6b60a033838ff058fc59ef5803d9">
+  
+  
+  
+
+  
+  
+  
+
+  <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/personalized-ads-on-pinterest" hreflang="en">Personalized ads on Pinterest</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/block-or-unblock-someone" hreflang="en">Block or unblock someone</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/review-personal-data-options" hreflang="en">Access, edit or delete personal data</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/review-the-pinner-promise" hreflang="en">Review the Pinner Promise</a></span></div></li>
+    
+  </ul>
+
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+    <a class="topic-list__link" href="https://help.pinterest.com/en/topics/privacy-safety-and-legal">See more<span class="visually-hidden"> Privacy, safety and legal articles</span></a>
+  </div>
+</div>
+
+
+
+
+                        </div>
+    </div>
+  </div>
+  <div class="topic-list-grid__panel u-anim-staggered-start" data-anim-trigger="view" id="panel-business" style="" data-anim-triggered="yes">
+    <div class="topic-list-grid u-anim-staggered-start__item u-anim-fade-in-and-slide-up" data-anim-triggered="yes">
+      <div class="topic-list-grid__inner">
+                              <div class="topic-list">
+  <div class="term-links">
+    <h3 class="topic-list__headline">Get started</h3>
+    <div class="views-element-container"><div class="js-view-dom-id-91afc8e328fab1ea814dec3d195166bf46e91c5a16c8ac606242bae5260630f5">
+  
+  
+  
+
+  
+  
+  
+
+  <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/claim-your-website" hreflang="en">Claim your website</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/get-a-business-account" hreflang="en">Get a business account</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/article/switch-back-to-personal-account" hreflang="en">Convert a business account to a personal account</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/edit-your-profile-cover" hreflang="en">Edit your profile cover</a></span></div></li>
+    
+  </ul>
+
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+    <a class="topic-list__link" href="https://help.pinterest.com/en/business/topics/get-started">See more<span class="visually-hidden"> Get started articles</span></a>
+  </div>
+</div>
+
+
+
+
+                      <div class="topic-list">
+  <div class="term-links">
+    <h3 class="topic-list__headline">Create content</h3>
+    <div class="views-element-container"><div class="js-view-dom-id-42317a5e5b466ecc2f7a96b3d6ab6b7cb70e4431544bfbb20348b32059ca19a3">
+  
+  
+  
+
+  
+  
+  
+
+  <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/story-pins" hreflang="en">Create Idea Pins</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/video-pins" hreflang="en">Create Video Pins</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/rich-pins" hreflang="en">Create rich Pins</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/auto-publish-pins-from-your-rss-feed" hreflang="en">Auto-publish Pins from your RSS feed</a></span></div></li>
+    
+  </ul>
+
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+    <a class="topic-list__link" href="https://help.pinterest.com/en/business/topics/create-content">See more<span class="visually-hidden"> Create content articles</span></a>
+  </div>
+</div>
+
+
+
+
+                      <div class="topic-list">
+  <div class="term-links">
+    <h3 class="topic-list__headline">Create a shop</h3>
+    <div class="views-element-container"><div class="js-view-dom-id-10faa3b8dc2734b2e81c409853376b2601cd427b13a9a2a9ed1f9bc25ec0a8dd">
+  
+  
+  
+
+  
+  
+  
+
+  <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/shopping-on-pinterest" hreflang="en">Shopping on Pinterest</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/before-you-get-started-with-catalogs" hreflang="en">Before you get started with Catalogs</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/data-source-ingestion" hreflang="en">Add your data source</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/promote-your-product-groups" hreflang="en">Create and manage product groups</a></span></div></li>
+    
+  </ul>
+
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+    <a class="topic-list__link" href="https://help.pinterest.com/en/business/topics/create-a-shop">See more<span class="visually-hidden"> Create a shop articles</span></a>
+  </div>
+</div>
+
+
+
+
+                      <div class="topic-list">
+  <div class="term-links">
+    <h3 class="topic-list__headline">Advertise</h3>
+    <div class="views-element-container"><div class="js-view-dom-id-5db6e03e26619a9280a201be6a46f2ec5aa12769f2f63870660d5e2488b29687">
+  
+  
+  
+
+  
+  
+  
+
+  <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/promoted-pins-overview" hreflang="en">Ads overview</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/pinterest-product-specs" hreflang="en">Review product specs</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/audience-targeting" hreflang="en">Set up audience targeting </a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/accepted-payments" hreflang="en">Accepted payments</a></span></div></li>
+    
+  </ul>
+
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+    <a class="topic-list__link" href="https://help.pinterest.com/en/business/topics/advertise">See more<span class="visually-hidden"> Advertise articles</span></a>
+  </div>
+</div>
+
+
+
+
+                      <div class="topic-list">
+  <div class="term-links">
+    <h3 class="topic-list__headline">Track</h3>
+    <div class="views-element-container"><div class="js-view-dom-id-e3475ec4e792e74d77d7c31596a9e256673bf0122b346f084e796d82f1633abe">
+  
+  
+  
+
+  
+  
+  
+
+  <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/track-conversions-with-pinterest-tag" hreflang="en">Track conversions with the Pinterest tag</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/enhanced-match" hreflang="en">Enable optional Enhanced match</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/add-event-codes" hreflang="en">Add event codes</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/install-the-base-code" hreflang="en">Add the base code</a></span></div></li>
+    
+  </ul>
+
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+    <a class="topic-list__link" href="https://help.pinterest.com/en/business/topics/add-tracking">See more<span class="visually-hidden"> Track articles</span></a>
+  </div>
+</div>
+
+
+
+
+                      <div class="topic-list">
+  <div class="term-links">
+    <h3 class="topic-list__headline">Report</h3>
+    <div class="views-element-container"><div class="js-view-dom-id-214c968a7bc59fe4ba068580114ece884c42fa2eabc175846fdbc2f083b28d66">
+  
+  
+  
+
+  
+  
+  
+
+  <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/pin-stats" hreflang="en">Review your Pin stats</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/pinterest-analytics" hreflang="en">Review Pinterest Analytics</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/audience-insights" hreflang="en">Review Audience insights</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="https://help.pinterest.com/en/business/article/trouble-with-pinterest-analytics" hreflang="en">Trouble with Pinterest Analytics</a></span></div></li>
+    
+  </ul>
+
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+    <a class="topic-list__link" href="https://help.pinterest.com/en/business/topics/report">See more<span class="visually-hidden"> Report articles</span></a>
+  </div>
+</div>
+
+
+
+
+                        </div>
+    </div>
+  </div>
+</div>
+              <div>
+
+<div class="tip-grid u-anim-staggered-start" data-anim-trigger="view" data-context="general" data-anim-triggered="yes" aria-hidden="false" style="">
+  <div class="tip-grid__inner">
+      <h2 class="tip-grid__headline u-anim-fade-in-and-slide-up u-anim-staggered-start__item" data-anim-triggered="yes">Discover more with Pinterest</h2>
+  
+    <div class="tip-grid__layout u-anim-fade-in-and-slide-up u-anim-staggered-start__item" style="position: relative; height: 1525px;" data-anim-triggered="yes">
+                            
+                  
+
+
+<div class="squircle squircle--medium squircle--tip" data-entity-id="656" data-source-title="Similar Pins" style="position: absolute; left: 0%; top: 0px;">
+  
+      
+        <button class="squircle__close-button button--close" style="touch-action: pan-y; user-select: none;">
+      <i class="button--close__icon icon--close" aria-label="Close tip and refresh" role="img"></i>
+    </button>
+    
+      <span class="squircle__label">Tip 586</span>
+  
+      <h2 class="squircle__headline">Create a group board for collaborative inspiration</h2>
+  
+      
+</div>
+          <span class="gutter-sizer"></span>
+                              
+                  
+
+
+<div class="squircle squircle--large squircle--bg-image" data-entity-id="1861" data-source-title="See Pinterest search trends for 2020" style="position: absolute; left: 34.4984%; top: 0px;">
+      <a href="https://help.pinterest.com/en/guide/see-pinterest-search-trends-for-2020" class="squircle__link" aria-label="Go to See Pinterest search trends for 2020"></a>
+  
+        <div class="squircle__bg-img" style="background-image: url('/sites/pinhelp/files/2020-01/p100_red_bg.png');">
+              <span class="squircle__bg-img-overlay u-opacity--0"></span>
+          </div>
+    
+      
+      <span class="squircle__label">Guide</span>
+  
+      <h2 class="squircle__headline">See Pinterest search trends for 2020</h2>
+  
+        <span class="squircle__icon">
+      <a href="https://help.pinterest.com/en/guide/see-pinterest-search-trends-for-2020">
+        <i class="icon--arrow-circle-forward" aria-label="Go to See Pinterest search trends for 2020" role="img"></i>
+      </a>
+    </span>
+    
+</div>
+          <span class="gutter-sizer"></span>
+                                                                    
+                  
+
+
+<div class="squircle squircle--small squircle--yellow" data-entity-id="1336" data-source-title="View Idea Pins" style="position: absolute; left: 68.9967%; top: 0px;">
+      <a href="https://help.pinterest.com/en/article/story-pins" class="squircle__link" aria-label="Go to View Idea Pins"></a>
+  
+      
+      
+      <span class="squircle__label">Article</span>
+  
+      <h2 class="squircle__headline">View Idea Pins</h2>
+  
+        <span class="squircle__icon">
+      <a href="https://help.pinterest.com/en/article/story-pins">
+        <i class="icon--arrow-circle-forward" aria-label="Go to View Idea Pins" role="img"></i>
+      </a>
+    </span>
+    
+</div>
+                                                                                          
+                  
+
+
+<div class="squircle squircle--small squircle--blue" data-entity-id="431" data-source-title="Organize your boards" style="position: absolute; left: 0%; top: 382px;">
+      <a href="https://help.pinterest.com/en/article/organize-your-boards" class="squircle__link" aria-label="Go to Organize your boards"></a>
+  
+      
+      
+      <span class="squircle__label">Article</span>
+  
+      <h2 class="squircle__headline">Organize your boards</h2>
+  
+        <span class="squircle__icon">
+      <a href="https://help.pinterest.com/en/article/organize-your-boards">
+        <i class="icon--arrow-circle-forward" aria-label="Go to Organize your boards" role="img"></i>
+      </a>
+    </span>
+    
+</div>
+          <span class="gutter-sizer"></span>
+                                                                                          
+                  
+
+
+<div class="squircle squircle--small squircle--pink" data-entity-id="366" data-source-title="Stop getting emails from Pinterest" style="position: absolute; left: 34.4984%; top: 422px;">
+      <a href="https://help.pinterest.com/en/article/want-to-stop-receiving-email" class="squircle__link" aria-label="Go to Stop getting emails from Pinterest"></a>
+  
+      
+      
+      <span class="squircle__label">Article</span>
+  
+      <h2 class="squircle__headline">Stop getting emails from Pinterest</h2>
+  
+        <span class="squircle__icon">
+      <a href="https://help.pinterest.com/en/article/want-to-stop-receiving-email">
+        <i class="icon--arrow-circle-forward" aria-label="Go to Stop getting emails from Pinterest" role="img"></i>
+      </a>
+    </span>
+    
+</div>
+          <span class="gutter-sizer"></span>
+                                                                                          
+                  
+
+
+<div class="squircle squircle--small squircle--blue" data-entity-id="56" data-source-title="Add Pins from the web" style="position: absolute; left: 68.9967%; top: 339px;">
+      <a href="https://help.pinterest.com/en/article/add-pins-from-the-web" class="squircle__link" aria-label="Go to Add Pins from the web"></a>
+  
+      
+      
+      <span class="squircle__label">Article</span>
+  
+      <h2 class="squircle__headline">Add Pins from the web</h2>
+  
+        <span class="squircle__icon">
+      <a href="https://help.pinterest.com/en/article/add-pins-from-the-web">
+        <i class="icon--arrow-circle-forward" aria-label="Go to Add Pins from the web" role="img"></i>
+      </a>
+    </span>
+    
+</div>
+                              
+                  
+
+
+<div class="squircle squircle--large squircle--bg-image" data-entity-id="1191" data-source-title="Becoming an advertiser on Pinterest " style="position: absolute; left: 0%; top: 721px;">
+      <a href="https://help.pinterest.com/en/business/guide/becoming-an-advertiser-on-pinterest" class="squircle__link" aria-label="Go to Becoming an advertiser on Pinterest "></a>
+  
+        <div class="squircle__bg-img" style="background-image: url('/sites/pinhelp/files/2018-10/GettyImages-728770189_0.jpg');">
+              <span class="squircle__bg-img-overlay u-opacity--50"></span>
+          </div>
+    
+      
+      <span class="squircle__label">Guide</span>
+  
+      <h2 class="squircle__headline">Becoming an advertiser on Pinterest </h2>
+  
+        <span class="squircle__icon">
+      <a href="https://help.pinterest.com/en/business/guide/becoming-an-advertiser-on-pinterest">
+        <i class="icon--arrow-circle-forward" aria-label="Go to Becoming an advertiser on Pinterest " role="img"></i>
+      </a>
+    </span>
+    
+</div>
+          <span class="gutter-sizer"></span>
+                                                                    
+                  
+
+
+<div class="squircle squircle--small squircle--yellow" data-entity-id="436" data-source-title="Discover ideas on Pinterest" style="position: absolute; left: 34.4984%; top: 761px;">
+      <a href="https://help.pinterest.com/en/article/discover-ideas-on-pinterest" class="squircle__link" aria-label="Go to Discover ideas on Pinterest"></a>
+  
+      
+      
+      <span class="squircle__label">Article</span>
+  
+      <h2 class="squircle__headline">Discover ideas on Pinterest</h2>
+  
+        <span class="squircle__icon">
+      <a href="https://help.pinterest.com/en/article/discover-ideas-on-pinterest">
+        <i class="icon--arrow-circle-forward" aria-label="Go to Discover ideas on Pinterest" role="img"></i>
+      </a>
+    </span>
+    
+</div>
+          <span class="gutter-sizer"></span>
+                              
+                  
+
+
+<div class="squircle squircle--medium squircle--tip" data-entity-id="606" data-source-title="Personalize home feed" style="position: absolute; left: 68.9967%; top: 678px;">
+  
+      
+        <button class="squircle__close-button button--close" style="touch-action: pan-y; user-select: none;">
+      <i class="button--close__icon icon--close" aria-label="Close tip and refresh" role="img"></i>
+    </button>
+    
+      <span class="squircle__label">Tip 2246</span>
+  
+      <h2 class="squircle__headline">Bake pet-friendly treats for your pet’s special day</h2>
+  
+      
+</div>
+                              
+                  
+
+
+<div class="squircle squircle--medium squircle--tip" data-entity-id="616" data-source-title="Unique password" style="position: absolute; left: 0%; top: 1143px;">
+  
+      
+        <button class="squircle__close-button button--close" style="touch-action: pan-y; user-select: none;">
+      <i class="button--close__icon icon--close" aria-label="Close tip and refresh" role="img"></i>
+    </button>
+    
+      <span class="squircle__label">Tip 651</span>
+  
+      <h2 class="squircle__headline">Use room temperature ingredients when baking for the best results</h2>
+  
+      
+</div>
+          <span class="gutter-sizer"></span>
+                                                                                                                
+                  
+
+
+<div class="squircle squircle--small squircle--pink" data-entity-id="16" data-source-title="Change your email" style="position: absolute; left: 34.4984%; top: 1100px;">
+      <a href="https://help.pinterest.com/en/article/change-your-email" class="squircle__link" aria-label="Go to Change your email"></a>
+  
+      
+      
+      <span class="squircle__label">Article</span>
+  
+      <h2 class="squircle__headline">Change your email</h2>
+  
+        <span class="squircle__icon">
+      <a href="https://help.pinterest.com/en/article/change-your-email">
+        <i class="icon--arrow-circle-forward" aria-label="Go to Change your email" role="img"></i>
+      </a>
+    </span>
+    
+</div>
+          <span class="gutter-sizer"></span>
+                              
+                  
+
+
+<div class="squircle squircle--large squircle--bg-image" data-entity-id="1221" data-source-title="Reporting, targeting, and tracking your campaigns: the fundamentals " style="position: absolute; left: 68.9967%; top: 1060px;">
+      <a href="https://help.pinterest.com/en/business/guide/reporting-targeting-and-tracking-your-campaigns-understanding-the-fundamentals" class="squircle__link" aria-label="Go to Reporting, targeting, and tracking your campaigns: the fundamentals "></a>
+  
+        <div class="squircle__bg-img" style="background-image: url('/sites/pinhelp/files/2018-10/GettyImages-900246172_0.jpg');">
+              <span class="squircle__bg-img-overlay u-opacity--50"></span>
+          </div>
+    
+      
+      <span class="squircle__label">Guide</span>
+  
+      <h2 class="squircle__headline">Reporting, targeting, and tracking your campaigns: the fundamentals </h2>
+  
+        <span class="squircle__icon">
+      <a href="https://help.pinterest.com/en/business/guide/reporting-targeting-and-tracking-your-campaigns-understanding-the-fundamentals">
+        <i class="icon--arrow-circle-forward" aria-label="Go to Reporting, targeting, and tracking your campaigns: the fundamentals " role="img"></i>
+      </a>
+    </span>
+    
+</div>
+                        </div>
+  </div>
+</div>
+</div>
+              <div>
+
+<div class="discover-card-group" data-context="biz" aria-hidden="true" style="display: none;">
+      <h2 class="discover-card-group__headline">Discover more ways to grow your business</h2>
+  
+  <div class="discover-card-group__content">
+                  
+        
+
+
+<div class="discover-card" data-entity-id="13736" data-source-title="Pinterest Business Community" style="color: #014F7E; background-color: #5EE6FF">
+  <div class="discover-card__content left">
+          <h4 class="discover-card__title">Pinterest Business Community</h4>
+    
+          <div class="discover-card__description">Get advice from other businesses on Pinterest</div>
+    
+                  <a href="http://community.pinterest.biz/" class="discover-card__cta" data-source-title="Join the conversation" style="color: #014F7E; border-color: #014F7E">
+          Join the conversation
+        </a>
+            </div>
+
+  <div class="discover-card__image right">
+                  <img src="Pinterest%20Help_files/community.jpg" alt="Woman with short, curly dark hair in a blue top smiling against a blue backdrop.">
+            </div>
+</div>
+                                          
+        
+
+
+<div class="discover-card" data-entity-id="13751" data-source-title="Pinterest Academy" style="color: #1C0000; background-color: #FFD769">
+  <div class="discover-card__content right">
+          <h4 class="discover-card__title">Pinterest Academy</h4>
+    
+          <div class="discover-card__description">Take our online courses and learn more about Pinterest products and tools</div>
+    
+                  <a href="https://pinterestacademy.exceedlms.com/sl/afca073a" class="discover-card__cta" data-source-title="Sign up" style="color: #1C0000; border-color: #1C0000">
+          Sign up
+        </a>
+            </div>
+
+  <div class="discover-card__image left">
+                  <img src="Pinterest%20Help_files/academy.jpg" alt="Woman with long, curly white hair in a yellow top waving her hands against a yellow backdrop.">
+            </div>
+</div>
+              
+        
+
+
+<div class="discover-card" data-entity-id="13766" data-source-title="Pinterest Business site" style="color: #004261; background-color: #FFC4B0">
+  <div class="discover-card__content left">
+          <h4 class="discover-card__title">Pinterest Business site</h4>
+    
+          <div class="discover-card__description">Learn how Pinterest can help you grow your business</div>
+    
+                  <a href="https://business.pinterest.com/" class="discover-card__cta" data-source-title="Get started" style="color: #004261; border-color: #004261">
+          Get started
+        </a>
+            </div>
+
+  <div class="discover-card__image right">
+                  <img src="Pinterest%20Help_files/site.jpg" alt="Woman with wavy, dark hair in a white top smiling wearing headphones against a peach backdrop.">
+            </div>
+</div>
+                                          
+        
+
+
+<div class="discover-card" data-entity-id="13781" data-source-title="Pinterest Trends tool" style="color: #511814; background-color: #FFC3D0">
+  <div class="discover-card__content right">
+          <h4 class="discover-card__title">Pinterest Trends tool</h4>
+    
+          <div class="discover-card__description">Discover what people are looking for in the US</div>
+    
+                  <a href="http://trends.pinterest.com/" class="discover-card__cta" data-source-title="See trends" style="color: #511814; border-color: #511814">
+          See trends
+        </a>
+            </div>
+
+  <div class="discover-card__image left">
+                  <img src="Pinterest%20Help_files/trends.jpg" alt="Man with short, pink hair in a white top facing away from the camera against a pink backdrop.">
+            </div>
+</div>
+            </div>
+</div>
+</div>
+          </div>
+  
+</div>
+
+
+
+  </div>
+
+
+    
+
+      </main>
+        <div>
+    <div id="block-contactusctaankle">
+  
+    
+      
+            <div>
+
+<div class="ankle ankle--contact footer-flush">
+  <div class="ankle__inner">
+        <div class="ankle__prompt">
+      <h2 class="ankle__headline--contact"><a href="https://help.pinterest.com/en/contact">Need more help? Send us a note.</a></h2>
+      <a href="https://help.pinterest.com/en/contact">
+        <span class="icon--arrow-circle-forward" aria-label="Go to contact form" role="img"></span>
+      </a>
+    </div>
+    
+      </div>
+</div>
+</div>
+      
+  </div>
+
+  </div>
+
+  
+      <footer class="site__footer" role="contentinfo">
+      
+<div class="footer u-bg--cork--medium footer--no-margin">
+  <div class="footer__inner">
+    <a href="#footer-end" class="visually-hidden focusable button" id="skip-footer">Skip Footer Menu</a>
+    <div class="footer__info">
+                    
+      <div class="footer__logo">
+        <a href="https://www.pinterest.com/" aria-label="Go to Pinterest.com">
+          <img src="Pinterest%20Help_files/badge-scriptmark.svg" alt="Pinterest" width="300" height="72">
+        </a>
+      </div>
+
+      <div class="footer__language">
+            <div class="language-switcher-language-url" id="block-languageswitcher" role="navigation">
+  
+    
+      
+<div class="form-item">
+  <span class="select-toggle">
+    <label for="select-js-language-block" class="visually-hidden">Select language</label>
+    <select class="form-select js-language-block" id="select-js-language-block">
+                      <option hreflang="en" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="en is-active" value="/en?source=gear_menu_web" selected="selected">English (US)</option>
+                              <option hreflang="id" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="id" value="/id?source=gear_menu_web">Bahasa Indonesia</option>
+                              <option hreflang="cs" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="cs" value="/cs?source=gear_menu_web">Čeština</option>
+                              <option hreflang="da" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="da" value="/da?source=gear_menu_web">Dansk</option>
+                              <option hreflang="de" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="de" value="/de?source=gear_menu_web">Deutsch</option>
+                              <option hreflang="en-gb" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="en-gb" value="/en-gb?source=gear_menu_web">English (UK)</option>
+                              <option hreflang="es" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="es" value="/es?source=gear_menu_web">Español</option>
+                              <option hreflang="fr" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="fr" value="/fr?source=gear_menu_web">Français</option>
+                              <option hreflang="it" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="it" value="/it?source=gear_menu_web">Italiano</option>
+                              <option hreflang="hu" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="hu" value="/hu?source=gear_menu_web">Magyar</option>
+                              <option hreflang="nl" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="nl" value="/nl?source=gear_menu_web">Nederlands</option>
+                              <option hreflang="nb" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="nb" value="/nb?source=gear_menu_web">Norsk bokmål</option>
+                              <option hreflang="pl" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="pl" value="/pl?source=gear_menu_web">Polski</option>
+                              <option hreflang="pt-br" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="pt-br" value="/pt-br?source=gear_menu_web">Português (Brasil)</option>
+                              <option hreflang="pt-pt" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="pt-pt" value="/pt-pt?source=gear_menu_web">Português (Europeu)</option>
+                              <option hreflang="ro" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="ro" value="/ro?source=gear_menu_web">Română</option>
+                              <option hreflang="sk" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="sk" value="/sk?source=gear_menu_web">Slovenčina</option>
+                              <option hreflang="fi" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="fi" value="/fi?source=gear_menu_web">Suomi</option>
+                              <option hreflang="sv" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="sv" value="/sv?source=gear_menu_web">Svenska</option>
+                              <option hreflang="tl" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="tl" value="/tl?source=gear_menu_web">Filipino</option>
+                              <option hreflang="vi" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="vi" value="/vi?source=gear_menu_web">Tiếng Việt</option>
+                              <option hreflang="tr" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="tr" value="/tr?source=gear_menu_web">Türkçe</option>
+                              <option hreflang="el" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="el" value="/el?source=gear_menu_web">Ελληνικά</option>
+                              <option hreflang="ru" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="ru" value="/ru?source=gear_menu_web">Русский</option>
+                              <option hreflang="uk" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="uk" value="/uk?source=gear_menu_web">Ukrainian</option>
+                              <option hreflang="th" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="th" value="/th?source=gear_menu_web">ภาษาไทย</option>
+                              <option hreflang="zh-hans" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="zh-hans" value="/zh-hans?source=gear_menu_web">简体中文</option>
+                              <option hreflang="zh-hant" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="zh-hant" value="/zh-hant?source=gear_menu_web">繁體中文</option>
+                              <option hreflang="ko" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="ko" value="/ko?source=gear_menu_web">한국어</option>
+                              <option hreflang="ja" data-drupal-link-query="{&quot;source&quot;:&quot;gear_menu_web&quot;}" data-drupal-link-system-path="&lt;front&gt;" class="ja" value="/ja?source=gear_menu_web">日本語</option>
+                  </select>
+  </span>
+</div>
+
+  </div>
+
+        </div>
+    </div>
+
+    <div class="footer__menus">
+                        <nav class="footer__menu footer__menu--menu-1">
+            <div class="footer__menu__title">About us</div>
+            <ul class="footer__menu__list">
+                                                <li class="footer__menu__item" data-country-code="DE,AT">
+                    <a href="https://policy.pinterest.com/de/impressum" class="footer__menu__link">Impressum</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://about.pinterest.com/" class="footer__menu__link">What's Pinterest</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://pinterest.com/pinterest" class="footer__menu__link">Our Pinterest page</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://medium.com/@Pinterest_Engineering" class="footer__menu__link">Engineering blog</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://business.pinterest.com/brand-guidelines" class="footer__menu__link">Brand guidelines</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://careers.pinterest.com/" class="footer__menu__link">Careers</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://help.pinterest.com/" class="footer__menu__link">Help Center</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://labs.pinterest.com/" class="footer__menu__link">Pinterest Labs</a>
+                                      </li>
+                                          </ul>
+          </nav>
+                  <nav class="footer__menu footer__menu--menu-2">
+            <div class="footer__menu__title">Our policies</div>
+            <ul class="footer__menu__list">
+                                                <li class="footer__menu__item">
+                    <a href="https://policy.pinterest.com/copyright" class="footer__menu__link">Copyright</a>
+                                          <span class="footer__menu__combinator">&amp;</span>
+                      <ul class="footer__submenu">
+                                                  <li class="footer__submenu__item">
+                            <a href="https://policy.pinterest.com/trademark" class="footer__submenu__link">trademark</a>
+                                                      </li>
+                                              </ul>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://help.pinterest.com/articles/personalized-ads-pinterest" class="footer__menu__link">Personalized ads</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://policy.pinterest.com/terms-of-service" class="footer__menu__link">Terms of service</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://policy.pinterest.com/privacy-policy" class="footer__menu__link">Privacy</a>
+                                          <span class="footer__menu__combinator">&amp;</span>
+                      <ul class="footer__submenu">
+                                                  <li class="footer__submenu__item">
+                            <a href="https://policy.pinterest.com/cookies" class="footer__submenu__link">cookies</a>
+                                                      </li>
+                                              </ul>
+                                      </li>
+                                          </ul>
+          </nav>
+                  <nav class="footer__menu footer__menu--menu-3">
+            <div class="footer__menu__title">More info</div>
+            <ul class="footer__menu__list">
+                                                <li class="footer__menu__item">
+                    <a href="https://business.pinterest.com/" class="footer__menu__link">For businesses</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://developers.pinterest.com/" class="footer__menu__link">For developers</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://newsroom.pinterest.com/" class="footer__menu__link">For press</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://investor.pinterestinc.com/" class="footer__menu__link">For investors</a>
+                                      </li>
+                                          </ul>
+          </nav>
+                    <div id="footer-end" class="visually-hidden">End of Footer</div>
+    </div>
+
+    <p class="footer__copyright">© Pinterest 2021</p>
+  </div>
+</div>
+
+
+    </footer>
+  
+  
+</div>
+  </div>
+
+    
+
+          <div class="search-modal" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="search-modal__inner">
+
+    <div id="search-full"><div tabindex="0" class="dynamic-search dynamic-search--full"><div class="dynamic-search__input-wrapper"><i class="dynamic-search__icon dynamic-search__icon--search icon--search animated fadeInLeft" aria-label="Search" role="img"></i><input class="dynamic-search__input" type="text" placeholder="Ask us anything"> </div><div class="dynamic-search__results l-smart-grid" data-row-items-large="2"></div></div></div>
+
+    <button class="search-modal__close-button button--close" style="touch-action: pan-y; user-select: none;">
+      <i class="button--close__icon icon--close" aria-label="Close" modal="" role="img"></i>
+    </button>
+  </div>
+</div>
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"en\/","currentPath":"node\/261","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en","currentQuery":{"source":"gear_menu_web"}},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"codesnippet\/codesnippet.highlightjs,codesnippet\/codesnippet.style.github,codesnippet\/codesnippet.style.googlecode,paragraphs\/drupal.paragraphs.unpublished,pin_base\/core,pin_captcha\/pin_captcha.recaptcha_invisible,pin_ckeditor_inline_icons\/datatables.js,pin_google_analytics\/google_analytics_script,pin_help_components_search_display\/drupal,pin_help_ct\/jquery_select2,pin_help_ct_availability\/pin_help_ct_availability,pin_help_nav_blocks\/pin_help_nav_blocks,pin_help_search_context\/pin_help_search_context,pin_help_webforms_user_experience_response\/pin_help_webforms_user_experience_response_ga.form,pin_help_webforms_user_experience_response\/status_correction,pin_pinterest_client\/client_identification,system\/base,views\/views.module","theme":"pin_base","theme_token":null},"ajaxTrustedUrl":[],"google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","script":"(function(i,s,o,g,r,a,m){i[\u0022GoogleAnalyticsObject\u0022]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,\u0022script\u0022,\u0022https:\/\/www.google-analytics.com\/analytics.js\u0022,\u0022ga\u0022);ga(\u0022create\u0022, \u0022UA-12967896-3\u0022, {\u0022cookieDomain\u0022:\u0022auto\u0022});ga(\u0022set\u0022, \u0022anonymizeIp\u0022, true);ga(\u0022send\u0022, \u0022pageview\u0022);"},"pin_analytics":{"cta":true,"topicListGrid":true,"squircle":true},"pin_pinformation":{"context":"general"},"pin_pinterest_authusers":{"data_retrieval_active":true,"data_retrieval_active_percentage":100,"data_retrieval_expiration_time":15,"data_retrieval_valid_date":"2018-07-13-00:00:00","data_retrieval_valid_date_format":"Y-m-d-H:i:s"},"nodeType":"homepage","theme":"pin_base","currentFacet":null,"tipsJson":[{"title":"\u003Ca href=\u0022\/en\/tip\/eco-friendly-tip-2\u0022 hreflang=\u0022en\u0022\u003EEco-friendly tip 2\u003C\/a\u003E","field_tip_text":"Replace paper towels with microfiber cleaning cloths","nid":"2256"},{"title":"\u003Ca href=\u0022\/en\/tip\/eco-friendly-tip\u0022 hreflang=\u0022en\u0022\u003EEco-friendly tip\u003C\/a\u003E","field_tip_text":"Use compostable, beeswax wrap instead of plastic wrap","nid":"2251"},{"title":"\u003Ca href=\u0022\/en\/tip\/pets-tip\u0022 hreflang=\u0022en\u0022\u003EPets tip\u003C\/a\u003E","field_tip_text":"Bake pet-friendly treats for your pet\u2019s special day","nid":"2246"},{"title":"\u003Ca href=\u0022\/en\/tip\/plants-tip\u0022 hreflang=\u0022en\u0022\u003EPlants tip\u003C\/a\u003E","field_tip_text":"Air plants are easy to care for and brighten up a space","nid":"2241"},{"title":"\u003Ca href=\u0022\/en\/tip\/organizing-tip\u0022 hreflang=\u0022en\u0022\u003EOrganizing Tip\u003C\/a\u003E","field_tip_text":"Split a big project into smaller tasks\u2028 to achieve your goal","nid":"2236"},{"title":"\u003Ca href=\u0022\/en\/tip\/goals-tip\u0022 hreflang=\u0022en\u0022\u003EGoals tip\u003C\/a\u003E","field_tip_text":"Brainstorm ideas before choosing your 2020 goals.","nid":"1921"},{"title":"\u003Ca href=\u0022\/en\/tip\/journaling-tip\u0022 hreflang=\u0022en\u0022\u003EJournaling tip\u003C\/a\u003E","field_tip_text":"Use writing prompts to jumpstart your creativity.","nid":"1916"},{"title":"\u003Ca href=\u0022\/en\/tip\/eco-friendly-grocery-tip\u0022 hreflang=\u0022en\u0022\u003EEco-friendly grocery tip\u003C\/a\u003E","field_tip_text":"Bring canvas bags for groceries instead of plastic or paper bags.","nid":"1911"},{"title":"\u003Ca href=\u0022\/en\/tip\/travel-packing-tip-2\u0022 hreflang=\u0022en\u0022\u003ETravel packing tip 2\u003C\/a\u003E","field_tip_text":"Use refillable travel-size toiletries.","nid":"1906"},{"title":"\u003Ca href=\u0022\/en\/tip\/travel-packing-tip\u0022 hreflang=\u0022en\u0022\u003ETravel packing tip\u003C\/a\u003E","field_tip_text":"Roll your clothes for more space in your suitcase.","nid":"1901"},{"title":"\u003Ca href=\u0022\/en\/tip\/follow-people-and-topics\u0022 hreflang=\u0022en\u0022\u003EFollow people and topics\u003C\/a\u003E","field_tip_text":"Follow people and topics for ideas and inspiration","nid":"661"},{"title":"\u003Ca href=\u0022\/en\/tip\/similar-pins\u0022 hreflang=\u0022en\u0022\u003ESimilar Pins\u003C\/a\u003E","field_tip_text":"Scroll down to see similar Pins to the one you\u2019re viewing","nid":"656"},{"title":"\u003Ca href=\u0022\/en\/tip\/room-temperature-ingredients\u0022 hreflang=\u0022en\u0022\u003ERoom temperature ingredients\u003C\/a\u003E","field_tip_text":"Use room temperature ingredients when baking for the best results","nid":"651"},{"title":"\u003Ca href=\u0022\/en\/tip\/browser-button\u0022 hreflang=\u0022en\u0022\u003EBrowser button\u003C\/a\u003E","field_tip_text":"Use the Pinterest browser button to save from anywhere on the web","nid":"646"},{"title":"\u003Ca href=\u0022\/en\/tip\/profile-picture\u0022 hreflang=\u0022en\u0022\u003EProfile picture\u003C\/a\u003E","field_tip_text":"You can add a profile picture in your settings","nid":"636"},{"title":"\u003Ca href=\u0022\/en\/tip\/two-factor-authentication\u0022 hreflang=\u0022en\u0022\u003ETwo-factor authentication\u003C\/a\u003E","field_tip_text":"Set up two-factor authentication for extra account security","nid":"626"},{"title":"\u003Ca href=\u0022\/en\/tip\/facebook-or-google-login\u0022 hreflang=\u0022en\u0022\u003EFacebook or Google login\u003C\/a\u003E","field_tip_text":"You can use Facebook or Google to log in to Pinterest","nid":"621"},{"title":"\u003Ca href=\u0022\/en\/tip\/unique-password\u0022 hreflang=\u0022en\u0022\u003EUnique password\u003C\/a\u003E","field_tip_text":"Use a unique password for each internet account you create","nid":"616"},{"title":"\u003Ca href=\u0022\/en\/tip\/price-tag\u0022 hreflang=\u0022en\u0022\u003EPrice tag\u003C\/a\u003E","field_tip_text":"A price tag symbol on a Pin means that you can buy what\u0027s in the Pin","nid":"611"},{"title":"\u003Ca href=\u0022\/en\/tip\/personalize-home-feed\u0022 hreflang=\u0022en\u0022\u003EPersonalize home feed\u003C\/a\u003E","field_tip_text":"Use Pinterest more to personalize your home feed","nid":"606"},{"title":"\u003Ca href=\u0022\/en\/tip\/following-tab\u0022 hreflang=\u0022en\u0022\u003EFollowing tab\u003C\/a\u003E","field_tip_text":"Follow people you like, and keep up with their Pins in the following tab","nid":"596"},{"title":"\u003Ca href=\u0022\/en\/tip\/wooden-spoon\u0022 hreflang=\u0022en\u0022\u003EWooden spoon\u003C\/a\u003E","field_tip_text":"Place a wooden spoon across a pot of water to keep it from boiling over","nid":"591"},{"title":"\u003Ca href=\u0022\/en\/tip\/group-boards\u0022 hreflang=\u0022en\u0022\u003EGroup boards\u003C\/a\u003E","field_tip_text":"Create a group board for collaborative inspiration","nid":"586"},{"title":"\u003Ca href=\u0022\/en\/tip\/send-pins\u0022 hreflang=\u0022en\u0022\u003ESend Pins\u003C\/a\u003E","field_tip_text":"Send Pins to friends to share ideas","nid":"581"}],"pin_user_nav_blocks":{"pinUserScripts":{"menuOutput":"\u003Cul class=\u0022menu--user logged-in menu menu-user-authenticated\u0022\u003E\u003Cli\u003E\u003Ca href=\u0022https:\/\/www.pinterest.com\/settings\u0022 title=\u0022Settings link for Pinterest users\u0022\u003ESettings\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022https:\/\/www.pinterest.com\u0022 title=\u0022Pinterest home\u0022\u003EPinterest home\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022https:\/\/www.pinterest.com\/about\/privacy\u0022 title=\u0022Terms \u0026amp; privacy for Pinterest\u0022\u003ETerms \u0026amp; privacy\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022\/en\/pinterest\/logout?return=\/en%3Fsource%3Dgear_menu_web\u0022 title=\u0022Logout link for Pinterest users\u0022\u003ELogout\u003C\/a\u003E\u003C\/li\u003E\u003C\/ul\u003E"}},"user":{"uid":0,"permissionsHash":"ff920a9201cbf991fcb0a1b600aeb0dfe2ba7d8d73b1e0af7c200c6c5843f156"}}</script>
+<script src="Pinterest%20Help_files/js_6XMGAAjizeJy6Pzsdkn_wPUGB3whZF8rPlnH8G0H_xU.js"></script>
+
+<script src="Pinterest%20Help_files/js_mlAj_fyaUvAXgAMpQeKYVim5jGhJnsZ5jcuserrV6r4.js"></script>
+<script src="Pinterest%20Help_files/inbenta-search-client.js"></script>
+<script src="Pinterest%20Help_files/js_BRagR_G3q8iLQe_3ZxUgV03vtr7quaun6MowqpAobGA.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"7ea89c5a2f","applicationID":"119185243,119185244","transactionName":"MQRSZEMFX0VTVUYIDQhOc0VCEF5bHVNcFQsSGB5eXgBUGFFXXA4MDwJRXAsMXltXRlMGBw==","queueTime":0,"applicationTime":590,"atts":"HUNREgsfTEs=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script>
+
+</body></html>
