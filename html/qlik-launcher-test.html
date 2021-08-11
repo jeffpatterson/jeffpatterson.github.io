@@ -32,12 +32,12 @@
       var launcherDiv = document.createElement("div");
       launcherDiv.setAttribute("id", "customLauncher");
       launcherDiv.style.position = "fixed";
-      launcherDiv.style.bottom = "25px";
-      launcherDiv.style.right = "25px";
-      launcherDiv.style.width = "166px";
-      launcherDiv.style.height = "80px";
+      launcherDiv.style.bottom = "15px";
+      launcherDiv.style.right = "15px";
+      launcherDiv.style.width = "186px";
+      launcherDiv.style.height = "100px";
       launcherDiv.style.backgroundImage = "url(/images/darwinbot_graphic_circle.png)";
-      launcherDiv.style.backgroundSize = "80px 166px";
+      launcherDiv.style.backgroundSize = "186px 100px";
       launcherDiv.style.zIndex = "2147483001";
       launcherDiv.style.borderRadius = "0px";
       launcherDiv.style.cursor = "pointer";
@@ -47,11 +47,11 @@
       const mediaQuery = window.matchMedia('(min-width: 676px) and (min-height: 686px)');
       function positionLauncher(e) {
         if (e.matches) {
-          document.getElementById("customLauncher").style.bottom = "25px";
-          document.getElementById("customLauncher").style.right = "25px";
+          document.getElementById("customLauncher").style.bottom = "15px";
+          document.getElementById("customLauncher").style.right = "15px";
         } else {
-          document.getElementById("customLauncher").style.bottom = "10px";
-          document.getElementById("customLauncher").style.right = "10px";
+          document.getElementById("customLauncher").style.bottom = "0px";
+          document.getElementById("customLauncher").style.right = "0px";
         }
       }
       mediaQuery.addListener(positionLauncher);
