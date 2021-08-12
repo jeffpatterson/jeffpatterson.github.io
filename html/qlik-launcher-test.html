@@ -9,58 +9,68 @@
     </style>
   </head>
   <body style="background-color: #f0f0f0;">
+    
+    <!-- Custom code for icon customization -->
     <script>
-    const rendered = {}
-    function onEventStream(eventStream) {
-      for(const event of [...eventStream.events].reverse()) {
-        if(!rendered[event.id]) {
-          render(event, eventStream)
-          rendered[event.id] = true
+      
+      // Change these values
+      var launcherIconUrl = "/images/supportbot_graphic_circle.png";
+      var launcherIconWidth = 186;
+      var launcherIconHeight = 100;
+     
+      const rendered = {}
+      function onEventStream(eventStream) {
+        for(const event of [...eventStream.events].reverse()) {
+          if(!rendered[event.id]) {
+            render(event, eventStream)
+            rendered[event.id] = true
+          }
         }
       }
-    }
 
-    function render(event, eventStream) {
-      if(event.type === "meya.session.event.chat.close") {
-        document.getElementById("customLauncher").style.display = "block";
-      } else if (event.type === "meya.session.event.chat.open") {
-        document.getElementById("customLauncher").style.display = "none";
-      }
-    }
-
-    document.addEventListener("DOMContentLoaded", function() {
-      var launcherDiv = document.createElement("div");
-      launcherDiv.setAttribute("id", "customLauncher");
-      launcherDiv.style.position = "fixed";
-      launcherDiv.style.bottom = "15px";
-      launcherDiv.style.right = "15px";
-      launcherDiv.style.width = "186px";
-      launcherDiv.style.height = "100px";
-      launcherDiv.style.backgroundImage = "url(/images/supportbot_graphic_circle.png)";
-      launcherDiv.style.backgroundSize = "186px 100px";
-      launcherDiv.style.zIndex = "2147483001";
-      launcherDiv.style.borderRadius = "0px";
-      launcherDiv.style.cursor = "pointer";
-      launcherDiv.addEventListener("click",function() { orb.openChat();});
-      document.body.appendChild(launcherDiv);
-
-      const mediaQuery = window.matchMedia('(min-width: 676px) and (min-height: 686px)');
-      function positionLauncher(e) {
-        if (e.matches) {
-          document.getElementById("customLauncher").style.bottom = "15px";
-          document.getElementById("customLauncher").style.right = "15px";
-        } else {
-          document.getElementById("customLauncher").style.bottom = "0px";
-          document.getElementById("customLauncher").style.right = "0px";
+      function render(event, eventStream) {
+        if(event.type === "meya.session.event.chat.close") {
+          document.getElementById("customLauncher").style.display = "block";
+        } else if (event.type === "meya.session.event.chat.open") {
+          document.getElementById("customLauncher").style.display = "none";
         }
       }
-      mediaQuery.addListener(positionLauncher);
-      positionLauncher(mediaQuery);
-    });
+
+      document.addEventListener("DOMContentLoaded", function() {
+        var launcherDiv = document.createElement("div");
+        launcherDiv.setAttribute("id", "customLauncher");
+        launcherDiv.style.position = "fixed";
+        launcherDiv.style.zIndex = "2147483647";
+        launcherDiv.style.borderRadius = "0px";
+        launcherDiv.style.cursor = "pointer";
+        //launcherDiv.style.bottom = "15px";
+        //launcherDiv.style.right = "15px";
+        launcherDiv.style.backgroundImage = "url(" + launcherIconurl + ")"; 
+        launcherDiv.style.width = launcherIconWidth + "px";
+        launcherDiv.style.height = launcherIconHeight + "px";
+        launcherDiv.style.backgroundSize = launcherIconWidth + "px " + launcherIconHeight + "px";
+        launcherDiv.addEventListener("click",function() { orb.openChat();});
+        document.body.appendChild(launcherDiv);
+
+        const mediaQuery = window.matchMedia('(min-width: 676px) and (min-height: 686px)');
+        function positionLauncher(e) {
+          var launcherIconPosition = 25 - (80 - launcherIconHeight)/2;
+          if (e.matches) {
+            document.getElementById("customLauncher").style.bottom = launcherIconPosition + "px";
+            document.getElementById("customLauncher").style.right = launcherIconPosition + "px"
+          } else {
+            document.getElementById("customLauncher").style.bottom = (launcherIconPosition - 10) + "px"
+            document.getElementById("customLauncher").style.right = (launcherIconPosition - 10) + "px"
+          }
+        }
+        mediaQuery.addListener(positionLauncher);
+        positionLauncher(mediaQuery);
+      });
       
     </script>
+    
+    <!-- Darwin embed script -->
     <script>
-
     window.orbConfig = {
         connectionOptions: {
             gridUrl: "https://grid.meya.ai",
