@@ -54,7 +54,7 @@
 
         const mediaQuery = window.matchMedia('(min-width: 676px) and (min-height: 686px)');
         function positionLauncher(e) {
-          var launcherIconPosition = 25 - (80 - launcherIconHeight)/2;
+          var launcherIconPosition = 25 - (launcherIconHeight-80)/2;
           if (e.matches) {
             document.getElementById("customLauncher").style.bottom = launcherIconPosition + "px";
             document.getElementById("customLauncher").style.right = launcherIconPosition + "px"
