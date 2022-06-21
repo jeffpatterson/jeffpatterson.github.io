@@ -45,7 +45,7 @@
           console.log(urlParams);
           if(urlParams.has("launchChat")) {
             console.log("open");
-            setTimeout(3000, function() { console.log("timer"); orb.openChat(); });
+            setTimeout(function() { console.log("timer"); orb.openChat(); }, 3000);
           }
         });
     </script>
