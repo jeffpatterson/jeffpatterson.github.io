@@ -42,7 +42,9 @@
         document.addEventListener("DOMContentLoaded", function() {
           var queryString = window.location.search;
           var urlParams = new URLSearchParams(queryString);
+          console.log(urlParams);
           if(urlParams.has("launchChat")) {
+            console.log("open");
             setTimeout(3000, function() { orb.openChat(); });
           }
         });
