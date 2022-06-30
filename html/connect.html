@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Connect Test</title>
+</head>
+<body>
+<script type="text/javascript">
+  (function(w, d, x, id){
+    s=d.createElement('script');
+    s.src='https://dtn7rvxwwlhud.cloudfront.net/amazon-connect-chat-interface-client.js';
+    s.async=1;
+    s.id=id;
+    d.getElementsByTagName('head')[0].appendChild(s);
+    w[x] =  w[x] || function() { (w[x].ac = w[x].ac || []).push(arguments) };
+  })(window, document, 'amazon_connect', 'ccadb17e-2c63-4241-9252-bcc38868452a');
+  amazon_connect('styles', { openChat: { color: 'white', backgroundColor: '#123456'}, closeChat: { color: 'white', backgroundColor: '#123456'} });
+  amazon_connect('snippetId', 'QVFJREFIaUczMG9CY2pZeGVON3dIRFJwVkJlRHFKcW1kTTRlazcxajNHMVd5VzM1ZWdFVTE3UXZiUmZlV3lvRVdzMU5pRnNBQUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNdzJ4dTkyRW4zbFdkNDdHc0FnRVFnQ3ZjTWIza1MyeE5zdE1USGtRVzFyWm1TTGNlMytLcUMxQkpJck55UFVCbG5jUnRRdGEvTFFTWUhSMGQ6Onh0U2s0UUtvaVpDMXlPamdEaVFXNEhpakMwendkYnE3a001NGIxaFZUVUQrZWx6L0RFRkw3Q1hzcGFRaUlRSEFySEtEeWx0YzRJcXhFODJMYTBEZ1ZyOE1ra29oeGhCSWhIWVNCallIYzFEbGsxZEFRV3VQQ1pzM0FNTEh1RzdlREU0WGNSSldFV1pxRURkVDkxRWZVUDVldkhGSWJxTT0=');
+  amazon_connect('supportedMessagingContentTypes', [ 'text/plain', 'text/markdown' ]);
+</script>
+</body>
+</html>
