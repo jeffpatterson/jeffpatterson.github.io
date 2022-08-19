@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>Darwin / Qlik Stage Test</title>
+  </head>
+  <body>
+<script>
+    window.orbConfig = {
+        connectionOptions: {
+            darwinMetadata: {
+                url: document.location.href,
+                qlik_user_id: LITHIUM.CommunityJsonObject.User.id,
+                email: LITHIUM.CommunityJsonObject.User.emailRef
+            },
+            gridUrl: "https://grid.meya.ai",
+            appId: "app-5d25cf848e834f8699cd7a80aaada26c",
+            integrationId: "integration.orb",
+            connect: false,
+            pageContext: {
+                environment: "STAGE"
+            }
+        },
+        theme: {
+            brandColor: "#005cb9",
+            botAvatarUrl: "https://www.qlik.com/us/-/media/images/global-us/Resource-Library/Custom/driftbot_graphic_circle.jpg"
+        },
+        launcher: {
+            type: "message",
+            text: "Contact Support",
+            icon: "streamline-bold/01-interface-essential/16-help/headphones-customer-support.svg"
+        },
+        windowApi: true,
+        mediaUpload: {
+            all: false, // Disable for all other current & future media types
+            image: true // Enable just for images
+        }
+    };
+    (function () {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.async = true;
+        script.src = "https://cdn.meya.ai/v2/orb.js";
+        document.body.appendChild(script);
+        var fontStyleSheet = document.createElement("link");
+        fontStyleSheet.rel = "stylesheet";
+        fontStyleSheet.href = "https://cdn.meya.ai/font/inter.css";
+        document.body.appendChild(fontStyleSheet);
+    })();
+</script>
+
+<script>
+    /* Darwin auto-open code */
+    document.addEventListener("DOMContentLoaded", function() {
+        var queryString = window.location.search;
+        var urlParams = new URLSearchParams(queryString);
+        if(urlParams.has("launchChat")) {
+            setTimeout(function() { orb.openChat(); }, 1000);
+        }
+    });
+</script>
+  </body>
+</html>
