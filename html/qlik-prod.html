@@ -6,17 +6,17 @@
 <script>
     window.orbConfig = {
         connectionOptions: {
-            darwinMetadata: {
-                url: document.location.href,
-                qlik_user_id: !(typeof LITHIUM === "undefined") && !(typeof LITHIUM?.CommunityJsonObject?.User?.id === "undefined") ? LITHIUM.CommunityJsonObject.User.id : "",
-                email: !(typeof LITHIUM === "undefined") && !(typeof LITHIUM?.CommunityJsonObject?.User?.emailRef === "undefined") ? LITHIUM.CommunityJsonObject.User.emailRef : ""
-            },
             gridUrl: "https://grid.meya.ai",
             appId: "app-5d25cf848e834f8699cd7a80aaada26c",
             integrationId: "integration.orb",
             connect: false,
             pageContext: {
-                environment: "STAGE"
+                environment: "STAGE",
+                darwinMetadata: {
+                    url: document.location.href,
+                    qlik_user_id: !(typeof LITHIUM === "undefined") && !(typeof LITHIUM?.CommunityJsonObject?.User?.id === "undefined") ? LITHIUM.CommunityJsonObject.User.id : "",
+                    email: !(typeof LITHIUM === "undefined") && !(typeof LITHIUM?.CommunityJsonObject?.User?.emailRef === "undefined") ? LITHIUM.CommunityJsonObject.User.emailRef : ""
+                }
             }
         },
         theme: {
