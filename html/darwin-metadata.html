@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>Darwin / Qlik Stage Test</title>
+  </head>
+  <body>
+<script>
+    window.orbConfig = {
+        connectionOptions: {
+            gridUrl: "https://grid.meya.ai",
+            appId: "app-37499a2ca85041fcb718b3fa1b5e17a8",
+            integrationId: "integration.orb",
+            connect: false,
+            pageContext: {
+                environment: "STAGE",
+                darwinMetadata: {
+                    url: document.location.href,
+                    zenon_user_id: Math.floor(Math.random() * 10000000,
+                    email: Math.floor(Math.random() * 100000000 + "@directly.ai"
+                }
+            }
+        },
+        theme: {
+            brandColor: "red",
+            botAvatarUrl: "https://images.directly.ai/prod/zenon/zenon-bot/avatar_a5ed3d3b-4352-4304-b5c8-d30641c19093.jpeg"
+        },
+        launcher: {
+            type: "message",
+            text: "Need Help?",
+            icon: "default"
+        },
+        windowApi: true,
+        mediaUpload: {
+            all: false, // Disable for all other current & future media types
+            image: true // Enable just for images
+        }
+    };
+    (function () {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.async = true;
+        script.src = "https://cdn.meya.ai/v2/orb.js";
+        document.body.appendChild(script);
+        var fontStyleSheet = document.createElement("link");
+        fontStyleSheet.rel = "stylesheet";
+        fontStyleSheet.href = "https://cdn.meya.ai/font/inter.css";
+        document.body.appendChild(fontStyleSheet);
+    })();
+</script>
+
+<script>
+    /* Darwin auto-open code */
+    document.addEventListener("DOMContentLoaded", function() {
+        var queryString = window.location.search;
+        var urlParams = new URLSearchParams(queryString);
+        if(urlParams.has("launchChat")) {
+            setTimeout(function() { orb.openChat(); }, 1000);
+        }
+    });
+</script>
+  </body>
+</html>
