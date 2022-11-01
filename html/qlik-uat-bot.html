@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Qlik - UAT Bot</title>
+  </head>
+  <body>
+    <script>
+    window.orbConfig = {
+        connectionOptions: {
+            gridUrl: "https://grid.meya.ai",
+            appId: "app-faf9872c558e48678053c1fdc38fe7d4",
+            integrationId: "integration.orb",
+            connect: false,
+            pageContext: {
+                environment: "STAGE"
+            }
+        },
+        theme: { 
+            brandColor: "#60a629", 
+            botAvatarUrl: "https://www.qlik.com/us/-/media/images/global-us/Resource-Library/Custom/driftbot_graphic_circle.jpg" 
+        },
+        launcher: {
+            type: "message",
+            text: "Need Help?",
+            icon: "default"
+        },
+        windowApi: true,
+    };
+    (function(){
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.async = true;
+        script.src = "https://cdn.meya.ai/v2/orb.js";
+        document.body.appendChild(script);
+        var fontStyleSheet = document.createElement("link");
+        fontStyleSheet.rel = "stylesheet";
+        fontStyleSheet.href = "https://cdn.meya.ai/font/inter.css";
+        document.body.appendChild(fontStyleSheet);
+    })();
+</script>
+  </body>
+</html>
