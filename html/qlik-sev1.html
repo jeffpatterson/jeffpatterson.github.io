@@ -70,7 +70,7 @@
     });
   
     function onEventStream(eventStream) {
-        for(const event of [...eventStream.events].reverse()) {
+        for(const event of [...eventStream.events]) {
             console.log(event);
             break;
         }
