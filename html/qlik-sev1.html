@@ -17,6 +17,10 @@
                     qlik_user_id: !(typeof LITHIUM === "undefined") && !(typeof LITHIUM?.CommunityJsonObject?.User?.id === "undefined") ? LITHIUM.CommunityJsonObject.User.id : "",
                     email: !(typeof LITHIUM === "undefined") && !(typeof LITHIUM?.CommunityJsonObject?.User?.emailRef === "undefined") ? LITHIUM.CommunityJsonObject.User.emailRef : ""
                 }
+            },
+            onFirstConnect: (connectData, next) => {
+                orb.addListener("eventStream", onEventStream);
+                next();
             }
         },
         theme: {
@@ -60,10 +64,17 @@
         if(urlParams.has("sev1")) {
             setTimeout(function() {
                 orb.openChat();
-                orb.say("production outage");
+                //orb.say("production outage");
             }, 1000);
         }
     });
+  
+    function onEventStream(eventStream) {
+        for(const event of [...eventStream.events].reverse()) {
+            console.log(event);
+            break;
+        }
+    }
 </script>
   </body>
 </html>
