@@ -72,7 +72,7 @@
     function onEventStream(eventStream) {
         for(const event of [...eventStream.events]) {
             if(event.type === "meya.lifecycle.event.event") {
-                console.log(event.lifecycle_id);
+                console.log(event.data.lifecycle_id);
             }
             break;
         }
