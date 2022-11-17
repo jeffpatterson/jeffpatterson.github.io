@@ -69,10 +69,16 @@
         }
     });
   
+    var sevEventTriggered = false;
+  
     function onEventStream(eventStream) {
         for(const event of [...eventStream.events]) {
             if(event.type === "meya.lifecycle.event.event") {
                 console.log(event.data.lifecycle_id);
+                if(event.data.lifecycle_id === "welcomeTurnFinished" && !sevEventTriggered) {
+                    orb.say("production outage");
+                    sevEventTriggered = true;
+                }
             }
             break;
         }
