@@ -72,6 +72,8 @@
   
     function onEventStream(eventStream) {
         for(const event of [...eventStream.events]) {
+            console.log("FOUND EVENT");
+            console.log(event);
             if(event.type === "meya.lifecycle.event.event") {
                 console.log(event.data.lifecycle_id);
                 if(event.data.lifecycle_id === "welcomeTurnFinished" && !sevEventTriggered) {
