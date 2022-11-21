@@ -18,10 +18,10 @@
                     email: !(typeof LITHIUM === "undefined") && !(typeof LITHIUM?.CommunityJsonObject?.User?.emailRef === "undefined") ? LITHIUM.CommunityJsonObject.User.emailRef : ""
                 }
             },
-            onFirstConnect: (connectData, next) => {
-                orb.addListener("eventStream", onEventStream);
-                next();
-            }
+            //onFirstConnect: (connectData, next) => {
+            //    orb.addListener("eventStream", onEventStream);
+            //    next();
+            //}
         },
         theme: {
             brandColor: "#005cb9",
@@ -54,6 +54,7 @@
 <script>
     /* Darwin auto-open code */
     document.addEventListener("DOMContentLoaded", function() {
+        orb.addListener("eventStream", onEventStream);
         var queryString = window.location.search;
         var urlParams = new URLSearchParams(queryString);
       
