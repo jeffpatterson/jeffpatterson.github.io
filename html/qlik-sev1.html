@@ -54,22 +54,22 @@
 <script>
     /* Darwin auto-open code */
     document.addEventListener("DOMContentLoaded", function() {
-        orb.addListener("eventStream", onEventStream);
-        var queryString = window.location.search;
-        var urlParams = new URLSearchParams(queryString);
-      
-        if(urlParams.has("launchChat")) {
-            setTimeout(function() { orb.openChat(); }, 1000);
-        }
-      
-        if(urlParams.has("sev1")) {
-            setTimeout(function() {
+        
+        var interval = setInterval(function() {
+            if(typeof orb === "undefined") return;
+            clearInterval(interval);
+            orb.addListener("eventStream", onEventStream);
+            var queryString = window.location.search;
+            var urlParams = new URLSearchParams(queryString);
+
+            if(urlParams.has("launchChat") || urlParams.has("sev1")) {
                 orb.openChat();
-            }, 1000);
-        }
+            }
+        }, 500);
     });
   
     var sevEventTriggered = false;
+         
   
     function onEventStream(eventStream) {
         for(const event of [...eventStream.events]) {
