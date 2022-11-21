@@ -64,8 +64,21 @@
             var queryString = window.location.search;
             var urlParams = new URLSearchParams(queryString);
 
-            if(urlParams.has("launchChat") || urlParams.has("sev1")) {
+            if(urlParams.has("launchChat")) {
                 orb.openChat();
+            }
+            
+            if(urlParams.has("sev1")) {
+                var sev1InProgress = darwinGetCookie("sev1triggered") ? true : false;
+                console.log("sev1 cooke: " + sev1InProgress);
+                if (!sev1InProgress) {
+                    // Sev 1 has not been triggered yet
+                    let localId = window.orbConfig.connectionOptions.appId;
+                    localStorage.removeItem(`https://grid.meya.ai/gateway/v2/orb/${localId}/integration.orb.orbThreadId`);
+                }
+                
+                orb.openChat();
+           
             }
         }, 500);
     });
@@ -82,6 +95,7 @@
                     try {
                         orb.say("production is down");
                         sevEventTriggered = true;
+                        darwinSetCookie("sev1triggered","1",2);
                     }
                     catch(e) {
                         console.log("CAUGHT ERROR");
@@ -91,6 +105,31 @@
             }
             break;
         }
+    }
+    
+    function darwinSetCookie(name,value,minutes) {
+        var expires = "";
+        if (minutes) {
+            var date = new Date();
+            date.setTime(date.getTime() + (minutes*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+    }
+    
+    function darwinGetCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    
+    function darwinEraseCookie(name) {   
+        document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
     }
 </script>
   </body>
