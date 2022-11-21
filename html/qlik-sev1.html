@@ -64,7 +64,6 @@
         if(urlParams.has("sev1")) {
             setTimeout(function() {
                 orb.openChat();
-                //orb.say("production outage");
             }, 1000);
         }
     });
@@ -76,8 +75,14 @@
             if(event.type === "meya.lifecycle.event.event") {
                 console.log(event.data.lifecycle_id);
                 if(event.data.lifecycle_id === "welcomeTurnFinished" && !sevEventTriggered) {
-                    orb.say("production outage");
-                    sevEventTriggered = true;
+                    try {
+                        orb.say("production is down");
+                        sevEventTriggered = true;
+                    }
+                    catch(e) {
+                        console.log("CAUGHT ERROR");
+                        console.log(e);
+                    }
                 }
             }
             break;
