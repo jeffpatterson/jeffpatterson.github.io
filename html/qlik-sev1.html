@@ -53,6 +53,7 @@
 
 <script>
     /* Darwin auto-open code */
+    var triggerSev1 = false;
     document.addEventListener("DOMContentLoaded", function() {
         
         var interval = setInterval(function() {
@@ -69,15 +70,22 @@
             }
             
             if(urlParams.has("sev1")) {
-                var sev1InProgress = darwinGetCookie("sev1triggered") ? true : false;
-                console.log("sev1 cooke: " + sev1InProgress);
-                if (!sev1InProgress) {
+                var sev1triggered = darwinGetCookie("sev1triggered") ? true : false;
+                var threadId = localStorage.getItem(`https://grid.meya.ai/gateway/v2/orb/${localId}/integration.orb.orbThreadId`);
+              
+                console.log("sev1 cooke: " + sev1triggered);
+                console.log("threadId: " + threadId);
+                if (threadId && !sev1triggered) {
                     // Sev 1 has not been triggered yet
                     let localId = window.orbConfig.connectionOptions.appId;
                     localStorage.removeItem(`https://grid.meya.ai/gateway/v2/orb/${localId}/integration.orb.orbThreadId`);
+                    location.reload();
+                } elseif (!sev1triggered) {
+                    triggerSev1 = true;
+                    orb.openChat();
+                } else {
+                    orb.openChat();
                 }
-                
-                orb.openChat();
            
             }
         }, 500);
@@ -91,11 +99,14 @@
             console.log(event);
             if(event.type === "meya.lifecycle.event.event") {
                 console.log(event.data.lifecycle_id);
-                if(event.data.lifecycle_id === "welcomeTurnFinished" && !sevEventTriggered) {
+                if(event.data.lifecycle_id === "welcomeTurnFinished" && triggerSev1) {
                     try {
-                        orb.say("production is down");
-                        sevEventTriggered = true;
-                        darwinSetCookie("sev1triggered","1",2);
+                        let sev1triggered = darwinGetCookie("setv1triggered");
+                        if (!sev1triggered) {
+                            orb.say("production is down");
+                            sevEventTriggered = true;
+                            darwinSetCookie("sev1triggered","1",2);
+                        }
                     }
                     catch(e) {
                         console.log("CAUGHT ERROR");
