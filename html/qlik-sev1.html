@@ -98,7 +98,7 @@
                     if (!sev1triggered) {
                         orb.say("production is down");
                         sevEventTriggered = true;
-                        darwinSetCookie("sev1triggered","1",2);
+                        darwinSetCookie("sev1triggered","1",30);
                     }
                 }
             }
