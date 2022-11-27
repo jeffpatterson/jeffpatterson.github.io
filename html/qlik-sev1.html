@@ -3,6 +3,7 @@
     <title>Darwin / Qlik Stage Test</title>
   </head>
   <body>
+      <button onClick="launchSevFlow();">Launch Sev 1 Flow</button>
 <script>
     window.orbConfig = {
         connectionOptions: {
@@ -53,7 +54,7 @@
 
 <script>
     /* Darwin auto-open code */
-    var triggerSev1 = false;
+    var initSevFlow = false;
   
     document.addEventListener("DOMContentLoaded", function() {
         
@@ -63,42 +64,49 @@
           
             orb.addListener("eventStream", onEventStream);
           
-            var queryString = window.location.search;
-            var urlParams = new URLSearchParams(queryString);
+            let queryString = window.location.search;
+            let urlParams = new URLSearchParams(queryString);
+            let launchSevFlowAfterReload = darwinGetCookie("launchSevFlowAfterReload") ? true : false; 
 
             if(urlParams.has("launchChat")) {
                 orb.openChat();
             }
             
-            if(urlParams.has("sev1")) {
-                let sev1triggered = darwinGetCookie("sev1triggered") ? true : false;
-                let localId = window.orbConfig.connectionOptions.appId;
-                let threadId = localStorage.getItem(`https://grid.meya.ai/gateway/v2/orb/${localId}/integration.orb.orbThreadId`);
-              
-                if (threadId && !sev1triggered) {
-                    localStorage.removeItem(`https://grid.meya.ai/gateway/v2/orb/${localId}/integration.orb.orbThreadId`);
-                    location.reload();
-                } else if (!sev1triggered) {
-                    triggerSev1 = true;
-                    orb.openChat();
-                } else {
-                    orb.openChat();
-                }
+            if(urlParams.has("sev1") || launchSevFlowAfterReload) {
+                launchSevFlow();
             }
         }, 500);
     });
   
-    var sevEventTriggered = false;
+    var sevInProgress = false;
+    
+    function launchSevFlow() {
+        let sevInProgress = darwinGetCookie("sevInProgress") ? true : false;
+        let localId = window.orbConfig.connectionOptions.appId;
+        let threadId = localStorage.getItem(`https://grid.meya.ai/gateway/v2/orb/${localId}/integration.orb.orbThreadId`);
+              
+        if (threadId && !sevInProgress) {
+            localStorage.removeItem(`https://grid.meya.ai/gateway/v2/orb/${localId}/integration.orb.orbThreadId`);
+            darwinSetCookie("launchSevFlowAfterReload","1",1);
+            location.reload();
+        } else if (!sevInProgress) {
+            initSevFlow = true;
+            orb.openChat();
+        } else {
+            orb.openChat();
+        }    
+    }
+  
   
     function onEventStream(eventStream) {
         for(const event of [...eventStream.events]) {
             if(event.type === "meya.lifecycle.event.event") {
-                if(event.data.lifecycle_id === "welcomeTurnFinished" && triggerSev1) {
-                    let sev1triggered = darwinGetCookie("setv1triggered");
-                    if (!sev1triggered) {
+                if(event.data.lifecycle_id === "welcomeTurnFinished" && initSevFlow) {
+                    let sevInProgress = darwinGetCookie("sevInProgress");
+                    if (!sevInProgress) {
                         orb.say("production is down");
-                        sevEventTriggered = true;
-                        darwinSetCookie("sev1triggered","1",30);
+                        sevInProgress = true;
+                        darwinSetCookie("sevInProgress","1",30);
                     }
                 }
             }
