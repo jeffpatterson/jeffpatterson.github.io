@@ -98,9 +98,12 @@
                 if(event.data.lifecycle_id === "welcomeTurnFinished" && initSevFlow) {
                     let sevInProgress = darwinGetCookie("sevInProgress");
                     if (!sevInProgress) {
-                        orb.say("production is down");
                         sevInProgress = true;
                         darwinSetCookie("sevInProgress","1",30);
+                        setTimeount(function() {
+                            orb.say("production is down");
+
+                        }, 1000);
                     }
                 }
             }
