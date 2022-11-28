@@ -100,9 +100,8 @@
                     if (!sevInProgress) {
                         sevInProgress = true;
                         darwinSetCookie("sevInProgress","1",30);
-                        setTimeount(function() {
+                        setTimeout(function() {
                             orb.say("production is down");
-
                         }, 1000);
                     }
                 }
