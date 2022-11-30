@@ -135,5 +135,18 @@
         document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
     }
 </script>
+    <script>          
+        function resetDarwin() {
+            let localId = window.orbConfig.connectionOptions.appId;
+            let threadId = localStorage.getItem(`https://grid.meya.ai/gateway/v2/orb/${localId}/integration.orb.orbThreadId`);
+            
+            if(threadId) {
+                localStorage.removeItem(`https://grid.meya.ai/gateway/v2/orb/${localId}/integration.orb.orbThreadId`);
+                darwinEraseCookie("launchSevFlowAfterReload");
+                darwinEraseCookie("sevInProgress");
+                location.reload();
+            }
+        }
+      </script>
   </body>
 </html>
