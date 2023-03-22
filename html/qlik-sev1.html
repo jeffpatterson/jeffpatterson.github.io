@@ -140,6 +140,33 @@
         document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
     }
 </script>
+    
+    <script>
+      let notificationInterval = setInterval(function() {
+    if(typeof orb === "undefined") return;
+    clearInterval(notificationInterval);
+    addBotNotification();
+}, 500);
+
+function addBotNotification() {
+    orb.openChat();
+    let promptMessage = "Need to submit a case? Did you know you can get your issues resolved faster using Qlik Support Chat? Try it Now!";
+    let botDiv = document.getElementsByClassName("orb-chat-mount")[0];
+    let rightSidePromptDiv = document.createElement("div");
+    rightSidePromptDiv.innerHTML = "<p>" + promptMessage + "</p>";
+    rightSidePromptDiv.style.position = "absolute";
+    //rightSidePromptDiv.style.right = "32px";
+    rightSidePromptDiv.style.top = "-100px";
+    rightSidePromptDiv.style.right = "0";
+    rightSidePromptDiv.style.minWidth = "400px";
+    rightSidePromptDiv.style.backgroundColor = "#009845";
+    rightSidePromptDiv.style.color = "#fff";
+    rightSidePromptDiv.style.padding = "20px 20px 10px 20px";
+    rightSidePromptDiv.style.borderRadius = "5px";
+    rightSidePromptDiv.style.border = "3px solid #fff";
+    botDiv.firstChild.appendChild(rightSidePromptDiv);
+}
+    </script>
     <script>          
         function resetDarwin() {
             let localId = window.orbConfig.connectionOptions.appId;
